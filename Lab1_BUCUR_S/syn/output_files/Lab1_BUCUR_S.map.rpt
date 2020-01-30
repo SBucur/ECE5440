@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab1_BUCUR_S
-Wed Jan 29 20:57:37 2020
+Thu Jan 30 15:06:24 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jan 29 20:57:37 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jan 30 15:06:24 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab1_BUCUR_S                                ;
 ; Top-level Entity Name              ; Lab1_BUCUR_S                                ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                           ; EP4CE115F29C8L     ;                    ;
+; Device                                                           ; EP4CE115F29C7      ;                    ;
 ; Top-level entity name                                            ; Lab1_BUCUR_S       ; Lab1_BUCUR_S       ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
@@ -150,8 +150,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -161,16 +161,16 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                  ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
-; Lab1_SBUCUR_S.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/syn/Lab1_SBUCUR_S.v ;         ;
-; decoder7.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/syn/decoder7.v      ;         ;
-; check.v                          ; yes             ; User Verilog HDL File  ; C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/syn/check.v         ;         ;
-; adder.v                          ; yes             ; User Verilog HDL File  ; C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/syn/adder.v         ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
+; Lab1_SBUCUR_S.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/Lab1_SBUCUR_S.v ;         ;
+; decoder7.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/decoder7.v      ;         ;
+; check.v                          ; yes             ; User Verilog HDL File  ; C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/check.v         ;         ;
+; adder.v                          ; yes             ; User Verilog HDL File  ; C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/adder.v         ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------+
@@ -259,7 +259,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -269,22 +269,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jan 29 20:57:26 2020
+    Info: Processing started: Thu Jan 30 15:06:06 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1_BUCUR_S -c Lab1_BUCUR_S
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab1_sbucur_s.v
-    Info (12023): Found entity 1: Lab1_BUCUR_S File: C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/syn/Lab1_SBUCUR_S.v Line: 6
+    Info (12023): Found entity 1: Lab1_BUCUR_S File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/Lab1_SBUCUR_S.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file decoder7.v
-    Info (12023): Found entity 1: decoder7 File: C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/syn/decoder7.v Line: 17
+    Info (12023): Found entity 1: decoder7 File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/decoder7.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file check.v
-    Info (12023): Found entity 1: check File: C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/syn/check.v Line: 6
+    Info (12023): Found entity 1: check File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/check.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file adder.v
-    Info (12023): Found entity 1: adder File: C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/syn/adder.v Line: 5
+    Info (12023): Found entity 1: adder File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/adder.v Line: 5
 Info (12127): Elaborating entity "Lab1_BUCUR_S" for the top level hierarchy
-Info (12128): Elaborating entity "adder" for hierarchy "adder:playersum" File: C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/syn/Lab1_SBUCUR_S.v Line: 18
-Info (12128): Elaborating entity "decoder7" for hierarchy "decoder7:dec1" File: C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/syn/Lab1_SBUCUR_S.v Line: 21
-Info (12128): Elaborating entity "check" for hierarchy "check:checkmatch" File: C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/syn/Lab1_SBUCUR_S.v Line: 24
+Info (12128): Elaborating entity "adder" for hierarchy "adder:playersum" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/Lab1_SBUCUR_S.v Line: 18
+Info (12128): Elaborating entity "decoder7" for hierarchy "decoder7:dec1" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/Lab1_SBUCUR_S.v Line: 21
+Info (12128): Elaborating entity "check" for hierarchy "check:checkmatch" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/Lab1_SBUCUR_S.v Line: 24
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -293,9 +293,9 @@ Info (21057): Implemented 57 device resources after synthesis - the final resour
     Info (21059): Implemented 23 output pins
     Info (21061): Implemented 26 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4784 megabytes
-    Info: Processing ended: Wed Jan 29 20:57:37 2020
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 4757 megabytes
+    Info: Processing ended: Thu Jan 30 15:06:24 2020
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:35
 
 

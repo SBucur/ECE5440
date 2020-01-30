@@ -1,5 +1,5 @@
 Flow report for Lab1_BUCUR_S
-Wed Jan 29 20:57:56 2020
+Thu Jan 30 15:06:56 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,12 +40,12 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Jan 29 20:57:52 2020       ;
+; Flow Status                        ; Successful - Thu Jan 30 15:06:51 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab1_BUCUR_S                                ;
 ; Top-level Entity Name              ; Lab1_BUCUR_S                                ;
 ; Family                             ; Cyclone IV E                                ;
-; Device                             ; EP4CE115F29C8L                              ;
+; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
 ; Total logic elements               ; 26 / 114,480 ( < 1 % )                      ;
 ;     Total combinational functions  ; 26 / 114,480 ( < 1 % )                      ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/29/2020 20:57:27 ;
+; Start date & time ; 01/30/2020 15:06:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab1_BUCUR_S        ;
 +-------------------+---------------------+
@@ -75,13 +75,18 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 114472187731342.158035304613368        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 169736367386220.158041836615932        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.0V                                   ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
@@ -91,11 +96,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4784 MB             ; 00:00:22                           ;
-; Fitter               ; 00:00:10     ; 1.0                     ; 6300 MB             ; 00:00:18                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4689 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 4936 MB             ; 00:00:02                           ;
-; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:45                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4749 MB             ; 00:00:35                           ;
+; Fitter               ; 00:00:17     ; 1.0                     ; 5443 MB             ; 00:00:21                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4703 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4833 MB             ; 00:00:03                           ;
+; Total                ; 00:00:46     ; --                      ; --                  ; 00:01:05                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -104,10 +109,10 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-6BVD0F3  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-6BVD0F3  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-6BVD0F3  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-6BVD0F3  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-HR5KN2I  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-HR5KN2I  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-HR5KN2I  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-HR5KN2I  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

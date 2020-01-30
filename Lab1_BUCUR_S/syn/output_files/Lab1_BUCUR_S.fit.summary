@@ -1,9 +1,9 @@
-Fitter Status : Successful - Wed Jan 29 20:57:47 2020
+Fitter Status : Successful - Thu Jan 30 15:06:42 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Lab1_BUCUR_S
 Top-level Entity Name : Lab1_BUCUR_S
 Family : Cyclone IV E
-Device : EP4CE115F29C8L
+Device : EP4CE115F29C7
 Timing Models : Final
 Total logic elements : 26 / 114,480 ( < 1 % )
     Total combinational functions : 26 / 114,480 ( < 1 % )

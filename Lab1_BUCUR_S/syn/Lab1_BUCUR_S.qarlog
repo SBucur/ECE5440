@@ -1,0 +1,18 @@
+Quartus Prime Archive log --	C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/Lab1_BUCUR_S.qarlog
+
+Archive:	C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/Lab1_BUCUR_S.qar
+Date:		Thu Jan 30 14:33:08 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/Lab1_BUCUR_S.qpf
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/Lab1_BUCUR_S.qsf
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/Lab1_SBUCUR_S.v
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/adder.v
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/check.v
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/decoder7.v
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

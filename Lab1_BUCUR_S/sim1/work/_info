@@ -9,44 +9,44 @@ z2
 cModel Technology
 dC:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_s/sim2
 vdecoder7
-Z0 !s110 1580264611
+!s110 1580418332
 !i10b 1
-!s100 ;YVe6YjT>fSJ@Bnc]F9?80
-I>LVdBk0g`DROF1@c7;]7I0
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_s/sim1
-w1579847930
-8C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_s/sim1/decoder7.v
-FC:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_s/sim1/decoder7.v
+!s100 =^D3R;a4E1L38GYJ^h22D0
+In5Dj]Rd>ZoGVnkzk>1j1F1
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim1
+w1580418273
+8C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim1/decoder7.v
+FC:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim1/decoder7.v
 L0 17
-Z3 OV;L;10.5b;63
+Z2 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1580264611.000000
-!s107 C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_s/sim1/decoder7.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_s/sim1/decoder7.v|
+Z3 !s108 1580418331.000000
+!s107 C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim1/decoder7.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim1/decoder7.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z4 o-work work
+Z5 tCvgOpt 0
 vdecoder7_tb
-R0
+!s110 1580418331
 !i10b 1
 !s100 _B@PVoH^=T9_KRF[5fZVi2
-I`T0;Ih_k6Sl9JFmY[8aVo3
+I^o]X3bH2d1i4e9lXbZ<Sd0
+R0
 R1
-R2
-w1580264248
-8C:\Users\Stefan\Desktop\FPGA\Lab1_BUCUR_s\sim1\decoder7_tb.v
-FC:\Users\Stefan\Desktop\FPGA\Lab1_BUCUR_s\sim1\decoder7_tb.v
+w1580399746
+8C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim1/decoder7_tb.v
+FC:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim1/decoder7_tb.v
 L0 8
-R3
+R2
 r1
 !s85 0
 31
-R4
-!s107 C:\Users\Stefan\Desktop\FPGA\Lab1_BUCUR_s\sim1\decoder7_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Stefan\Desktop\FPGA\Lab1_BUCUR_s\sim1\decoder7_tb.v|
+R3
+!s107 C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim1/decoder7_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim1/decoder7_tb.v|
 !i113 1
+R4
 R5
-R6
