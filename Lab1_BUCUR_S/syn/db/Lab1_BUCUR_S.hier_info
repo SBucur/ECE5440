@@ -1,0 +1,100 @@
+|Lab1_BUCUR_S
+player1[0] => player1[0].IN2
+player1[1] => player1[1].IN2
+player1[2] => player1[2].IN2
+player1[3] => player1[3].IN2
+player2[0] => player2[0].IN2
+player2[1] => player2[1].IN2
+player2[2] => player2[2].IN2
+player2[3] => player2[3].IN2
+num1[0] << decoder7:dec1.port1
+num1[1] << decoder7:dec1.port1
+num1[2] << decoder7:dec1.port1
+num1[3] << decoder7:dec1.port1
+num1[4] << decoder7:dec1.port1
+num1[5] << decoder7:dec1.port1
+num1[6] << decoder7:dec1.port1
+num2[0] << decoder7:dec2.port1
+num2[1] << decoder7:dec2.port1
+num2[2] << decoder7:dec2.port1
+num2[3] << decoder7:dec2.port1
+num2[4] << decoder7:dec2.port1
+num2[5] << decoder7:dec2.port1
+num2[6] << decoder7:dec2.port1
+segsum[0] << decoder7:decsum.port1
+segsum[1] << decoder7:decsum.port1
+segsum[2] << decoder7:decsum.port1
+segsum[3] << decoder7:decsum.port1
+segsum[4] << decoder7:decsum.port1
+segsum[5] << decoder7:decsum.port1
+segsum[6] << decoder7:decsum.port1
+led[0] << check:checkmatch.port1
+led[1] << check:checkmatch.port1
+
+
+|Lab1_BUCUR_S|adder:playersum
+in1[0] => Add0.IN4
+in1[1] => Add0.IN3
+in1[2] => Add0.IN2
+in1[3] => Add0.IN1
+in2[0] => Add0.IN8
+in2[1] => Add0.IN7
+in2[2] => Add0.IN6
+in2[3] => Add0.IN5
+sum[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1_BUCUR_S|decoder7:dec1
+hex[0] => Decoder0.IN3
+hex[1] => Decoder0.IN2
+hex[2] => Decoder0.IN1
+hex[3] => Decoder0.IN0
+seg7[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1_BUCUR_S|decoder7:dec2
+hex[0] => Decoder0.IN3
+hex[1] => Decoder0.IN2
+hex[2] => Decoder0.IN1
+hex[3] => Decoder0.IN0
+seg7[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1_BUCUR_S|decoder7:decsum
+hex[0] => Decoder0.IN3
+hex[1] => Decoder0.IN2
+hex[2] => Decoder0.IN1
+hex[3] => Decoder0.IN0
+seg7[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1_BUCUR_S|check:checkmatch
+sum[0] => Equal0.IN3
+sum[1] => Equal0.IN2
+sum[2] => Equal0.IN1
+sum[3] => Equal0.IN0
+status[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+status[1] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

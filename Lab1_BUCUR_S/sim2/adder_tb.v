@@ -1,0 +1,40 @@
+// ECE5440
+// Author: Stefan Bucur 3153
+// Module: decoder7_tb
+// Description: Testbench for adder.v
+//	2^8 possible inputs, only testing normal and edge cases
+//	ex: 15 + 1 -> overflow -> 0 (edge case, expected output)
+//	ex: 3  + 3 = 6 (normal)
+
+`timescale 1ns/100ps
+
+module adder_tb();
+
+	reg [3:0] num1, num2;
+	wire [3:0] sum1;
+
+	adder adder_test(num1, num2, sum1);
+
+	initial
+	begin
+		num1 = 0;
+		num2 = 0;
+		#10;	// sum = 0
+		num1 = 3;
+		num2 = 3;
+		#10;	// sum = 4'b0110
+		num1 = 15;
+		num2 = 1;
+		#10;	// sum = 0
+		num1 = 1;
+		num2 = 15;
+		#10;	// sum = 0
+		num1 = 4'b1010;
+		num2 = 4'b0101;
+		#10;	// sum = 4'b1111
+		num1 = 13;
+		num2 = 9;
+		#10;	// sum = 4'b0111
+	end
+
+endmodule

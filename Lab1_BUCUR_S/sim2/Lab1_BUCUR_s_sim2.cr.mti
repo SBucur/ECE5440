@@ -1,0 +1,15 @@
+C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_s/sim2/adder.v {1 {vlog -work work -stats=none C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_s/sim2/adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_s/sim2/adder_tb.v {1 {vlog -work work -stats=none {C:\Users\Stefan\Desktop\FPGA\Lab1_BUCUR_s\sim2\adder_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module adder_tb
+
+Top level modules:
+	adder_tb
+
+} {} {}}

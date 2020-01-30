@@ -1,0 +1,139 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_s/sim2/Lab1_BUCUR_s_sim2.mpf
+# Loading project Lab1_BUCUR_s_sim2
+# Compile of adder.v was successful.
+# Compile of adder_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.adder_tb
+# vsim -gui work.adder_tb 
+# Start time: 16:13:14 on Jan 29,2020
+# Loading work.adder_tb
+# Loading work.adder
+add wave -position insertpoint  \
+sim:/adder_tb/adder_test/in1 \
+sim:/adder_tb/adder_test/in2 \
+sim:/adder_tb/adder_test/sum
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+run
+run
+quit -sim
+# End time: 16:18:07 on Jan 29,2020, Elapsed time: 0:04:53
+# Errors: 0, Warnings: 0
+# Compile of adder.v was successful.
+# Compile of adder_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.adder_tb
+# vsim -gui work.adder_tb 
+# Start time: 16:18:36 on Jan 29,2020
+# Loading work.adder_tb
+# Loading work.adder
+add wave -position insertpoint  \
+sim:/adder_tb/num1 \
+sim:/adder_tb/num2 \
+sim:/adder_tb/sum1
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# End time: 16:22:11 on Jan 29,2020, Elapsed time: 0:03:35
+# Errors: 0, Warnings: 0

@@ -1,0 +1,15 @@
+C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_s/sim1/decoder7.v {1 {vlog -work work -stats=none C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_s/sim1/decoder7.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module decoder7
+
+Top level modules:
+	decoder7
+
+} {} {}} C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_s/sim1/decoder7_tb.v {1 {vlog -work work -stats=none {C:\Users\Stefan\Desktop\FPGA\Lab1_BUCUR_s\sim1\decoder7_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module decoder7_tb
+
+Top level modules:
+	decoder7_tb
+
+} {} {}}

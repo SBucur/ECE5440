@@ -1,0 +1,15 @@
+C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/bonus/check.v {1 {vlog -work work -stats=none {C:\Users\Stefan\Desktop\FPGA\Lab1_BUCUR_S\bonus\check.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module check
+
+Top level modules:
+	check
+
+} {} {}} C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/bonus/check_tb.v {1 {vlog -work work -stats=none {C:\Users\Stefan\Desktop\FPGA\Lab1_BUCUR_S\bonus\check_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module check_tb
+
+Top level modules:
+	check_tb
+
+} {} {}}
