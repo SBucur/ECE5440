@@ -1,17 +1,6 @@
-# 0 compiles, 2 failed with no errors.
-# Error opening C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/bonus/check.v
-# Path name 'C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/bonus/check.v' doesn't exist.
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/bonus/Lab1_SBUCUR_S_bonus.mpf
+# Loading project Lab1_SBUCUR_S_bonus
 # Compile of check_tb.v was successful.
 # Compile of check.v was successful.
 # 2 compiles, 0 failed with no errors.
-vsim -gui work.check_tb
-# vsim -gui work.check_tb 
-# Start time: 10:16:28 on Jan 30,2020
-# Loading work.check_tb
-# Loading work.check
-add wave -position insertpoint  \
-sim:/check_tb/sum_test \
-sim:/check_tb/status_test
-run -all
-# End time: 10:20:13 on Jan 30,2020, Elapsed time: 0:03:45
-# Errors: 0, Warnings: 0

@@ -1,6 +1,6 @@
 // ECE5440
 // Author: Stefan Bucur 3153
-// Module: adder_top
+// Module: Lab1_SBUCUR_S
 // Description: Top-level module for Lab 1.
 
 module Lab1_BUCUR_S(
@@ -11,7 +11,7 @@ module Lab1_BUCUR_S(
 
         input [3:0] player1, player2;
         output [6:0] num1, num2, segsum;
-	output [1:0] led;
+        output [1:0] led;
         wire [3:0] sum;
         wire [1:0] led;
 

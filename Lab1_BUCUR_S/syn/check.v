@@ -1,7 +1,9 @@
 // ECE5440
 // Author: Stefan Bucur 3153
 // Module: check
-// Description: bonus for Lab 1 assignment; use LEDs to indicate if the players successfully input numbers that add to 0xF
+// Description: The bonus for the Lab 1 assignment.
+// use LEDs to indicate if the players successfully input numbers that add to 0xF
+// FPGA has individual wires for different colored LEDs, output must have two signals
 
 module check(
     //inputs
@@ -16,7 +18,7 @@ module check(
 
     always @(sum)
     begin
-        if( sum == 4'hf )
+        if( sum == 4'b1111 )
         begin
             status = 2'b01;
         end

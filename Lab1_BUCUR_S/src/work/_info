@@ -9,23 +9,23 @@ z2
 cModel Technology
 dC:/intelFPGA_lite/18.1
 vadder
-Z0 !s110 1580352215
+Z0 !s110 1580439732
 !i10b 1
 !s100 K=oEX4CoPEzQFHPVTY:T71
-I?RPiEHWIcSk7PC6TRW_2J1
+Ij;KhW@G;:=3_nC@dVF9CY0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src
+Z2 dC:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/src
 w1579747594
-8C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/adder.v
-FC:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/adder.v
+8C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim2/adder.v
+FC:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim2/adder.v
 L0 5
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1580352215.000000
-!s107 C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/adder.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/adder.v|
+Z4 !s108 1580439732.000000
+!s107 C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim2/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim2/adder.v|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
@@ -35,7 +35,7 @@ vadder_top
 !s100 PUQ0@mebQYgi>X8>dRH0T1
 IU38a@WKQiZlkamBn`LgHc2
 R1
-R2
+Z7 dC:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src
 w1580351347
 8C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/lab1_top.v
 FC:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/lab1_top.v
@@ -53,52 +53,74 @@ R6
 vcheck
 R0
 !i10b 1
-!s100 Ce747I35B@`nn4YQ[;P1Z3
-I76ZQGK379K1jR8@]n:ggG1
+!s100 ZT7C5@h0:Mbk3:_kSW]3J3
+IU>gXG_=49f>odjSjgI0@;2
 R1
 R2
-w1580350333
-8C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/check.v
-FC:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/check.v
-L0 6
+w1580351628
+8C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/bonus/check.v
+FC:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/bonus/check.v
+L0 8
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/check.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/check.v|
+!s107 C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/bonus/check.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/bonus/check.v|
 !i113 1
 R5
 R6
 vdecoder7
 R0
 !i10b 1
-!s100 ;YVe6YjT>fSJ@Bnc]F9?80
-I5WYZ[i2D]=cDA=[80z4OZ0
+!s100 =^D3R;a4E1L38GYJ^h22D0
+In5Dj]Rd>ZoGVnkzk>1j1F1
 R1
 R2
-w1579847930
-8C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/decoder7.v
-FC:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/decoder7.v
+w1580432013
+8C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim1/decoder7.v
+FC:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim1/decoder7.v
 L0 17
 R3
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/decoder7.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/decoder7.v|
+!s108 1580439731.000000
+!s107 C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim1/decoder7.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/sim1/decoder7.v|
 !i113 1
 R5
 R6
-vlab1_top
+vLab1_BUCUR_S
 R0
+!i10b 1
+!s100 KPmD5_FlS8iAEolPRV0Wj1
+IF9ah_:XmXzYX?KTZAF>];1
+R1
+R2
+w1580352508
+8C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/src/Lab1_SBUCUR_S.v
+FC:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/src/Lab1_SBUCUR_S.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/src/Lab1_SBUCUR_S.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/src/Lab1_SBUCUR_S.v|
+!i113 1
+R5
+R6
+n@lab1_@b@u@c@u@r_@s
+vlab1_top
+!s110 1580352215
 !i10b 1
 !s100 gJ8fLEiY^ck7ccY;K[7KK2
 IJ;l6H0Xd<YCdRk0Ae]z@K3
 R1
-R2
+R7
 w1580351387
 8C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/Lab1_SBUCUR_S.v
 FC:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/Lab1_SBUCUR_S.v
@@ -107,7 +129,7 @@ R3
 r1
 !s85 0
 31
-R4
+!s108 1580352215.000000
 !s107 C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/Lab1_SBUCUR_S.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/Lab1_SBUCUR_S.v|
 !i113 1

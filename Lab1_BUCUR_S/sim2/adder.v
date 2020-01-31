@@ -1,7 +1,8 @@
 // ECE5440
 // Author: Stefan Bucur 3153
-// Module: adder.v
-// 
+// Module: adder
+// Description: A two-number 4-bit addition module.
+
 module adder (in1, in2, sum);
 
 	input [3:0]in1, in2;

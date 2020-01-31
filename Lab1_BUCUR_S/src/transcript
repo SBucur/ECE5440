@@ -1,12 +1,8 @@
 # Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
-# OpenFile C:/Users/Stefan/Desktop/FPGA/Lab1_BUCUR_S/src/src.mpf
-# Loading project src
+# OpenFile C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/src/Lab1_BUCUR_S_src.mpf
+# Loading project Lab1_BUCUR_S_src
 # Compile of decoder7.v was successful.
 # Compile of adder.v was successful.
-# Compile of Lab1_SBUCUR_S.v was successful.
-# 3 compiles, 0 failed with no errors.
-# Compile of decoder7.v was successful.
-# Compile of adder.v was successful.
-# Compile of Lab1_SBUCUR_S.v was successful.
 # Compile of check.v was successful.
+# Compile of Lab1_SBUCUR_S.v was successful.
 # 4 compiles, 0 failed with no errors.

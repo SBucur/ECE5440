@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab1_BUCUR_S
-Thu Jan 30 15:06:24 2020
+Fri Jan 31 02:01:10 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jan 30 15:06:24 2020       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jan 31 02:01:10 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab1_BUCUR_S                                ;
 ; Top-level Entity Name              ; Lab1_BUCUR_S                                ;
@@ -150,8 +150,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -259,7 +259,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -269,16 +269,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Jan 30 15:06:06 2020
+    Info: Processing started: Fri Jan 31 02:00:59 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1_BUCUR_S -c Lab1_BUCUR_S
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab1_sbucur_s.v
     Info (12023): Found entity 1: Lab1_BUCUR_S File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/Lab1_SBUCUR_S.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file decoder7.v
     Info (12023): Found entity 1: decoder7 File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/decoder7.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file check.v
-    Info (12023): Found entity 1: check File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/check.v Line: 6
+    Info (12023): Found entity 1: check File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/check.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file adder.v
     Info (12023): Found entity 1: adder File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab1_BUCUR_S/syn/adder.v Line: 5
 Info (12127): Elaborating entity "Lab1_BUCUR_S" for the top level hierarchy
@@ -293,9 +293,9 @@ Info (21057): Implemented 57 device resources after synthesis - the final resour
     Info (21059): Implemented 23 output pins
     Info (21061): Implemented 26 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4757 megabytes
-    Info: Processing ended: Thu Jan 30 15:06:24 2020
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:35
+    Info: Peak virtual memory: 4782 megabytes
+    Info: Processing ended: Fri Jan 31 02:01:10 2020
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:22
 
 
