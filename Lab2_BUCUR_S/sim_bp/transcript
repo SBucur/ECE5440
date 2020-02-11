@@ -1,0 +1,178 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_bp/Lab2_BUCUR_S_sim_bp.mpf
+# Loading project Lab2_BUCUR_S_sim_bp
+# Compile of button_shaper.v failed with 1 errors.
+# Compile of button_shaper.v failed with 7 errors.
+# Compile of button_shaper.v failed with 7 errors.
+# Compile of button_shaper.v failed with 1 errors.
+# Compile of button_shaper.v failed with 1 errors.
+# Compile of button_shaper.v failed with 1 errors.
+# Compile of button_shaper.v was successful.
+# Compile of button_shaper.v was successful.
+# Compile of button_press.v was successful.
+# Compile of button_press_tb.v failed with 1 errors.
+# Compile of button_press_tb.v was successful.
+vsim -gui work.button_press_tb
+# vsim -gui work.button_press_tb 
+# Start time: 23:20:50 on Feb 05,2020
+# Loading work.button_press_tb
+# Loading work.button_press
+add wave -position insertpoint  \
+sim:/button_press_tb/clk \
+sim:/button_press_tb/rst \
+sim:/button_press_tb/button_in \
+sim:/button_press_tb/button_out
+run
+quit -sim
+# End time: 23:22:57 on Feb 05,2020, Elapsed time: 0:02:07
+# Errors: 0, Warnings: 0
+# Compile of button_press_tb.v was successful.
+vsim -gui work.button_press_tb
+# vsim -gui work.button_press_tb 
+# Start time: 23:23:13 on Feb 05,2020
+# Loading work.button_press_tb
+# Loading work.button_press
+add wave -position insertpoint  \
+sim:/button_press_tb/clk \
+sim:/button_press_tb/rst \
+sim:/button_press_tb/button_in \
+sim:/button_press_tb/button_out
+run
+quit -sim
+# End time: 23:25:21 on Feb 05,2020, Elapsed time: 0:02:08
+# Errors: 0, Warnings: 0
+# Compile of button_press_tb.v was successful.
+vsim -gui work.button_press_tb
+# vsim -gui work.button_press_tb 
+# Start time: 23:25:42 on Feb 05,2020
+# Loading work.button_press_tb
+# Loading work.button_press
+add wave -position insertpoint  \
+sim:/button_press_tb/clk \
+sim:/button_press_tb/rst \
+sim:/button_press_tb/button_in \
+sim:/button_press_tb/button_out
+run
+quit -sim
+# End time: 23:28:21 on Feb 05,2020, Elapsed time: 0:02:39
+# Errors: 0, Warnings: 0
+# Compile of button_press_tb.v was successful.
+# Compile of button_press.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.button_press
+# vsim -gui work.button_press 
+# Start time: 23:28:46 on Feb 05,2020
+# Loading work.button_press
+quit -sim
+vsim -gui work.button_press_tb
+# End time: 23:28:59 on Feb 05,2020, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 0
+# vsim -gui work.button_press_tb 
+# Start time: 23:28:59 on Feb 05,2020
+# Loading work.button_press_tb
+# Loading work.button_press
+add wave -position insertpoint  \
+sim:/button_press_tb/clk \
+sim:/button_press_tb/rst \
+sim:/button_press_tb/button_in \
+sim:/button_press_tb/button_out
+run
+quit -sim
+# End time: 23:50:53 on Feb 05,2020, Elapsed time: 0:21:54
+# Errors: 0, Warnings: 0
+# Compile of button_press.v was successful.
+vsim -gui work.button_press_tb
+# vsim -gui work.button_press_tb 
+# Start time: 23:52:12 on Feb 05,2020
+# Loading work.button_press_tb
+# Loading work.button_press
+add wave -position insertpoint  \
+sim:/button_press_tb/clk \
+sim:/button_press_tb/rst \
+sim:/button_press_tb/button_in \
+sim:/button_press_tb/button_out
+run
+run
+run
+quit -sim
+# End time: 23:58:05 on Feb 05,2020, Elapsed time: 0:05:53
+# Errors: 0, Warnings: 0
+# Compile of button_press.v was successful.
+# Compile of button_press_tb.v was successful.
+# Compile of button_press.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.button_press_tb
+# vsim -gui work.button_press_tb 
+# Start time: 23:58:34 on Feb 05,2020
+# Loading work.button_press_tb
+# Loading work.button_press
+add wave -position insertpoint  \
+sim:/button_press_tb/clk \
+sim:/button_press_tb/rst \
+sim:/button_press_tb/button_in \
+sim:/button_press_tb/button_out
+run
+run -continue
+run
+quit -sim
+# End time: 00:02:40 on Feb 06,2020, Elapsed time: 0:04:06
+# Errors: 0, Warnings: 0
+# Compile of button_press_tb.v was successful.
+# Compile of button_press.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.button_press_tb
+# vsim -gui work.button_press_tb 
+# Start time: 00:02:54 on Feb 06,2020
+# Loading work.button_press_tb
+# Loading work.button_press
+add wave -position insertpoint  \
+sim:/button_press_tb/clk \
+sim:/button_press_tb/rst \
+sim:/button_press_tb/button_in \
+sim:/button_press_tb/button_out
+run
+run
+run
+quit -sim
+# End time: 00:05:55 on Feb 06,2020, Elapsed time: 0:03:01
+# Errors: 0, Warnings: 0
+# Compile of button_press_tb.v was successful.
+# Compile of button_press.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.button_press_tb
+# vsim -gui work.button_press_tb 
+# Start time: 00:06:02 on Feb 06,2020
+# Loading work.button_press_tb
+# Loading work.button_press
+add wave -position insertpoint  \
+sim:/button_press_tb/clk \
+sim:/button_press_tb/rst \
+sim:/button_press_tb/button_in \
+sim:/button_press_tb/button_out
+run
+run
+run
+run
+# Break key hit
+quit -sim
+# End time: 00:07:33 on Feb 06,2020, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 0
+# Compile of button_press_tb.v was successful.
+# Compile of button_press.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.button_press_tb
+# vsim -gui work.button_press_tb 
+# Start time: 00:07:40 on Feb 06,2020
+# Loading work.button_press_tb
+# Loading work.button_press
+add wave -position insertpoint  \
+sim:/button_press_tb/clk \
+sim:/button_press_tb/rst \
+sim:/button_press_tb/button_in \
+sim:/button_press_tb/button_out
+run
+run
+run
+run
+# End time: 00:22:52 on Feb 06,2020, Elapsed time: 0:15:12
+# Errors: 0, Warnings: 0

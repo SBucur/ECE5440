@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_bp
+vloadreg
+!s110 1581304830
+!i10b 1
+!s100 `_:17^BB]DG@o:AD05oe92
+IP1n3NahHCaGLkeCTEVI?20
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_loadreg
+w1580972158
+8C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_loadreg/loadreg.v
+FC:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_loadreg/loadreg.v
+L0 8
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1581304830.000000
+!s107 C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_loadreg/loadreg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_loadreg/loadreg.v|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+vloadreg_tb
+!s110 1581304831
+!i10b 1
+!s100 6^iKK1F62A@UbQVY:lcRL3
+ISPMGFZ`aaGAgJ_@g2_FM?2
+R0
+R1
+w1581015590
+8C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_loadreg/loadreg_tb.v
+FC:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_loadreg/loadreg_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1581304831.000000
+!s107 C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_loadreg/loadreg_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_loadreg/loadreg_tb.v|
+!i113 1
+R3
+R4

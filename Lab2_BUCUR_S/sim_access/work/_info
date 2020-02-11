@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_loadreg
+vaccess
+!s110 1581413673
+!i10b 1
+!s100 H[R0KLS@QNX7D]PVm53183
+I5lP7DNb5k5^6YDS=1eI6_3
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_access
+w1581413659
+8C:\intelFPGA_lite\18.1\Lab2_BUCUR_S\sim_access\access.v
+FC:\intelFPGA_lite\18.1\Lab2_BUCUR_S\sim_access\access.v
+L0 9
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1581413673.000000
+!s107 C:\intelFPGA_lite\18.1\Lab2_BUCUR_S\sim_access\access.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\intelFPGA_lite\18.1\Lab2_BUCUR_S\sim_access\access.v|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+vaccess_tb
+!s110 1581413674
+!i10b 1
+!s100 f8kgQQ4YnhA8n_]SK]z;`2
+IbPNYb9<VcB2<@WNGITn1j2
+R0
+R1
+w1581413391
+8C:\intelFPGA_lite\18.1\Lab2_BUCUR_S\sim_access\access_tb.v
+FC:\intelFPGA_lite\18.1\Lab2_BUCUR_S\sim_access\access_tb.v
+L0 9
+R2
+r1
+!s85 0
+31
+!s108 1581413674.000000
+!s107 C:\intelFPGA_lite\18.1\Lab2_BUCUR_S\sim_access\access_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\intelFPGA_lite\18.1\Lab2_BUCUR_S\sim_access\access_tb.v|
+!i113 1
+R3
+R4
