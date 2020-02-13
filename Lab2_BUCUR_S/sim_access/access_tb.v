@@ -13,30 +13,41 @@ module access_tb ();
     reg load_p1, load_p2, p_enter;
     wire load1_out, load2_out;
     wire passr, passg;
+    wire [2:0] state_acc;
 
     access testmod(
         rst, clk,
         load_p1, load_p2,
         passnum, p_enter,
         load1_out, load2_out,
-        passr, passg
+        passr, passg, state_acc
     );
 
     always begin
-        #10 clk = 1;
         #10 clk = 0;
+        #10 clk = 1;
     end
 
     initial begin
         #5
         rst = 1;
-        passnum = 3;
         load_p1 = 1;
         load_p2 = 1;
         p_enter = 0;
-        #50 p_enter = 1;
-        #20 passnum = 1;
-        #20 passnum = 5;
-        #20 passnum = 3;
+        #50 passnum = 3;
+            p_enter = 1;
+        #10 p_enter = 0;
+
+        #50 passnum = 1;
+            p_enter = 1;
+        #10 p_enter = 0;
+
+        #50 passnum = 5;
+            p_enter = 1;
+        #10 p_enter = 0;
+
+        #50 passnum = 3;
+            p_enter = 1;
+        #10 p_enter = 0;
     end
 endmodule
