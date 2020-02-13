@@ -8,7 +8,7 @@
 
 module access (
     //inputs
-    RST, CLK,
+    CLK, RST,
 	loadreg_1_in, loadreg_2_in,
 	pword, pword_enter,
     //outputs
@@ -150,7 +150,5 @@ module access (
 				default: begin currentstate <= Digit_1; end
 			endcase
 		end
-		//update state based on switch case result
-		//currentstate <= nextstate;
 	end
 endmodule

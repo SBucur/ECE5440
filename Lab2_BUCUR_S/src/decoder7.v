@@ -12,7 +12,7 @@
 //	 -6-
 //	|   |
 //	4   2
-//	 -3- .(DP, ignore maybe?)
+//	 -3- .(DP, ignored)
 
 module decoder7 (hex, seg7);
 	input [3:0] hex;
