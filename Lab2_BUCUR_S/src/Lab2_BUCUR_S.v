@@ -5,33 +5,44 @@
 // Key: 3153
 
 module Lab2_BUCUR_S(
-    //inputs
-    CLK, RST, player1_num, player2_num, load_p1, load_p2, access_num, access_in,
-    //outputs
-    player1_dec, player2_dec, result_dec, pass_r, pass_g
+    // inputs
+    CLK, RST,
+    p1_data, p2_data, acc_data,
+    p1_sel, p2_sel, acc_sel,
+    // outputs
+    p1_digit, p2_digit, sum_digit,
+    sum_r, sum_g, pass_r, pass_g,
     );
 
-    input [3:0] player1_num, player2_num, access_num;
-    input load_p1, load_p2, access_in, RST;
-    output [6:0] player1_dec, player2_dec, result_dec;
-    output pass_r, pass_g;
-    reg [6:0] player1_dec, player2_dec, result_dec;
-    reg pass_r, pass_g;
+    input CLK, RST;
+    input [3:0] p1_data, p2_data, acc_data;
+    input p1_sel, p2_sel, acc_sel;
 
-    wire [3:0] loadreg_out_w, adder_out_w;
-    wire p1_w, p2_w, access_w;
-    wire [2:0] access_state;
+    output [6:0] p1_digit, p2_digit, sum_digit;
+    output sun_r, sum_g, pass_r, pass_g;
+    reg [6:0] p1_digit, p2_digit, sum_digit;
+    reg sun_r, sum_g, pass_r, pass_g;
 
-    //TODO: wire this mess
-    adder add_sum(p1_w, p2_w, adder_out_w);
-    decoder7 p1_dec(p1_w, player1_num);
-    decoder7 p2_dec(p2_w, player2_dec);
-    decoder7 sum_dec(adder_out_w, result_dec);
-    loadreg p1_num(CLK, RST, player1_num, load_p1);
-    loadreg p2_num(CLK, RST, player2_num, load_p2);
-    button_press p1_bpress(CLK, RST, load_p1, p1_w, );
-    button_press p2_bpress(CLK, RST, load_p2, p2_w);
-    button_press access_bpress(CLK, RST, access_in, access_w);
-    access acc_ctl(CLK, RST, );
+    wire p1_bpress, p2_bpress, acc_bpress;
+    wire p1_acc, p2_acc;
+    wire [2:0] acc_state;
+    wire [3:0] p1_w, p2_w, add_w;
+
+    decoder7 p1_dec(p1_w, p1_digit);
+    decoder7 p2_dec(p2_w, p2_digit);
+    decoder7 sum_dec(add_w, sum_digit);
+    adder player_sum(p1_w, p2w, add_w);
+    loadreg p1_num(CLK, RST, p1_data, p1_acc, p1_w);
+    loadreg p2_num(CLK, RST, p2_data, p2_acc, p2_w);
+    access acc_ctl(CLK, RST,
+                   p1_bpress, p2_bpress,
+                   acc_data, acc_bpress,
+                   p1_acc, p2_acc,
+                   pass_r, pass_g, acc_state
+    );
+    bshaper p1_button(CLK, RST, p1_sel, p1_bpress);
+    bshaper p2_button(CLK, RST, p2_sel, p2_bpress);
+    bshaper acc_button(CLK, RST, acc_sel, acc_bpress);
+    
 
 endmodule

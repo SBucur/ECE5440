@@ -144,7 +144,5 @@ module access_tb ();
         @(posedge clk);
         @(posedge clk);
             rst = 1;
-
-        
     end
 endmodule

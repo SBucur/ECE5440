@@ -150,7 +150,5 @@ module access (
 				default: begin currentstate <= Digit_1; end
 			endcase
 		end
-		//update state based on switch case result
-		//currentstate <= nextstate;
 	end
 endmodule

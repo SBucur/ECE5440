@@ -8,9 +8,10 @@
 // Button input is pulled up (active low)
 // FSM is based on Week 4 tutorial
 
-module button_press(
+module bshaper(
 	//inputs
-	CLK, RST, button_in,
+	CLK, RST,
+	button_in,
 	//outputs
 	button_out
 	);
