@@ -1,0 +1,177 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "p1_digit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_digit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_digit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_digit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_digit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_digit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_digit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "p2_digit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "p2_digit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "p2_digit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "p2_digit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "p2_digit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "p2_digit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "p2_digit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_status[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_status[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pass_r",
+					"strict" : false
+				},
+				{
+					"name" : "pass_g",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "p1_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK",
+					"strict" : false
+				},
+				{
+					"name" : "p1_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "p2_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "p2_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "p2_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "p2_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "acc_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "acc_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "acc_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "acc_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "acc_sel",
+					"strict" : false
+				},
+				{
+					"name" : "p1_sel",
+					"strict" : false
+				},
+				{
+					"name" : "p2_sel",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

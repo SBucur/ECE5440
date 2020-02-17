@@ -19,7 +19,7 @@ module decoder7 (hex, seg7);
 	output [6:0] seg7;
 	reg [6:0] seg7;
 	
-	always @ (hex, seg7)
+	always @ (hex)
 	begin
 		//decoder logic to convert hex to seg7
 		//0=ON, 1=OFF

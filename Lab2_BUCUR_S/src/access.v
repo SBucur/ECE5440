@@ -9,29 +9,29 @@
 module access (
     //inputs
     CLK, RST,
-	bpress_1, bpress_2,
+	loadreg_1_in, loadreg_2_in,
 	pword, pword_enter,
     //outputs
-    acc_1, acc_1,
-	pass_r, pass_g, currentstate
+    loadreg_1_out, loadreg_2_out,
+	pass_red, pass_green, currentstate
     );
 
-    input RST, CLK;
+    input CLK, RST;
     // input accept buttons for the two load registers
-    input bpress_1, bpress_2;
+    input loadreg_1_in, loadreg_2_in;
     // user inputs 4-bit password digit
     input [3:0] pword;
     input pword_enter;
 
     // signals to wire out to player loadreg modules
-    output acc_1, acc_1;
-    output pass_r, pass_g;
+    output loadreg_1_out, loadreg_2_out;
+    output pass_red, pass_green;
     // display current state for simulation and debugging pruposes
     // currentstate will not be wired to any modules or I/O
 	output [2:0] currentstate;
     
-    reg acc_1, acc_1;
-    reg pass_r, pass_g;
+    reg loadreg_1_out, loadreg_2_out;
+    reg pass_red, pass_green;
 
     // FSM regs, parameters and states
     reg [2:0] currentstate, nextstate;
@@ -47,20 +47,20 @@ module access (
 		if (RST == 1'b0) begin
 			currentstate <= Digit_1;
 			pass_OK <= 1'b1;
-			pass_r <= 1'b1;
-			pass_g <= 1'b0;
-			acc_1 <= 1'b0;
-			acc_1 <= 1'b0;
+			pass_red <= 1'b1;
+			pass_green <= 1'b0;
+			loadreg_1_out <= 1'b0;
+			loadreg_2_out <= 1'b0;
 		end
 		else begin case (currentstate)
 				Digit_1: begin
 					pass_OK <= 1'b1;
 					if(pword_enter == 1'b0)
 					begin
-						pass_r <= 1'b1;
-						pass_g <= 1'b0;
-						acc_1 <= 1'b0;
-						acc_1 <= 1'b0;
+						pass_red <= 1'b1;
+						pass_green <= 1'b0;
+						loadreg_1_out <= 1'b0;
+						loadreg_2_out <= 1'b0;
 						currentstate <= Digit_1;
 					end
 					else begin
@@ -74,10 +74,10 @@ module access (
 				Digit_2: begin
 					if(pword_enter == 1'b0)
 					begin
-						pass_r <= 1'b1;
-						pass_g <= 1'b0;
-						acc_1 <= 1'b0;
-						acc_1 <= 1'b0;
+						pass_red <= 1'b1;
+						pass_green <= 1'b0;
+						loadreg_1_out <= 1'b0;
+						loadreg_2_out <= 1'b0;
 						currentstate <= Digit_2;
 					end
 					else begin
@@ -91,10 +91,10 @@ module access (
 				Digit_3: begin
 					if(pword_enter == 1'b0)
 					begin
-						pass_r <= 1'b1;
-						pass_g <= 1'b0;
-						acc_1 <= 1'b0;
-						acc_1 <= 1'b0;
+						pass_red <= 1'b1;
+						pass_green <= 1'b0;
+						loadreg_1_out <= 1'b0;
+						loadreg_2_out <= 1'b0;
 						currentstate <= Digit_3;
 					end
 					else begin
@@ -108,10 +108,10 @@ module access (
 				Digit_4: begin
 					if(pword_enter == 1'b0)
 					begin
-						pass_r <= 1'b1;
-						pass_g <= 1'b0;
-						acc_1 <= 1'b0;
-						acc_1 <= 1'b0;
+						pass_red <= 1'b1;
+						pass_green <= 1'b0;
+						loadreg_1_out <= 1'b0;
+						loadreg_2_out <= 1'b0;
 						currentstate <= Digit_4;
 					end
 					else begin
@@ -133,10 +133,10 @@ module access (
 					end
 				end
 				OK: begin
-					pass_r <= 1'b0;
-					pass_g <= 1'b1;
-					acc_1 <= bpress_1;
-					acc_1 <= bpress_2;
+					pass_red <= 1'b0;
+					pass_green <= 1'b1;
+					loadreg_1_out <= loadreg_1_in;
+					loadreg_2_out <= loadreg_2_in;
                     // Bonus assignment: press pword_enter again to logout of the system
                     // Logout in this case means resetting to Digit_1
                     if(pword_enter == 1'b1)

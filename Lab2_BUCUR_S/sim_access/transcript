@@ -6,7 +6,7 @@
 # 2 compiles, 0 failed with no errors.
 vsim -gui work.access_tb
 # vsim -gui work.access_tb 
-# Start time: 21:32:17 on Feb 12,2020
+# Start time: 10:56:38 on Feb 15,2020
 # Loading work.access_tb
 # Loading work.access
 add wave -position insertpoint  \
@@ -23,15 +23,24 @@ sim:/access_tb/passg \
 sim:/access_tb/state_acc
 run
 run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 quit -sim
-# End time: 21:41:26 on Feb 12,2020, Elapsed time: 0:09:09
+# End time: 10:58:59 on Feb 15,2020, Elapsed time: 0:02:21
 # Errors: 0, Warnings: 0
 # Compile of access.v was successful.
 # Compile of access_tb.v was successful.
 # 2 compiles, 0 failed with no errors.
 vsim -gui work.access_tb
 # vsim -gui work.access_tb 
-# Start time: 22:44:01 on Feb 12,2020
+# Start time: 10:59:14 on Feb 15,2020
 # Loading work.access_tb
 # Loading work.access
 add wave -position insertpoint  \
@@ -49,15 +58,23 @@ sim:/access_tb/state_acc
 run
 run
 run
+run
+run
+run
+run
+run
+run
+run
+run
 quit -sim
-# End time: 22:47:00 on Feb 12,2020, Elapsed time: 0:02:59
+# End time: 11:07:38 on Feb 15,2020, Elapsed time: 0:08:24
 # Errors: 0, Warnings: 0
 # Compile of access.v was successful.
 # Compile of access_tb.v was successful.
 # 2 compiles, 0 failed with no errors.
 vsim -gui work.access_tb
 # vsim -gui work.access_tb 
-# Start time: 22:47:06 on Feb 12,2020
+# Start time: 11:07:47 on Feb 15,2020
 # Loading work.access_tb
 # Loading work.access
 add wave -position insertpoint  \
@@ -80,15 +97,73 @@ run
 run
 run
 run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 quit -sim
-# End time: 22:49:25 on Feb 12,2020, Elapsed time: 0:02:19
+# End time: 11:15:52 on Feb 15,2020, Elapsed time: 0:08:05
+# Errors: 0, Warnings: 0
+# Compile of access.v was successful.
+# Compile of access_tb.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of access.v was successful.
+# Compile of access_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.access_tb
+# vsim -gui work.access_tb 
+# Start time: 11:16:32 on Feb 15,2020
+# Loading work.access_tb
+# Loading work.access
+add wave -position insertpoint  \
+sim:/access_tb/clk \
+sim:/access_tb/rst \
+sim:/access_tb/passnum \
+sim:/access_tb/load_p1 \
+sim:/access_tb/load_p2 \
+sim:/access_tb/p_enter \
+sim:/access_tb/load1_out \
+sim:/access_tb/load2_out \
+sim:/access_tb/passr \
+sim:/access_tb/passg \
+sim:/access_tb/state_acc
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 11:24:21 on Feb 15,2020, Elapsed time: 0:07:49
 # Errors: 0, Warnings: 0
 # Compile of access.v was successful.
 # Compile of access_tb.v was successful.
 # 2 compiles, 0 failed with no errors.
 vsim -gui work.access_tb
 # vsim -gui work.access_tb 
-# Start time: 22:49:31 on Feb 12,2020
+# Start time: 11:24:30 on Feb 15,2020
 # Loading work.access_tb
 # Loading work.access
 add wave -position insertpoint  \
@@ -105,452 +180,30 @@ sim:/access_tb/passg \
 sim:/access_tb/state_acc
 run
 run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 quit -sim
-# End time: 22:55:43 on Feb 12,2020, Elapsed time: 0:06:12
+# End time: 11:25:36 on Feb 15,2020, Elapsed time: 0:01:06
 # Errors: 0, Warnings: 0
 # Compile of access.v was successful.
 # Compile of access_tb.v was successful.
 # 2 compiles, 0 failed with no errors.
 vsim -gui work.access_tb
 # vsim -gui work.access_tb 
-# Start time: 22:55:48 on Feb 12,2020
-# Loading work.access_tb
-# Loading work.access
-run
-run
-run
-add wave -position insertpoint  \
-sim:/access_tb/clk \
-sim:/access_tb/rst \
-sim:/access_tb/passnum \
-sim:/access_tb/load_p1 \
-sim:/access_tb/load_p2 \
-sim:/access_tb/p_enter \
-sim:/access_tb/load1_out \
-sim:/access_tb/load2_out \
-sim:/access_tb/passr \
-sim:/access_tb/passg \
-sim:/access_tb/state_acc
-restart -f
-run
-run
-quit -sim
-# End time: 23:09:12 on Feb 12,2020, Elapsed time: 0:13:24
-# Errors: 0, Warnings: 0
-# Compile of access.v was successful.
-# Compile of access.v was successful.
-# Compile of access_tb.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.access_tb
-# vsim -gui work.access_tb 
-# Start time: 23:09:19 on Feb 12,2020
-# Loading work.access_tb
-# Loading work.access
-add wave -position insertpoint  \
-sim:/access_tb/clk \
-sim:/access_tb/rst \
-sim:/access_tb/passnum \
-sim:/access_tb/load_p1 \
-sim:/access_tb/load_p2 \
-sim:/access_tb/p_enter \
-sim:/access_tb/load1_out \
-sim:/access_tb/load2_out \
-sim:/access_tb/passr \
-sim:/access_tb/passg \
-sim:/access_tb/state_acc
-run
-run
-run
-quit -sim
-# End time: 23:10:08 on Feb 12,2020, Elapsed time: 0:00:49
-# Errors: 0, Warnings: 0
-# Compile of access_tb.v was successful.
-vsim -gui work.access_tb
-# vsim -gui work.access_tb 
-# Start time: 23:10:50 on Feb 12,2020
-# Loading work.access_tb
-# Loading work.access
-add wave -position insertpoint  \
-sim:/access_tb/clk \
-sim:/access_tb/rst \
-sim:/access_tb/passnum \
-sim:/access_tb/load_p1 \
-sim:/access_tb/load_p2 \
-sim:/access_tb/p_enter \
-sim:/access_tb/load1_out \
-sim:/access_tb/load2_out \
-sim:/access_tb/passr \
-sim:/access_tb/passg \
-sim:/access_tb/state_acc
-run
-run
-run
-quit -sim
-# End time: 23:12:46 on Feb 12,2020, Elapsed time: 0:01:56
-# Errors: 0, Warnings: 0
-# Compile of access.v was successful.
-# Compile of access_tb.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.access_tb
-# vsim -gui work.access_tb 
-# Start time: 23:12:53 on Feb 12,2020
-# Loading work.access_tb
-# Loading work.access
-add wave -position insertpoint  \
-sim:/access_tb/clk \
-sim:/access_tb/rst \
-sim:/access_tb/passnum \
-sim:/access_tb/load_p1 \
-sim:/access_tb/load_p2 \
-sim:/access_tb/p_enter \
-sim:/access_tb/load1_out \
-sim:/access_tb/load2_out \
-sim:/access_tb/passr \
-sim:/access_tb/passg \
-sim:/access_tb/state_acc
-run
-run
-run
-run
-run
-quit -sim
-# End time: 23:18:40 on Feb 12,2020, Elapsed time: 0:05:47
-# Errors: 0, Warnings: 0
-# Compile of access.v was successful.
-# Compile of access_tb.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.access_tb
-# vsim -gui work.access_tb 
-# Start time: 23:18:54 on Feb 12,2020
-# Loading work.access_tb
-# Loading work.access
-add wave -position insertpoint  \
-sim:/access_tb/clk \
-sim:/access_tb/rst \
-sim:/access_tb/passnum \
-sim:/access_tb/load_p1 \
-sim:/access_tb/load_p2 \
-sim:/access_tb/p_enter \
-sim:/access_tb/load1_out \
-sim:/access_tb/load2_out \
-sim:/access_tb/passr \
-sim:/access_tb/passg \
-sim:/access_tb/state_acc
-run
-run
-run
-run
-quit -sim
-# End time: 23:19:58 on Feb 12,2020, Elapsed time: 0:01:04
-# Errors: 0, Warnings: 0
-# Compile of access.v was successful.
-# Compile of access_tb.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.access_tb
-# vsim -gui work.access_tb 
-# Start time: 23:20:07 on Feb 12,2020
-# Loading work.access_tb
-# Loading work.access
-add wave -position insertpoint  \
-sim:/access_tb/clk \
-sim:/access_tb/rst \
-sim:/access_tb/passnum \
-sim:/access_tb/load_p1 \
-sim:/access_tb/load_p2 \
-sim:/access_tb/p_enter \
-sim:/access_tb/load1_out \
-sim:/access_tb/load2_out \
-sim:/access_tb/passr \
-sim:/access_tb/passg \
-sim:/access_tb/state_acc
-run
-run
-run
-quit -sim
-# End time: 23:33:00 on Feb 12,2020, Elapsed time: 0:12:53
-# Errors: 0, Warnings: 0
-# Compile of access_tb.v was successful.
-vsim -gui work.access_tb
-# vsim -gui work.access_tb 
-# Start time: 23:33:04 on Feb 12,2020
-# Loading work.access_tb
-# Loading work.access
-add wave -position insertpoint  \
-sim:/access_tb/clk \
-sim:/access_tb/rst \
-sim:/access_tb/passnum \
-sim:/access_tb/load_p1 \
-sim:/access_tb/load_p2 \
-sim:/access_tb/p_enter \
-sim:/access_tb/load1_out \
-sim:/access_tb/load2_out \
-sim:/access_tb/passr \
-sim:/access_tb/passg \
-sim:/access_tb/state_acc
-run
-run
-run
-run
-run
-run
-quit -sim
-# End time: 23:34:46 on Feb 12,2020, Elapsed time: 0:01:42
-# Errors: 0, Warnings: 0
-# Compile of access.v was successful.
-# Compile of access_tb.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.access_tb
-# vsim -gui work.access_tb 
-# Start time: 23:34:55 on Feb 12,2020
-# Loading work.access_tb
-# Loading work.access
-add wave -position insertpoint  \
-sim:/access_tb/clk \
-sim:/access_tb/load1_out \
-sim:/access_tb/load2_out \
-sim:/access_tb/load_p1 \
-sim:/access_tb/load_p2 \
-sim:/access_tb/p_enter \
-sim:/access_tb/passg \
-sim:/access_tb/passnum \
-sim:/access_tb/passr \
-sim:/access_tb/rst \
-sim:/access_tb/state_acc
-run
-run
-quit -sim
-# End time: 23:35:57 on Feb 12,2020, Elapsed time: 0:01:02
-# Errors: 0, Warnings: 0
-# Compile of access.v was successful.
-# Compile of access_tb.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.access_tb
-# vsim -gui work.access_tb 
-# Start time: 23:36:12 on Feb 12,2020
-# Loading work.access_tb
-# Loading work.access
-add wave -position insertpoint  \
-sim:/access_tb/clk \
-sim:/access_tb/load1_out \
-sim:/access_tb/load2_out \
-sim:/access_tb/load_p1 \
-sim:/access_tb/load_p2 \
-sim:/access_tb/p_enter \
-sim:/access_tb/passg \
-sim:/access_tb/passnum \
-sim:/access_tb/passr \
-sim:/access_tb/rst \
-sim:/access_tb/state_acc
-run
-run
-run
-quit -sim
-# End time: 23:41:02 on Feb 12,2020, Elapsed time: 0:04:50
-# Errors: 0, Warnings: 0
-# Compile of access.v was successful.
-# Compile of access_tb.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.access_tb
-# vsim -gui work.access_tb 
-# Start time: 23:41:38 on Feb 12,2020
-# Loading work.access_tb
-# Loading work.access
-add wave -position insertpoint  \
-sim:/access_tb/clk \
-sim:/access_tb/load1_out \
-sim:/access_tb/load2_out \
-sim:/access_tb/load_p1 \
-sim:/access_tb/load_p2 \
-sim:/access_tb/p_enter \
-sim:/access_tb/passg \
-sim:/access_tb/passnum \
-sim:/access_tb/passr \
-sim:/access_tb/rst \
-sim:/access_tb/state_acc
-run
-run
-run
-run
-quit -sim
-# End time: 23:46:37 on Feb 12,2020, Elapsed time: 0:04:59
-# Errors: 0, Warnings: 0
-# Compile of access.v was successful.
-# Compile of access_tb.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.access_tb
-# vsim -gui work.access_tb 
-# Start time: 23:46:45 on Feb 12,2020
-# Loading work.access_tb
-# Loading work.access
-add wave -position insertpoint  \
-sim:/access_tb/clk \
-sim:/access_tb/load1_out \
-sim:/access_tb/load2_out \
-sim:/access_tb/load_p1 \
-sim:/access_tb/load_p2 \
-sim:/access_tb/p_enter \
-sim:/access_tb/passg \
-sim:/access_tb/passnum \
-sim:/access_tb/passr \
-sim:/access_tb/rst \
-sim:/access_tb/state_acc
-run
-run
-run
-run
-run
-run
-run
-run
-quit -sim
-# End time: 23:50:53 on Feb 12,2020, Elapsed time: 0:04:08
-# Errors: 0, Warnings: 0
-# Compile of access.v was successful.
-# Compile of access_tb.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.access_tb
-# vsim -gui work.access_tb 
-# Start time: 23:51:01 on Feb 12,2020
-# Loading work.access_tb
-# Loading work.access
-add wave -position insertpoint  \
-sim:/access_tb/clk \
-sim:/access_tb/rst \
-sim:/access_tb/passnum \
-sim:/access_tb/load_p1 \
-sim:/access_tb/load_p2 \
-sim:/access_tb/p_enter \
-sim:/access_tb/load1_out \
-sim:/access_tb/load2_out \
-sim:/access_tb/passr \
-sim:/access_tb/passg \
-sim:/access_tb/state_acc
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-restart -f
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-quit -sim
-# End time: 23:57:36 on Feb 12,2020, Elapsed time: 0:06:35
-# Errors: 0, Warnings: 0
-# Compile of access.v was successful.
-# Compile of access_tb.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.access_tb
-# vsim -gui work.access_tb 
-# Start time: 23:57:43 on Feb 12,2020
+# Start time: 11:25:52 on Feb 15,2020
 # Loading work.access_tb
 # Loading work.access
 add wave -position insertpoint  \
@@ -576,7 +229,16 @@ run
 run
 run
 run
-quit -sim
-# End time: 00:09:36 on Feb 13,2020, Elapsed time: 0:11:53
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 11:27:24 on Feb 15,2020, Elapsed time: 0:01:32
 # Errors: 0, Warnings: 0
-# reading C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini

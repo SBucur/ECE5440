@@ -24,10 +24,9 @@ module loadreg(
 	always @ (posedge CLK) begin
 		if (RST == 0)
 		begin
-			loadreg_state <= 2'b00;
+			loadreg_state <= Store;
 			data_out <= 4'b0000;
 		end
-
 		else begin case (loadreg_state)
 				Store: begin
 					if(sig_load == 1'b1)
