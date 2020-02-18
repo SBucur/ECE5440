@@ -1,0 +1,92 @@
+Archive Project report for Lab2_BUCUR_S
+Tue Feb 18 00:45:07 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Tue Feb 18 00:45:07 2020 ;
+; Revision Name          ; Lab2_BUCUR_S                          ;
+; Top-level Entity Name  ; Lab2_BUCUR_S                          ;
+; Family                 ; Cyclone IV E                          ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/syn/Lab2_BUCUR_S.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'Lab2_BUCUR_S.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4830 megabytes
+    Info: Processing ended: Tue Feb 18 00:45:07 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++--------------------------------------------------------------------------+
+; Files Archived                                                           ;
++--------------------------------------------------------------------------+
+; File Name                                                                ;
++--------------------------------------------------------------------------+
+; ../src/access.v                                                          ;
+; ../src/adder.v                                                           ;
+; ../src/bshaper.v                                                         ;
+; ../src/check.v                                                           ;
+; ../src/decoder7.v                                                        ;
+; ../src/Lab2_BUCUR_S.v                                                    ;
+; ../src/loadreg.v                                                         ;
+; c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf             ;
+; C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/access.v       ;
+; C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/adder.v        ;
+; C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/bshaper.v      ;
+; C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/check.v        ;
+; C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/decoder7.v     ;
+; C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/Lab2_BUCUR_S.v ;
+; C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/loadreg.v      ;
+; Lab2_BUCUR_S.qpf                                                         ;
+; Lab2_BUCUR_S.qsf                                                         ;
++--------------------------------------------------------------------------+
+
+

@@ -1,1 +1,10 @@
 *.zip
+<<<<<<< Updated upstream
+=======
+*.txt
+*.pdn
+*.png
+*.PNG
+*.jpg
+*.jpeg
+>>>>>>> Stashed changes

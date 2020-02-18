@@ -1,0 +1,21 @@
+Quartus Prime Archive log --	C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/syn/Lab2_BUCUR_S.qarlog
+
+Archive:	C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/syn/Lab2_BUCUR_S.qar
+Date:		Tue Feb 18 00:45:07 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/Lab2_BUCUR_S.v
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/access.v
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/adder.v
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/bshaper.v
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/check.v
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/decoder7.v
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/src/loadreg.v
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/syn/Lab2_BUCUR_S.qpf
+C:/Users/Stefan/Documents/GitHub/ECE5440/Lab2_BUCUR_S/syn/Lab2_BUCUR_S.qsf
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 10 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
