@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1
+vcnt4
+Z0 !s110 1582087705
+!i10b 1
+!s100 jVo;>9S53^0[Yj2kJ6iW21
+I`FegR`2HOdzO=QPcPHi][2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_rng
+w1582087511
+8C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_rng/cnt4.v
+FC:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_rng/cnt4.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1582087705.000000
+!s107 C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_rng/cnt4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_rng/cnt4.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vtrng
+R0
+!i10b 1
+!s100 YR@mP;A_GEaTfoHVEU^;O1
+IY`oSjg1PS<EIgBMXH?G0D0
+R1
+R2
+w1582082790
+8C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_rng/trng.v
+FC:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_rng/trng.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_rng/trng.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_rng/trng.v|
+!i113 1
+R5
+R6
+vtrng_tb
+R0
+!i10b 1
+!s100 o38H^E^K6MDZCPc:AZ_of2
+I>^D0TOgS9k?1IjC5M1l>C3
+R1
+R2
+w1582087658
+8C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_rng/trng_tb.v
+FC:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_rng/trng_tb.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_rng/trng_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_rng/trng_tb.v|
+!i113 1
+R5
+R6
