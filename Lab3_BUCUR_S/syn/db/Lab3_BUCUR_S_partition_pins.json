@@ -1,0 +1,161 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "bot_digit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bot_digit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bot_digit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bot_digit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bot_digit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "bot_digit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "bot_digit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "player_digit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "player_digit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "player_digit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "player_digit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "player_digit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "player_digit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "player_digit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_digit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_status[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sum_status[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pass_r",
+					"strict" : false
+				},
+				{
+					"name" : "pass_g",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK",
+					"strict" : false
+				},
+				{
+					"name" : "bot_sel",
+					"strict" : false
+				},
+				{
+					"name" : "player_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "player_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "player_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "player_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "acc_sel",
+					"strict" : false
+				},
+				{
+					"name" : "acc_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "acc_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "acc_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "acc_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "player_sel",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

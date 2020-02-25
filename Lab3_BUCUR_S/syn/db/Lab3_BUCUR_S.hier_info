@@ -1,0 +1,263 @@
+|Lab3_BUCUR_S
+CLOCK => CLOCK.IN6
+RESET => RESET.IN6
+player_data[0] => player_data[0].IN1
+player_data[1] => player_data[1].IN1
+player_data[2] => player_data[2].IN1
+player_data[3] => player_data[3].IN1
+acc_data[0] => acc_data[0].IN1
+acc_data[1] => acc_data[1].IN1
+acc_data[2] => acc_data[2].IN1
+acc_data[3] => acc_data[3].IN1
+bot_sel => bot_sel.IN2
+player_sel => player_sel.IN1
+acc_sel => acc_sel.IN1
+bot_digit[0] << decoder7:bot_dec.port1
+bot_digit[1] << decoder7:bot_dec.port1
+bot_digit[2] << decoder7:bot_dec.port1
+bot_digit[3] << decoder7:bot_dec.port1
+bot_digit[4] << decoder7:bot_dec.port1
+bot_digit[5] << decoder7:bot_dec.port1
+bot_digit[6] << decoder7:bot_dec.port1
+player_digit[0] << decoder7:player_dec.port1
+player_digit[1] << decoder7:player_dec.port1
+player_digit[2] << decoder7:player_dec.port1
+player_digit[3] << decoder7:player_dec.port1
+player_digit[4] << decoder7:player_dec.port1
+player_digit[5] << decoder7:player_dec.port1
+player_digit[6] << decoder7:player_dec.port1
+sum_digit[0] << decoder7:sum_dec.port1
+sum_digit[1] << decoder7:sum_dec.port1
+sum_digit[2] << decoder7:sum_dec.port1
+sum_digit[3] << decoder7:sum_dec.port1
+sum_digit[4] << decoder7:sum_dec.port1
+sum_digit[5] << decoder7:sum_dec.port1
+sum_digit[6] << decoder7:sum_dec.port1
+sum_status[0] << check:sum_result.port1
+sum_status[1] << check:sum_result.port1
+pass_r << access:acc_ctl.port8
+pass_g << access:acc_ctl.port9
+
+
+|Lab3_BUCUR_S|decoder7:bot_dec
+hex[0] => Decoder0.IN3
+hex[1] => Decoder0.IN2
+hex[2] => Decoder0.IN1
+hex[3] => Decoder0.IN0
+seg7[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|decoder7:player_dec
+hex[0] => Decoder0.IN3
+hex[1] => Decoder0.IN2
+hex[2] => Decoder0.IN1
+hex[3] => Decoder0.IN0
+seg7[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|decoder7:sum_dec
+hex[0] => Decoder0.IN3
+hex[1] => Decoder0.IN2
+hex[2] => Decoder0.IN1
+hex[3] => Decoder0.IN0
+seg7[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|adder:player_sum
+in1[0] => Add0.IN4
+in1[1] => Add0.IN3
+in1[2] => Add0.IN2
+in1[3] => Add0.IN1
+in2[0] => Add0.IN8
+in2[1] => Add0.IN7
+in2[2] => Add0.IN6
+in2[3] => Add0.IN5
+sum[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|check:sum_result
+sum[0] => Equal0.IN3
+sum[1] => Equal0.IN2
+sum[2] => Equal0.IN1
+sum[3] => Equal0.IN0
+status[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+status[1] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|trng:pbot
+CLK => CLK.IN1
+RST => RST.IN1
+button_trng => counter_in_internal.IN1
+rand[0] <= cnt4:counter.port3
+rand[1] <= cnt4:counter.port3
+rand[2] <= cnt4:counter.port3
+rand[3] <= cnt4:counter.port3
+
+
+|Lab3_BUCUR_S|trng:pbot|cnt4:counter
+CLK => count[0]~reg0.CLK
+CLK => count[1]~reg0.CLK
+CLK => count[2]~reg0.CLK
+CLK => count[3]~reg0.CLK
+RST => count.OUTPUTSELECT
+RST => count.OUTPUTSELECT
+RST => count.OUTPUTSELECT
+RST => count.OUTPUTSELECT
+sig_in => count.OUTPUTSELECT
+sig_in => count.OUTPUTSELECT
+sig_in => count.OUTPUTSELECT
+sig_in => count.OUTPUTSELECT
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|loadreg:bot_num
+CLK => data_out[0]~reg0.CLK
+CLK => data_out[1]~reg0.CLK
+CLK => data_out[2]~reg0.CLK
+CLK => data_out[3]~reg0.CLK
+RST => data_out.OUTPUTSELECT
+RST => data_out.OUTPUTSELECT
+RST => data_out.OUTPUTSELECT
+RST => data_out.OUTPUTSELECT
+data_in[0] => data_out.DATAB
+data_in[1] => data_out.DATAB
+data_in[2] => data_out.DATAB
+data_in[3] => data_out.DATAB
+sig_load => data_out.OUTPUTSELECT
+sig_load => data_out.OUTPUTSELECT
+sig_load => data_out.OUTPUTSELECT
+sig_load => data_out.OUTPUTSELECT
+data_out[0] <= data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|loadreg:player_num
+CLK => data_out[0]~reg0.CLK
+CLK => data_out[1]~reg0.CLK
+CLK => data_out[2]~reg0.CLK
+CLK => data_out[3]~reg0.CLK
+RST => data_out.OUTPUTSELECT
+RST => data_out.OUTPUTSELECT
+RST => data_out.OUTPUTSELECT
+RST => data_out.OUTPUTSELECT
+data_in[0] => data_out.DATAB
+data_in[1] => data_out.DATAB
+data_in[2] => data_out.DATAB
+data_in[3] => data_out.DATAB
+sig_load => data_out.OUTPUTSELECT
+sig_load => data_out.OUTPUTSELECT
+sig_load => data_out.OUTPUTSELECT
+sig_load => data_out.OUTPUTSELECT
+data_out[0] <= data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|access:acc_ctl
+CLK => loadreg_2_out~reg0.CLK
+CLK => loadreg_1_out~reg0.CLK
+CLK => pass_green~reg0.CLK
+CLK => pass_red~reg0.CLK
+CLK => pass_OK.CLK
+CLK => currentstate[0]~reg0.CLK
+CLK => currentstate[1]~reg0.CLK
+CLK => currentstate[2]~reg0.CLK
+RST => currentstate.OUTPUTSELECT
+RST => currentstate.OUTPUTSELECT
+RST => currentstate.OUTPUTSELECT
+RST => pass_OK.OUTPUTSELECT
+RST => pass_red.OUTPUTSELECT
+RST => pass_green.OUTPUTSELECT
+RST => loadreg_1_out.OUTPUTSELECT
+RST => loadreg_2_out.OUTPUTSELECT
+loadreg_1_in => Mux2.IN4
+loadreg_2_in => Mux3.IN4
+pword[0] => Equal0.IN0
+pword[0] => Equal1.IN1
+pword[0] => Equal2.IN1
+pword[1] => Equal0.IN3
+pword[1] => Equal1.IN3
+pword[1] => Equal2.IN0
+pword[2] => Equal0.IN2
+pword[2] => Equal1.IN0
+pword[2] => Equal2.IN3
+pword[3] => Equal0.IN1
+pword[3] => Equal1.IN2
+pword[3] => Equal2.IN2
+pword_enter => Mux5.IN7
+pword_enter => Mux6.IN7
+pword_enter => Mux4.IN7
+pword_enter => pass_red.OUTPUTSELECT
+pword_enter => pass_green.OUTPUTSELECT
+pword_enter => loadreg_1_out.OUTPUTSELECT
+pword_enter => loadreg_2_out.OUTPUTSELECT
+pword_enter => currentstate.OUTPUTSELECT
+pword_enter => currentstate.OUTPUTSELECT
+pword_enter => currentstate.OUTPUTSELECT
+pword_enter => pass_OK.OUTPUTSELECT
+pword_enter => pass_OK.OUTPUTSELECT
+pword_enter => Mux5.IN4
+pword_enter => Mux6.IN4
+pword_enter => pass_OK.OUTPUTSELECT
+pword_enter => pass_OK.OUTPUTSELECT
+pword_enter => Mux6.IN5
+pword_enter => Mux4.IN5
+pword_enter => Mux5.IN5
+loadreg_1_out <= loadreg_1_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+loadreg_2_out <= loadreg_2_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pass_red <= pass_red~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pass_green <= pass_green~reg0.DB_MAX_OUTPUT_PORT_TYPE
+currentstate[0] <= currentstate[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+currentstate[1] <= currentstate[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+currentstate[2] <= currentstate[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|bshaper:player_button
+CLK => currentstate~1.DATAIN
+RST => currentstate.OUTPUTSELECT
+RST => currentstate.OUTPUTSELECT
+RST => currentstate.OUTPUTSELECT
+b_in => Selector0.IN1
+b_in => nextstate.Edge.DATAB
+b_in => Selector1.IN2
+b_out <= b_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|bshaper:acc_button
+CLK => currentstate~1.DATAIN
+RST => currentstate.OUTPUTSELECT
+RST => currentstate.OUTPUTSELECT
+RST => currentstate.OUTPUTSELECT
+b_in => Selector0.IN1
+b_in => nextstate.Edge.DATAB
+b_in => Selector1.IN2
+b_out <= b_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

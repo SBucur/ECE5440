@@ -23,7 +23,7 @@ module cnt4 (
         else begin
             if(sig_in == 1'b1)
             begin
-                count <= count + 1;
+                count <= count + 4'b0001;
             end
         end
     end
