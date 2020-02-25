@@ -8,3 +8,69 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA_lite/18.1
+vdigitTimer
+Z0 !s110 1582617916
+!i10b 1
+!s100 hAAB2j<;LH3G]7d?3I4?N1
+I:U3Ag0gWhPKeo;dFn;6l`2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer
+w1582617817
+8C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer.v
+FC:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer.v
+L0 20
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1582617916.000000
+!s107 C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+ndigit@timer
+vdigitTimer_2
+R0
+!i10b 1
+!s100 >_P5FO9;:U;zjfF5bgnoD2
+I_bmkGnZH>XhD?n0MPaL3[2
+R1
+R2
+w1582616229
+8C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_2.v
+FC:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_2.v
+L0 12
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_2.v|
+!i113 1
+R5
+R6
+ndigit@timer_2
+vdigitTimer_tb
+!s110 1582617989
+!i10b 1
+!s100 3mo<EaeU5A@f<NZInmcXG0
+I[AIZOABK=E70o^h5E9zF?2
+R1
+R2
+w1582617976
+8C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_tb.v
+FC:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_tb.v
+L0 10
+R3
+r1
+!s85 0
+31
+!s108 1582617989.000000
+!s107 C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_tb.v|
+!i113 1
+R5
+R6
+ndigit@timer_tb
