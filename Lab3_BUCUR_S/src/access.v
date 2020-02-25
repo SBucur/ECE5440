@@ -8,7 +8,7 @@
 
 module access (
     //inputs
-    RST, CLK,
+    CLK, RST,
 	loadreg_1_in, loadreg_2_in,
 	pword, pword_enter,
     //outputs
@@ -16,7 +16,7 @@ module access (
 	pass_red, pass_green, currentstate
     );
 
-    input RST, CLK;
+    input CLK, RST;
     // input accept buttons for the two load registers
     input loadreg_1_in, loadreg_2_in;
     // user inputs 4-bit password digit
@@ -141,7 +141,7 @@ module access (
                     // Logout in this case means resetting to Digit_1
                     if(pword_enter == 1'b1)
                     begin
-                        currentstate <= OK;
+                        currentstate <= Digit_1;
                     end
                     else begin
                         currentstate <= OK;
