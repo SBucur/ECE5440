@@ -32,6 +32,9 @@ module digitTimer (
     reg borrow_up, noborrow_dn;
     reg [3:0] count;
 
+    // module is clocked from the lesser digit or 1s timer
+    // module asychronously resets on reconf=1, but does not update at negedge
+    //      this is to prevent timer from losing a second upon depressing reconf
     always @ (posedge borrow_dn, posedge reconf) begin
         if (reconf == 1'b1)
         begin
@@ -63,6 +66,7 @@ module digitTimer (
                     noborrow_dn <= 1'b0;
                 end
                 else begin
+                    // cannot underflow, stay at 0 and signal to adjacent timers
                     borrow_up <= 1'b1;
                     noborrow_dn <= 1'b1;
                 end
