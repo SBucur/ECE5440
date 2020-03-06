@@ -8,15 +8,15 @@ module trng (
     CLK, RST,
     button_trng,
     //outputs
-    rand
+    rand_num
     );
 
     input CLK, RST;
     input button_trng;
     wire counter_in_internal;
-    output [3:0] rand;
+    output [3:0] rand_num;
 
     assign counter_in_internal = ~button_trng;
-    cnt4 counter(CLK, RST, counter_in_internal, rand);
+    cnt4 counter(CLK, RST, counter_in_internal, rand_num);
     
 endmodule

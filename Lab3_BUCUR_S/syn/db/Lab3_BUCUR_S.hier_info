@@ -9,7 +9,15 @@ acc_data[0] => acc_data[0].IN1
 acc_data[1] => acc_data[1].IN1
 acc_data[2] => acc_data[2].IN1
 acc_data[3] => acc_data[3].IN1
-bot_sel => bot_sel.IN2
+time_def_tens[0] => time_def_tens[0].IN1
+time_def_tens[1] => time_def_tens[1].IN1
+time_def_tens[2] => time_def_tens[2].IN1
+time_def_tens[3] => time_def_tens[3].IN1
+time_def_ones[0] => time_def_ones[0].IN1
+time_def_ones[1] => time_def_ones[1].IN1
+time_def_ones[2] => time_def_ones[2].IN1
+time_def_ones[3] => time_def_ones[3].IN1
+bot_sel => bot_sel.IN1
 player_sel => player_sel.IN1
 acc_sel => acc_sel.IN1
 bot_digit[0] << decoder7:bot_dec.port1
@@ -35,8 +43,23 @@ sum_digit[5] << decoder7:sum_dec.port1
 sum_digit[6] << decoder7:sum_dec.port1
 sum_status[0] << check:sum_result.port1
 sum_status[1] << check:sum_result.port1
-pass_r << access:acc_ctl.port8
-pass_g << access:acc_ctl.port9
+pass_r << access:acc_ctl.port11
+pass_g << access:acc_ctl.port12
+ten_digit[0] << decoder7:ten_dec.port1
+ten_digit[1] << decoder7:ten_dec.port1
+ten_digit[2] << decoder7:ten_dec.port1
+ten_digit[3] << decoder7:ten_dec.port1
+ten_digit[4] << decoder7:ten_dec.port1
+ten_digit[5] << decoder7:ten_dec.port1
+ten_digit[6] << decoder7:ten_dec.port1
+one_digit[0] << decoder7:one_dec.port1
+one_digit[1] << decoder7:one_dec.port1
+one_digit[2] << decoder7:one_dec.port1
+one_digit[3] << decoder7:one_dec.port1
+one_digit[4] << decoder7:one_dec.port1
+one_digit[5] << decoder7:one_dec.port1
+one_digit[6] << decoder7:one_dec.port1
+GND << GND.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Lab3_BUCUR_S|decoder7:bot_dec
@@ -68,6 +91,34 @@ seg7[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Lab3_BUCUR_S|decoder7:sum_dec
+hex[0] => Decoder0.IN3
+hex[1] => Decoder0.IN2
+hex[2] => Decoder0.IN1
+hex[3] => Decoder0.IN0
+seg7[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|decoder7:ten_dec
+hex[0] => Decoder0.IN3
+hex[1] => Decoder0.IN2
+hex[2] => Decoder0.IN1
+hex[3] => Decoder0.IN0
+seg7[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|decoder7:one_dec
 hex[0] => Decoder0.IN3
 hex[1] => Decoder0.IN2
 hex[2] => Decoder0.IN1
@@ -134,29 +185,6 @@ count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Lab3_BUCUR_S|loadreg:bot_num
-CLK => data_out[0]~reg0.CLK
-CLK => data_out[1]~reg0.CLK
-CLK => data_out[2]~reg0.CLK
-CLK => data_out[3]~reg0.CLK
-RST => data_out.OUTPUTSELECT
-RST => data_out.OUTPUTSELECT
-RST => data_out.OUTPUTSELECT
-RST => data_out.OUTPUTSELECT
-data_in[0] => data_out.DATAB
-data_in[1] => data_out.DATAB
-data_in[2] => data_out.DATAB
-data_in[3] => data_out.DATAB
-sig_load => data_out.OUTPUTSELECT
-sig_load => data_out.OUTPUTSELECT
-sig_load => data_out.OUTPUTSELECT
-sig_load => data_out.OUTPUTSELECT
-data_out[0] <= data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data_out[1] <= data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data_out[2] <= data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |Lab3_BUCUR_S|loadreg:player_num
 CLK => data_out[0]~reg0.CLK
 CLK => data_out[1]~reg0.CLK
@@ -181,14 +209,6 @@ data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Lab3_BUCUR_S|access:acc_ctl
-CLK => loadreg_2_out~reg0.CLK
-CLK => loadreg_1_out~reg0.CLK
-CLK => pass_green~reg0.CLK
-CLK => pass_red~reg0.CLK
-CLK => pass_OK.CLK
-CLK => currentstate[0]~reg0.CLK
-CLK => currentstate[1]~reg0.CLK
-CLK => currentstate[2]~reg0.CLK
 RST => currentstate.OUTPUTSELECT
 RST => currentstate.OUTPUTSELECT
 RST => currentstate.OUTPUTSELECT
@@ -196,9 +216,21 @@ RST => pass_OK.OUTPUTSELECT
 RST => pass_red.OUTPUTSELECT
 RST => pass_green.OUTPUTSELECT
 RST => loadreg_1_out.OUTPUTSELECT
-RST => loadreg_2_out.OUTPUTSELECT
-loadreg_1_in => Mux2.IN4
-loadreg_2_in => Mux3.IN4
+RST => loadreg_R_out.OUTPUTSELECT
+RST => enable.OUTPUTSELECT
+RST => reconf.OUTPUTSELECT
+CLK => reconf~reg0.CLK
+CLK => enable~reg0.CLK
+CLK => loadreg_R_out~reg0.CLK
+CLK => loadreg_1_out~reg0.CLK
+CLK => pass_green~reg0.CLK
+CLK => pass_red~reg0.CLK
+CLK => pass_OK.CLK
+CLK => currentstate[0]~reg0.CLK
+CLK => currentstate[1]~reg0.CLK
+CLK => currentstate[2]~reg0.CLK
+loadreg_1_in => ~NO_FANOUT~
+loadreg_R_in => ~NO_FANOUT~
 pword[0] => Equal0.IN0
 pword[0] => Equal1.IN1
 pword[0] => Equal2.IN1
@@ -211,27 +243,45 @@ pword[2] => Equal2.IN3
 pword[3] => Equal0.IN1
 pword[3] => Equal1.IN2
 pword[3] => Equal2.IN2
-pword_enter => Mux5.IN7
+pword_enter => Mux7.IN6
+pword_enter => Mux8.IN6
 pword_enter => Mux6.IN7
-pword_enter => Mux4.IN7
+pword_enter => Mux7.IN7
+pword_enter => Mux8.IN7
 pword_enter => pass_red.OUTPUTSELECT
 pword_enter => pass_green.OUTPUTSELECT
 pword_enter => loadreg_1_out.OUTPUTSELECT
-pword_enter => loadreg_2_out.OUTPUTSELECT
+pword_enter => loadreg_R_out.OUTPUTSELECT
+pword_enter => enable.OUTPUTSELECT
+pword_enter => reconf.OUTPUTSELECT
+pword_enter => reconf.OUTPUTSELECT
+pword_enter => Mux8.IN2
+pword_enter => pass_red.OUTPUTSELECT
+pword_enter => pass_green.OUTPUTSELECT
 pword_enter => currentstate.OUTPUTSELECT
 pword_enter => currentstate.OUTPUTSELECT
 pword_enter => currentstate.OUTPUTSELECT
 pword_enter => pass_OK.OUTPUTSELECT
 pword_enter => pass_OK.OUTPUTSELECT
-pword_enter => Mux5.IN4
-pword_enter => Mux6.IN4
+pword_enter => Mux7.IN4
+pword_enter => Mux8.IN3
 pword_enter => pass_OK.OUTPUTSELECT
 pword_enter => pass_OK.OUTPUTSELECT
-pword_enter => Mux6.IN5
-pword_enter => Mux4.IN5
-pword_enter => Mux5.IN5
+pword_enter => Mux8.IN4
+timeout => currentstate.OUTPUTSELECT
+timeout => currentstate.OUTPUTSELECT
+timeout => currentstate.OUTPUTSELECT
+timeout => pass_red.OUTPUTSELECT
+timeout => pass_green.OUTPUTSELECT
+timeout => enable.OUTPUTSELECT
+timeout => reconf.OUTPUTSELECT
+timeout => currentstate.OUTPUTSELECT
+timeout => currentstate.OUTPUTSELECT
+timeout => currentstate.OUTPUTSELECT
+enable <= enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reconf <= reconf~reg0.DB_MAX_OUTPUT_PORT_TYPE
 loadreg_1_out <= loadreg_1_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-loadreg_2_out <= loadreg_2_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+loadreg_R_out <= loadreg_R_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 pass_red <= pass_red~reg0.DB_MAX_OUTPUT_PORT_TYPE
 pass_green <= pass_green~reg0.DB_MAX_OUTPUT_PORT_TYPE
 currentstate[0] <= currentstate[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -259,5 +309,241 @@ b_in => Selector0.IN1
 b_in => nextstate.Edge.DATAB
 b_in => Selector1.IN2
 b_out <= b_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|digitTimer_2:timer
+reconf => reconf.IN2
+count_default1[0] => count_default1[0].IN1
+count_default1[1] => count_default1[1].IN1
+count_default1[2] => count_default1[2].IN1
+count_default1[3] => count_default1[3].IN1
+count_default2[0] => count_default2[0].IN1
+count_default2[1] => count_default2[1].IN1
+count_default2[2] => count_default2[2].IN1
+count_default2[3] => count_default2[3].IN1
+borrow_up <= digitTimer:tens.port2
+borrow_dn => borrow_dn.IN1
+noborrow_up => noborrow_up.IN1
+noborrow_dn <= digitTimer:ones.port5
+count_tens[0] <= digitTimer:tens.port6
+count_tens[1] <= digitTimer:tens.port6
+count_tens[2] <= digitTimer:tens.port6
+count_tens[3] <= digitTimer:tens.port6
+count_ones[0] <= digitTimer:ones.port6
+count_ones[1] <= digitTimer:ones.port6
+count_ones[2] <= digitTimer:ones.port6
+count_ones[3] <= digitTimer:ones.port6
+
+
+|Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:tens
+reconf => borrow_up~reg0.PRESET
+reconf => noborrow_dn~reg0.ALOAD
+reconf => count[0]~reg0.ALOAD
+reconf => count[1]~reg0.ALOAD
+reconf => count[2]~reg0.ALOAD
+reconf => count[3]~reg0.ALOAD
+count_default[0] => LessThan0.IN8
+count_default[0] => count.DATAA
+count_default[0] => Equal0.IN31
+count_default[1] => LessThan0.IN7
+count_default[1] => count.DATAA
+count_default[1] => Equal0.IN30
+count_default[2] => LessThan0.IN6
+count_default[2] => count.DATAA
+count_default[2] => Equal0.IN29
+count_default[3] => LessThan0.IN5
+count_default[3] => count.DATAA
+count_default[3] => Equal0.IN28
+borrow_up <= borrow_up~reg0.DB_MAX_OUTPUT_PORT_TYPE
+borrow_dn => borrow_up~reg0.CLK
+borrow_dn => noborrow_dn~reg0.CLK
+borrow_dn => count[0]~reg0.CLK
+borrow_dn => count[1]~reg0.CLK
+borrow_dn => count[2]~reg0.CLK
+borrow_dn => count[3]~reg0.CLK
+noborrow_up => noborrow_dn.DATAB
+noborrow_up => count.OUTPUTSELECT
+noborrow_up => count.OUTPUTSELECT
+noborrow_up => count.OUTPUTSELECT
+noborrow_up => count.OUTPUTSELECT
+noborrow_dn <= noborrow_dn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:ones
+reconf => borrow_up~reg0.PRESET
+reconf => noborrow_dn~reg0.ALOAD
+reconf => count[0]~reg0.ALOAD
+reconf => count[1]~reg0.ALOAD
+reconf => count[2]~reg0.ALOAD
+reconf => count[3]~reg0.ALOAD
+count_default[0] => LessThan0.IN8
+count_default[0] => count.DATAA
+count_default[0] => Equal0.IN31
+count_default[1] => LessThan0.IN7
+count_default[1] => count.DATAA
+count_default[1] => Equal0.IN30
+count_default[2] => LessThan0.IN6
+count_default[2] => count.DATAA
+count_default[2] => Equal0.IN29
+count_default[3] => LessThan0.IN5
+count_default[3] => count.DATAA
+count_default[3] => Equal0.IN28
+borrow_up <= borrow_up~reg0.DB_MAX_OUTPUT_PORT_TYPE
+borrow_dn => borrow_up~reg0.CLK
+borrow_dn => noborrow_dn~reg0.CLK
+borrow_dn => count[0]~reg0.CLK
+borrow_dn => count[1]~reg0.CLK
+borrow_dn => count[2]~reg0.CLK
+borrow_dn => count[3]~reg0.CLK
+noborrow_up => noborrow_dn.DATAB
+noborrow_up => count.OUTPUTSELECT
+noborrow_up => count.OUTPUTSELECT
+noborrow_up => count.OUTPUTSELECT
+noborrow_up => count.OUTPUTSELECT
+noborrow_dn <= noborrow_dn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|secTimer:timer_clk
+clk => clk.IN1
+rst => rst.IN2
+en => en.IN1
+pulse_1s <= cnt1000:counter.port2
+
+
+|Lab3_BUCUR_S|secTimer:timer_clk|cnt1000:counter
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => pulse_sec.OUTPUTSELECT
+cnt_up => pulse_sec~reg0.CLK
+cnt_up => cnt[0].CLK
+cnt_up => cnt[1].CLK
+cnt_up => cnt[2].CLK
+cnt_up => cnt[3].CLK
+cnt_up => cnt[4].CLK
+cnt_up => cnt[5].CLK
+cnt_up => cnt[6].CLK
+cnt_up => cnt[7].CLK
+cnt_up => cnt[8].CLK
+cnt_up => cnt[9].CLK
+pulse_sec <= pulse_sec~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_BUCUR_S|secTimer:timer_clk|timer_1ms:timer
+clk => pulse_1ms~reg0.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+clk => cnt[16].CLK
+clk => cnt[17].CLK
+clk => cnt[18].CLK
+clk => cnt[19].CLK
+clk => cnt[20].CLK
+clk => cnt[21].CLK
+clk => cnt[22].CLK
+clk => cnt[23].CLK
+clk => cnt[24].CLK
+clk => cnt[25].CLK
+clk => cnt[26].CLK
+clk => cnt[27].CLK
+clk => cnt[28].CLK
+clk => cnt[29].CLK
+clk => cnt[30].CLK
+clk => cnt[31].CLK
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => pulse_1ms.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => cnt.OUTPUTSELECT
+en => pulse_1ms.OUTPUTSELECT
+pulse_1ms <= pulse_1ms~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

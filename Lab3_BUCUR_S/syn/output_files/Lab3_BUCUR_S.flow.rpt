@@ -1,5 +1,5 @@
 Flow report for Lab3_BUCUR_S
-Fri Feb 21 19:05:07 2020
+Fri Mar 06 03:46:03 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Feb 21 19:05:01 2020       ;
+; Flow Status                        ; Successful - Fri Mar 06 03:45:59 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab3_BUCUR_S                                ;
 ; Top-level Entity Name              ; Lab3_BUCUR_S                                ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 70 / 114,480 ( < 1 % )                      ;
-;     Total combinational functions  ; 70 / 114,480 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 23 / 114,480 ( < 1 % )                      ;
-; Total registers                    ; 23                                          ;
-; Total pins                         ; 38 / 529 ( 7 % )                            ;
+; Total logic elements               ; 151 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 147 / 114,480 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 66 / 114,480 ( < 1 % )                      ;
+; Total registers                    ; 66                                          ;
+; Total pins                         ; 61 / 529 ( 12 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/21/2020 19:04:03 ;
+; Start date & time ; 03/06/2020 03:45:18 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab3_BUCUR_S        ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 169736367386220.158233344311304        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 114472187731342.158348791713636        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -97,11 +97,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 4755 MB             ; 00:00:44                           ;
-; Fitter               ; 00:00:26     ; 1.0                     ; 5446 MB             ; 00:00:32                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4701 MB             ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4837 MB             ; 00:00:03                           ;
-; Total                ; 00:00:59     ; --                      ; --                  ; 00:01:26                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4830 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:24     ; 1.0                     ; 6310 MB             ; 00:00:37                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4684 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4941 MB             ; 00:00:03                           ;
+; Total                ; 00:00:42     ; --                      ; --                  ; 00:01:08                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -110,10 +110,10 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-HR5KN2I  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-HR5KN2I  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-HR5KN2I  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-HR5KN2I  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-6BVD0F3  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-6BVD0F3  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-6BVD0F3  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-6BVD0F3  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
