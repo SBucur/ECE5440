@@ -1,0 +1,415 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/Lab3_BUCUR_S_sim_digitTimer.mpf
+# Loading project Lab3_BUCUR_S_sim_digitTimer
+# Compile of digitTimer.v failed with 2 errors.
+# Compile of digitTimer.v failed with 7 errors.
+# Compile of digitTimer.v failed with 3 errors.
+# Compile of digitTimer.v failed with 7 errors.
+# Compile of digitTimer.v failed with 7 errors.
+# Compile of digitTimer.v was successful.
+# Compile of digitTimer.v was successful.
+# Compile of digitTimer_tb.v failed with 1 errors.
+# Compile of digitTimer_2.v was successful.
+# 3 compiles, 1 failed with 1 error.
+# Compile of digitTimer.v was successful.
+# Compile of digitTimer_tb.v was successful.
+# Compile of digitTimer_2.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of digitTimer.v was successful.
+# Compile of digitTimer_tb.v was successful.
+# Compile of digitTimer_2.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of digitTimer_tb.v was successful.
+vsim -gui work.digitTimer_tb
+# vsim -gui work.digitTimer_tb 
+# Start time: 01:51:39 on Feb 25,2020
+# Loading work.digitTimer_tb
+# Loading work.digitTimer_2
+# Loading work.digitTimer
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_tb.v(17): [PCDPC] - Port size (4) does not match connection size (1) for port 'count_default1'. The port definition is at: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_2.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /digitTimer_tb/dT2 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_2.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_tb.v(17): [PCDPC] - Port size (4) does not match connection size (1) for port 'count_default2'. The port definition is at: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_2.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /digitTimer_tb/dT2 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_2.v
+add wave -position insertpoint  \
+sim:/digitTimer_tb/RST \
+sim:/digitTimer_tb/borrow_dn \
+sim:/digitTimer_tb/noborrow_up \
+sim:/digitTimer_tb/borrow_up \
+sim:/digitTimer_tb/noborrow_dn \
+sim:/digitTimer_tb/count_default1 \
+sim:/digitTimer_tb/count_default2
+quit -sim
+# End time: 01:52:21 on Feb 25,2020, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 2
+# Compile of digitTimer_tb.v was successful.
+vsim -gui work.digitTimer_tb
+# vsim -gui work.digitTimer_tb 
+# Start time: 01:52:32 on Feb 25,2020
+# Loading work.digitTimer_tb
+# Loading work.digitTimer_2
+# Loading work.digitTimer
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_tb.v(17): [PCDPC] - Port size (4) does not match connection size (1) for port 'count_default1'. The port definition is at: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_2.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /digitTimer_tb/dT2 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_2.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_tb.v(17): [PCDPC] - Port size (4) does not match connection size (1) for port 'count_default2'. The port definition is at: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_2.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /digitTimer_tb/dT2 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_digitTimer/digitTimer_2.v
+quit -sim
+# End time: 01:52:58 on Feb 25,2020, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 2
+# Compile of digitTimer_tb.v was successful.
+vsim -gui work.digitTimer_tb
+# vsim -gui work.digitTimer_tb 
+# Start time: 01:53:05 on Feb 25,2020
+# Loading work.digitTimer_tb
+# Loading work.digitTimer_2
+# Loading work.digitTimer
+add wave -position insertpoint  \
+sim:/digitTimer_tb/RST \
+sim:/digitTimer_tb/borrow_dn \
+sim:/digitTimer_tb/noborrow_up \
+sim:/digitTimer_tb/borrow_up \
+sim:/digitTimer_tb/noborrow_dn
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 01:54:00 on Feb 25,2020, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 0
+# Compile of digitTimer.v was successful.
+# Compile of digitTimer_tb.v was successful.
+# Compile of digitTimer_2.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.digitTimer_tb
+# vsim -gui work.digitTimer_tb 
+# Start time: 01:56:59 on Feb 25,2020
+# Loading work.digitTimer_tb
+# Loading work.digitTimer_2
+# Loading work.digitTimer
+add wave -position insertpoint  \
+sim:/digitTimer_tb/RST \
+sim:/digitTimer_tb/borrow_dn \
+sim:/digitTimer_tb/noborrow_up \
+sim:/digitTimer_tb/default1 \
+sim:/digitTimer_tb/default2 \
+sim:/digitTimer_tb/borrow_up \
+sim:/digitTimer_tb/noborrow_dn
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 02:00:57 on Feb 25,2020, Elapsed time: 0:03:58
+# Errors: 0, Warnings: 0
+# Compile of digitTimer_tb.v failed with 2 errors.
+# Compile of digitTimer_tb.v was successful.
+vsim -gui work.digitTimer_tb
+# vsim -gui work.digitTimer_tb 
+# Start time: 02:01:50 on Feb 25,2020
+# Loading work.digitTimer_tb
+# Loading work.digitTimer
+add wave -position insertpoint  \
+sim:/digitTimer_tb/RST \
+sim:/digitTimer_tb/borrow_dn \
+sim:/digitTimer_tb/noborrow_up \
+sim:/digitTimer_tb/default_num \
+sim:/digitTimer_tb/borrow_up \
+sim:/digitTimer_tb/noborrow_dn
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 02:03:52 on Feb 25,2020, Elapsed time: 0:02:02
+# Errors: 0, Warnings: 0
+# Compile of digitTimer.v was successful.
+# Compile of digitTimer_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.digitTimer_tb
+# vsim -gui work.digitTimer_tb 
+# Start time: 02:03:58 on Feb 25,2020
+# Loading work.digitTimer_tb
+# Loading work.digitTimer
+add wave -position insertpoint  \
+sim:/digitTimer_tb/RST \
+sim:/digitTimer_tb/borrow_dn \
+sim:/digitTimer_tb/noborrow_up \
+sim:/digitTimer_tb/default_num \
+sim:/digitTimer_tb/borrow_up \
+sim:/digitTimer_tb/noborrow_dn \
+sim:/digitTimer_tb/digit_count
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 02:05:15 on Feb 25,2020, Elapsed time: 0:01:17
+# Errors: 0, Warnings: 0
+# Compile of digitTimer.v was successful.
+# Compile of digitTimer_tb.v was successful.
+# Compile of digitTimer_2.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.digitTimer_tb
+# vsim -gui work.digitTimer_tb 
+# Start time: 02:05:20 on Feb 25,2020
+# Loading work.digitTimer_tb
+# Loading work.digitTimer
+add wave -position insertpoint  \
+sim:/digitTimer_tb/RST \
+sim:/digitTimer_tb/borrow_dn \
+sim:/digitTimer_tb/noborrow_up \
+sim:/digitTimer_tb/default_num \
+sim:/digitTimer_tb/borrow_up \
+sim:/digitTimer_tb/noborrow_dn \
+sim:/digitTimer_tb/digit_count
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 02:06:22 on Feb 25,2020, Elapsed time: 0:01:02
+# Errors: 0, Warnings: 0
+# Compile of digitTimer_tb.v was successful.
+vsim -gui work.digitTimer_tb
+# vsim -gui work.digitTimer_tb 
+# Start time: 02:06:38 on Feb 25,2020
+# Loading work.digitTimer_tb
+# Loading work.digitTimer
+add wave -position insertpoint  \
+sim:/digitTimer_tb/RST \
+sim:/digitTimer_tb/borrow_dn \
+sim:/digitTimer_tb/noborrow_up \
+sim:/digitTimer_tb/default_num \
+sim:/digitTimer_tb/borrow_up \
+sim:/digitTimer_tb/noborrow_dn \
+sim:/digitTimer_tb/digit_count
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 02:11:28 on Feb 25,2020, Elapsed time: 0:04:50
+# Errors: 0, Warnings: 0

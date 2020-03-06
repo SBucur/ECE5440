@@ -1,0 +1,666 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/Lab2_BUCUR_S.mpf
+# Loading project Lab2_BUCUR_S
+# Compile of access.v was successful.
+# Compile of adder.v was successful.
+# Compile of bshaper.v was successful.
+# Compile of check.v was successful.
+# Compile of decoder7.v was successful.
+# Compile of Lab2_BUCUR_S.v was successful.
+# Compile of loadreg.v was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of Lab2_BUCUR_S_tb.v failed with 6 errors.
+# Compile of Lab2_BUCUR_S_tb.v was successful.
+vsim -gui work.Lab2_BUCUR_S_tb
+# vsim -gui work.Lab2_BUCUR_S_tb 
+# Start time: 11:39:13 on Feb 15,2020
+# Loading work.Lab2_BUCUR_S_tb
+# Loading work.Lab2_BUCUR_S
+# Loading work.decoder7
+# Loading work.adder
+# Loading work.check
+# Loading work.loadreg
+# Loading work.access
+# Loading work.bshaper
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/Lab2_BUCUR_S_tb.v(19): [PCDPC] - Port size (3) does not match connection size (1) for port 'acc_state'. The port definition is at: C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/Lab2_BUCUR_S.v(14).
+#    Time: 0 ps  Iteration: 0  Instance: /Lab2_BUCUR_S_tb/fpga_tb File: C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/Lab2_BUCUR_S.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/Lab2_BUCUR_S.v(33): [PCDPC] - Port size (4) does not match connection size (1) for port 'in2'. The port definition is at: C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/adder.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /Lab2_BUCUR_S_tb/fpga_tb/player_sum File: C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/adder.v
+add wave -position insertpoint  \
+sim:/Lab2_BUCUR_S_tb/CLOCK \
+sim:/Lab2_BUCUR_S_tb/RESET \
+sim:/Lab2_BUCUR_S_tb/p1_data \
+sim:/Lab2_BUCUR_S_tb/p2_data \
+sim:/Lab2_BUCUR_S_tb/acc_data \
+sim:/Lab2_BUCUR_S_tb/p1_sel \
+sim:/Lab2_BUCUR_S_tb/p2_sel \
+sim:/Lab2_BUCUR_S_tb/acc_sel \
+sim:/Lab2_BUCUR_S_tb/p1_digit \
+sim:/Lab2_BUCUR_S_tb/p2_digit \
+sim:/Lab2_BUCUR_S_tb/sum_digit \
+sim:/Lab2_BUCUR_S_tb/sum_status \
+sim:/Lab2_BUCUR_S_tb/pass_r \
+sim:/Lab2_BUCUR_S_tb/pass_g \
+sim:/Lab2_BUCUR_S_tb/acc_state
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 11:41:40 on Feb 15,2020, Elapsed time: 0:02:27
+# Errors: 0, Warnings: 2
+# Compile of Lab2_BUCUR_S.v was successful.
+# Compile of Lab2_BUCUR_S_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of access.v was successful.
+# Compile of adder.v was successful.
+# Compile of bshaper.v was successful.
+# Compile of check.v was successful.
+# Compile of decoder7.v was successful.
+# Compile of Lab2_BUCUR_S.v was successful.
+# Compile of loadreg.v was successful.
+# Compile of Lab2_BUCUR_S_tb.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.Lab2_BUCUR_S_tb
+# vsim -gui work.Lab2_BUCUR_S_tb 
+# Start time: 11:41:56 on Feb 15,2020
+# Loading work.Lab2_BUCUR_S_tb
+# Loading work.Lab2_BUCUR_S
+# Loading work.decoder7
+# Loading work.adder
+# Loading work.check
+# Loading work.loadreg
+# Loading work.access
+# Loading work.bshaper
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/Lab2_BUCUR_S.v(33): [PCDPC] - Port size (4) does not match connection size (1) for port 'in2'. The port definition is at: C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/adder.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /Lab2_BUCUR_S_tb/fpga_tb/player_sum File: C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/adder.v
+add wave -position insertpoint  \
+sim:/Lab2_BUCUR_S_tb/CLOCK \
+sim:/Lab2_BUCUR_S_tb/RESET \
+sim:/Lab2_BUCUR_S_tb/p1_data \
+sim:/Lab2_BUCUR_S_tb/p2_data \
+sim:/Lab2_BUCUR_S_tb/acc_data \
+sim:/Lab2_BUCUR_S_tb/p1_sel \
+sim:/Lab2_BUCUR_S_tb/p2_sel \
+sim:/Lab2_BUCUR_S_tb/acc_sel \
+sim:/Lab2_BUCUR_S_tb/sum_status \
+sim:/Lab2_BUCUR_S_tb/pass_r \
+sim:/Lab2_BUCUR_S_tb/pass_g \
+sim:/Lab2_BUCUR_S_tb/acc_state
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 13:15:31 on Feb 15,2020, Elapsed time: 1:33:35
+# Errors: 0, Warnings: 1
+# Compile of access.v was successful.
+# Compile of Lab2_BUCUR_S.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.Lab2_BUCUR_S_tb
+# vsim -gui work.Lab2_BUCUR_S_tb 
+# Start time: 13:15:44 on Feb 15,2020
+# Loading work.Lab2_BUCUR_S_tb
+# Loading work.Lab2_BUCUR_S
+# Loading work.decoder7
+# Loading work.adder
+# Loading work.check
+# Loading work.loadreg
+# Loading work.access
+# Loading work.bshaper
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/Lab2_BUCUR_S.v(33): [PCDPC] - Port size (4) does not match connection size (1) for port 'in2'. The port definition is at: C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/adder.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /Lab2_BUCUR_S_tb/fpga_tb/player_sum File: C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/adder.v
+quit -sim
+# End time: 13:17:31 on Feb 15,2020, Elapsed time: 0:01:47
+# Errors: 0, Warnings: 1
+# Compile of adder.v was successful.
+# Compile of Lab2_BUCUR_S.v was successful.
+# Compile of Lab2_BUCUR_S_tb.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.Lab2_BUCUR_S_tb
+# vsim -gui work.Lab2_BUCUR_S_tb 
+# Start time: 13:17:42 on Feb 15,2020
+# Loading work.Lab2_BUCUR_S_tb
+# Loading work.Lab2_BUCUR_S
+# Loading work.decoder7
+# Loading work.adder
+# Loading work.check
+# Loading work.loadreg
+# Loading work.access
+# Loading work.bshaper
+add wave -position insertpoint  \
+sim:/Lab2_BUCUR_S_tb/CLOCK \
+sim:/Lab2_BUCUR_S_tb/RESET \
+sim:/Lab2_BUCUR_S_tb/p1_data \
+sim:/Lab2_BUCUR_S_tb/p2_data \
+sim:/Lab2_BUCUR_S_tb/acc_data \
+sim:/Lab2_BUCUR_S_tb/p1_sel \
+sim:/Lab2_BUCUR_S_tb/p2_sel \
+sim:/Lab2_BUCUR_S_tb/acc_sel \
+sim:/Lab2_BUCUR_S_tb/p1_digit \
+sim:/Lab2_BUCUR_S_tb/p2_digit \
+sim:/Lab2_BUCUR_S_tb/sum_digit \
+sim:/Lab2_BUCUR_S_tb/sum_status \
+sim:/Lab2_BUCUR_S_tb/pass_r \
+sim:/Lab2_BUCUR_S_tb/pass_g \
+sim:/Lab2_BUCUR_S_tb/acc_state
+# Can't move the Now cursor.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 13:18:52 on Feb 15,2020, Elapsed time: 0:01:10
+# Errors: 1, Warnings: 0
+# Compile of access.v was successful.
+# Compile of adder.v was successful.
+# Compile of bshaper.v was successful.
+# Compile of check.v was successful.
+# Compile of decoder7.v was successful.
+# Compile of Lab2_BUCUR_S.v was successful.
+# Compile of loadreg.v was successful.
+# Compile of Lab2_BUCUR_S_tb.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.Lab2_BUCUR_S_tb
+# vsim -gui work.Lab2_BUCUR_S_tb 
+# Start time: 13:19:31 on Feb 15,2020
+# Loading work.Lab2_BUCUR_S_tb
+# Loading work.Lab2_BUCUR_S
+# Loading work.decoder7
+# Loading work.adder
+# Loading work.check
+# Loading work.loadreg
+# Loading work.access
+# Loading work.bshaper
+quit -sim
+# End time: 13:30:25 on Feb 15,2020, Elapsed time: 0:10:54
+# Errors: 0, Warnings: 0
+# Compile of access.v was successful.
+# Compile of adder.v was successful.
+# Compile of bshaper.v was successful.
+# Compile of check.v was successful.
+# Compile of decoder7.v was successful.
+# Compile of access.v was successful with warnings.
+# Compile of adder.v was successful.
+# Compile of bshaper.v was successful.
+# Compile of check.v was successful.
+vsim -gui work.Lab2_BUCUR_S_tb
+# vsim -gui work.Lab2_BUCUR_S_tb 
+# Start time: 13:30:36 on Feb 15,2020
+# Loading work.Lab2_BUCUR_S_tb
+# Loading work.Lab2_BUCUR_S
+# Loading work.decoder7
+# Loading work.adder
+# Loading work.check
+# Loading work.loadreg
+# Loading work.access
+# Loading work.bshaper
+# Compile of decoder7.v was successful.
+# Compile of Lab2_BUCUR_S.v was successful.
+# Compile of loadreg.v was successful.
+# Compile of Lab2_BUCUR_S_tb.v was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of Lab2_BUCUR_S.v was successful.
+# Compile of loadreg.v was successful.
+# Compile of Lab2_BUCUR_S_tb.v was successful.
+# 8 compiles, 0 failed with no errors.
+add wave -position insertpoint  \
+sim:/Lab2_BUCUR_S_tb/CLOCK \
+sim:/Lab2_BUCUR_S_tb/RESET \
+sim:/Lab2_BUCUR_S_tb/p1_data \
+sim:/Lab2_BUCUR_S_tb/p2_data \
+sim:/Lab2_BUCUR_S_tb/acc_data \
+sim:/Lab2_BUCUR_S_tb/p1_sel \
+sim:/Lab2_BUCUR_S_tb/p2_sel \
+sim:/Lab2_BUCUR_S_tb/acc_sel \
+sim:/Lab2_BUCUR_S_tb/sum_status \
+sim:/Lab2_BUCUR_S_tb/pass_r \
+sim:/Lab2_BUCUR_S_tb/pass_g \
+sim:/Lab2_BUCUR_S_tb/acc_state
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 13:31:36 on Feb 15,2020, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 0
+# Compile of access.v was successful.
+vsim -gui work.Lab2_BUCUR_S_tb
+# vsim -gui work.Lab2_BUCUR_S_tb 
+# Start time: 13:45:23 on Feb 15,2020
+# Loading work.Lab2_BUCUR_S_tb
+# Loading work.Lab2_BUCUR_S
+# Loading work.decoder7
+# Loading work.adder
+# Loading work.check
+# Loading work.loadreg
+# Loading work.access
+# Loading work.bshaper
+add wave -position insertpoint  \
+sim:/Lab2_BUCUR_S_tb/CLOCK \
+sim:/Lab2_BUCUR_S_tb/RESET \
+sim:/Lab2_BUCUR_S_tb/p1_data \
+sim:/Lab2_BUCUR_S_tb/p2_data \
+sim:/Lab2_BUCUR_S_tb/acc_data \
+sim:/Lab2_BUCUR_S_tb/p1_sel \
+sim:/Lab2_BUCUR_S_tb/p2_sel \
+sim:/Lab2_BUCUR_S_tb/acc_sel \
+sim:/Lab2_BUCUR_S_tb/sum_status \
+sim:/Lab2_BUCUR_S_tb/pass_r \
+sim:/Lab2_BUCUR_S_tb/pass_g \
+sim:/Lab2_BUCUR_S_tb/acc_state
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 17:07:32 on Feb 15,2020, Elapsed time: 3:22:09
+# Errors: 0, Warnings: 0
+project open C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_bp/Lab2_BUCUR_S_sim_bshaper
+# reading C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project Lab2_BUCUR_S_sim_bshaper
+# Compile of bshaper.v was successful.
+# Compile of bshaper_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.bshaper_tb
+# vsim -gui work.bshaper_tb 
+# Start time: 17:19:25 on Feb 15,2020
+# Loading work.bshaper_tb
+# Loading work.bshaper
+add wave -position insertpoint  \
+sim:/bshaper_tb/CLK \
+sim:/bshaper_tb/RST \
+sim:/bshaper_tb/button_in \
+sim:/bshaper_tb/button_out
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 17:20:44 on Feb 15,2020, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 0
+# Compile of bshaper.v was successful.
+# Compile of bshaper_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.bshaper_tb
+# vsim -gui work.bshaper_tb 
+# Start time: 17:20:55 on Feb 15,2020
+# Loading work.bshaper_tb
+# Loading work.bshaper
+add wave -position insertpoint  \
+sim:/bshaper_tb/CLK \
+sim:/bshaper_tb/RST \
+sim:/bshaper_tb/button_in \
+sim:/bshaper_tb/button_out
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+project open C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/src/Lab2_BUCUR_S
+# End time: 17:23:41 on Feb 15,2020, Elapsed time: 0:02:46
+# Errors: 0, Warnings: 0
+# reading C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project Lab2_BUCUR_S
+# Compile of access.v was successful.
+# Compile of adder.v was successful.
+# Compile of bshaper.v was successful.
+# Compile of check.v was successful.
+# Compile of decoder7.v was successful.
+# Compile of Lab2_BUCUR_S.v was successful.
+# Compile of loadreg.v was successful.
+# Compile of Lab2_BUCUR_S_tb.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.Lab2_BUCUR_S_tb
+# vsim -gui work.Lab2_BUCUR_S_tb 
+# Start time: 17:24:13 on Feb 15,2020
+# Loading work.Lab2_BUCUR_S_tb
+# Loading work.Lab2_BUCUR_S
+# Loading work.decoder7
+# Loading work.adder
+# Loading work.check
+# Loading work.loadreg
+# Loading work.access
+# Loading work.bshaper
+add wave -position insertpoint  \
+sim:/Lab2_BUCUR_S_tb/CLOCK \
+sim:/Lab2_BUCUR_S_tb/RESET \
+sim:/Lab2_BUCUR_S_tb/p1_data \
+sim:/Lab2_BUCUR_S_tb/p2_data \
+sim:/Lab2_BUCUR_S_tb/acc_data \
+sim:/Lab2_BUCUR_S_tb/p1_sel \
+sim:/Lab2_BUCUR_S_tb/p2_sel \
+sim:/Lab2_BUCUR_S_tb/acc_sel \
+sim:/Lab2_BUCUR_S_tb/sum_status \
+sim:/Lab2_BUCUR_S_tb/pass_r \
+sim:/Lab2_BUCUR_S_tb/pass_g \
+sim:/Lab2_BUCUR_S_tb/acc_state
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 17:25:28 on Feb 15,2020, Elapsed time: 0:01:15
+# Errors: 0, Warnings: 0
