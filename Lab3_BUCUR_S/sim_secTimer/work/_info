@@ -1,0 +1,74 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1
+vcnt1000
+Z0 !s110 1583254166
+!i10b 1
+!s100 _H^jObERQ>hlCG4<ZJQ^o1
+IDC67RhcYl:OSH6Vm9hN:h2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer
+w1583254155
+8C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer/cnt1000.v
+FC:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer/cnt1000.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1583254166.000000
+!s107 C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer/cnt1000.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer/cnt1000.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vsecTimer
+R0
+!i10b 1
+!s100 I]dIR>jj>SlW3SYAjnXd@2
+I2jHkWCZzQCNc==kmE1hfA0
+R1
+R2
+w1583254149
+8C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer/secTimer.v
+FC:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer/secTimer.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer/secTimer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer/secTimer.v|
+!i113 1
+R5
+R6
+nsec@timer
+vtimer_1ms
+R0
+!i10b 1
+!s100 0ClDTaPb=YFfR=dd`U1f_0
+IZ=RDkJ^H`S8hfXDMcT3ZS1
+R1
+R2
+w1583254153
+8C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer/timer_1ms.v
+FC:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer/timer_1ms.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer/timer_1ms.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer/timer_1ms.v|
+!i113 1
+R5
+R6
