@@ -160,10 +160,10 @@ status[1] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 CLK => CLK.IN1
 RST => RST.IN1
 button_trng => counter_in_internal.IN1
-rand[0] <= cnt4:counter.port3
-rand[1] <= cnt4:counter.port3
-rand[2] <= cnt4:counter.port3
-rand[3] <= cnt4:counter.port3
+rand_num[0] <= cnt4:counter.port3
+rand_num[1] <= cnt4:counter.port3
+rand_num[2] <= cnt4:counter.port3
+rand_num[3] <= cnt4:counter.port3
 
 
 |Lab3_BUCUR_S|trng:pbot|cnt4:counter
@@ -209,16 +209,9 @@ data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Lab3_BUCUR_S|access:acc_ctl
-RST => currentstate.OUTPUTSELECT
-RST => currentstate.OUTPUTSELECT
-RST => currentstate.OUTPUTSELECT
-RST => pass_OK.OUTPUTSELECT
-RST => pass_red.OUTPUTSELECT
-RST => pass_green.OUTPUTSELECT
-RST => loadreg_1_out.OUTPUTSELECT
-RST => loadreg_R_out.OUTPUTSELECT
-RST => enable.OUTPUTSELECT
-RST => reconf.OUTPUTSELECT
+CLK => currentstate[0]~reg0.CLK
+CLK => currentstate[1]~reg0.CLK
+CLK => currentstate[2]~reg0.CLK
 CLK => reconf~reg0.CLK
 CLK => enable~reg0.CLK
 CLK => loadreg_R_out~reg0.CLK
@@ -226,9 +219,16 @@ CLK => loadreg_1_out~reg0.CLK
 CLK => pass_green~reg0.CLK
 CLK => pass_red~reg0.CLK
 CLK => pass_OK.CLK
-CLK => currentstate[0]~reg0.CLK
-CLK => currentstate[1]~reg0.CLK
-CLK => currentstate[2]~reg0.CLK
+RST => pass_OK.OUTPUTSELECT
+RST => pass_red.OUTPUTSELECT
+RST => pass_green.OUTPUTSELECT
+RST => loadreg_1_out.OUTPUTSELECT
+RST => loadreg_R_out.OUTPUTSELECT
+RST => enable.OUTPUTSELECT
+RST => reconf.OUTPUTSELECT
+RST => currentstate.OUTPUTSELECT
+RST => currentstate.OUTPUTSELECT
+RST => currentstate.OUTPUTSELECT
 loadreg_1_in => ~NO_FANOUT~
 loadreg_R_in => ~NO_FANOUT~
 pword[0] => Equal0.IN0
