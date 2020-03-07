@@ -72,11 +72,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "CLOCK",
+					"name" : "RESET",
 					"strict" : false
 				},
 				{
-					"name" : "RESET",
+					"name" : "CLOCK",
 					"strict" : false
 				},
 				{

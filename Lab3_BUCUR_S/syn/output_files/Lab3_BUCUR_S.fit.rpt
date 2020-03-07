@@ -1,5 +1,5 @@
 Fitter report for Lab3_BUCUR_S
-Fri Mar 06 03:45:53 2020
+Sat Mar 07 02:36:38 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -67,15 +67,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Mar 06 03:45:53 2020       ;
+; Fitter Status                      ; Successful - Sat Mar 07 02:36:38 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab3_BUCUR_S                                ;
 ; Top-level Entity Name              ; Lab3_BUCUR_S                                ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 151 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 147 / 114,480 ( < 1 % )                     ;
+; Total logic elements               ; 150 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 149 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 66 / 114,480 ( < 1 % )                      ;
 ; Total registers                    ; 66                                          ;
 ; Total pins                         ; 61 / 529 ( 12 % )                           ;
@@ -159,8 +159,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processors 3-12        ;   0.2%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processors 3-12        ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -170,8 +170,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 351 ) ; 0.00 % ( 0 / 351 )         ; 0.00 % ( 0 / 351 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 351 ) ; 0.00 % ( 0 / 351 )         ; 0.00 % ( 0 / 351 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 353 ) ; 0.00 % ( 0 / 353 )         ; 0.00 % ( 0 / 353 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 353 ) ; 0.00 % ( 0 / 353 )         ; 0.00 % ( 0 / 353 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -194,7 +194,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 341 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 343 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -210,26 +210,26 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Total logic elements                        ; 151 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 85                      ;
-;     -- Register only                        ; 4                       ;
-;     -- Combinational with a register        ; 62                      ;
+; Total logic elements                        ; 150 / 114,480 ( < 1 % ) ;
+;     -- Combinational with no register       ; 84                      ;
+;     -- Register only                        ; 1                       ;
+;     -- Combinational with a register        ; 65                      ;
 ;                                             ;                         ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 75                      ;
+;     -- 4 input functions                    ; 77                      ;
 ;     -- 3 input functions                    ; 20                      ;
 ;     -- <=2 input functions                  ; 52                      ;
-;     -- Register only                        ; 4                       ;
+;     -- Register only                        ; 1                       ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 107                     ;
+;     -- normal mode                          ; 109                     ;
 ;     -- arithmetic mode                      ; 40                      ;
 ;                                             ;                         ;
 ; Total registers*                            ; 66 / 117,053 ( < 1 % )  ;
 ;     -- Dedicated logic registers            ; 66 / 114,480 ( < 1 % )  ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )       ;
 ;                                             ;                         ;
-; Total LABs:  partially or completely used   ; 14 / 7,155 ( < 1 % )    ;
+; Total LABs:  partially or completely used   ; 12 / 7,155 ( < 1 % )    ;
 ; Virtual pins                                ; 0                       ;
 ; I/O pins                                    ; 61 / 529 ( 12 % )       ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )          ;
@@ -247,12 +247,12 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )           ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
-; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%      ;
-; Peak interconnect usage (total/H/V)         ; 2.2% / 2.0% / 2.6%      ;
-; Maximum fan-out                             ; 35                      ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.0% / 0.1%      ;
+; Peak interconnect usage (total/H/V)         ; 1.4% / 0.9% / 2.2%      ;
+; Maximum fan-out                             ; 43                      ;
 ; Highest non-global fan-out                  ; 32                      ;
-; Total fan-out                               ; 780                     ;
-; Average fan-out                             ; 2.20                    ;
+; Total fan-out                               ; 785                     ;
+; Average fan-out                             ; 2.22                    ;
 +---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -265,26 +265,26 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-; Total logic elements                        ; 151 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 85                     ; 0                              ;
-;     -- Register only                        ; 4                      ; 0                              ;
-;     -- Combinational with a register        ; 62                     ; 0                              ;
+; Total logic elements                        ; 150 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 84                     ; 0                              ;
+;     -- Register only                        ; 1                      ; 0                              ;
+;     -- Combinational with a register        ; 65                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 75                     ; 0                              ;
+;     -- 4 input functions                    ; 77                     ; 0                              ;
 ;     -- 3 input functions                    ; 20                     ; 0                              ;
 ;     -- <=2 input functions                  ; 52                     ; 0                              ;
-;     -- Register only                        ; 4                      ; 0                              ;
+;     -- Register only                        ; 1                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic elements by mode                      ;                        ;                                ;
-;     -- normal mode                          ; 107                    ; 0                              ;
+;     -- normal mode                          ; 109                    ; 0                              ;
 ;     -- arithmetic mode                      ; 40                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Total registers                             ; 66                     ; 0                              ;
 ;     -- Dedicated logic registers            ; 66 / 114480 ( < 1 % )  ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total LABs:  partially or completely used   ; 14 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 12 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                        ;                                ;
 ; Virtual pins                                ; 0                      ; 0                              ;
 ; I/O pins                                    ; 61                     ; 0                              ;
@@ -300,8 +300,8 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 775                    ; 5                              ;
-;     -- Registered Connections               ; 179                    ; 0                              ;
+;     -- Total Connections                    ; 780                    ; 5                              ;
+;     -- Registered Connections               ; 183                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
 ;     -- Top                                  ; 0                      ; 0                              ;
@@ -336,7 +336,7 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; CLOCK            ; Y2    ; 2        ; 0            ; 36           ; 14           ; 43                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; RESET            ; M23   ; 6        ; 115          ; 40           ; 7            ; 15                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; acc_data[0]      ; AB28  ; 5        ; 115          ; 17           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; acc_data[1]      ; AC28  ; 5        ; 115          ; 14           ; 0            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; acc_data[1]      ; AC28  ; 5        ; 115          ; 14           ; 0            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; acc_data[2]      ; AC27  ; 5        ; 115          ; 15           ; 7            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; acc_data[3]      ; AD27  ; 5        ; 115          ; 13           ; 7            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; acc_sel          ; M21   ; 6        ; 115          ; 53           ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
@@ -346,14 +346,14 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; player_data[2]   ; Y24   ; 5        ; 115          ; 13           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; player_data[3]   ; Y23   ; 5        ; 115          ; 14           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; player_sel       ; R24   ; 5        ; 115          ; 35           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; time_def_ones[0] ; R23   ; 5        ; 115          ; 35           ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; time_def_ones[0] ; R27   ; 5        ; 115          ; 34           ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
 ; time_def_ones[1] ; R28   ; 5        ; 115          ; 34           ; 21           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; time_def_ones[2] ; R27   ; 5        ; 115          ; 34           ; 14           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; time_def_ones[3] ; T21   ; 5        ; 115          ; 32           ; 0            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; time_def_tens[0] ; R25   ; 5        ; 115          ; 33           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; time_def_tens[1] ; U27   ; 5        ; 115          ; 29           ; 7            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; time_def_tens[2] ; R21   ; 5        ; 115          ; 36           ; 7            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; time_def_tens[3] ; T22   ; 5        ; 115          ; 32           ; 7            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; time_def_ones[2] ; R23   ; 5        ; 115          ; 35           ; 14           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; time_def_ones[3] ; P21   ; 5        ; 115          ; 36           ; 0            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; time_def_tens[0] ; T26   ; 5        ; 115          ; 31           ; 7            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; time_def_tens[1] ; R26   ; 5        ; 115          ; 33           ; 7            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; time_def_tens[2] ; T25   ; 5        ; 115          ; 31           ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; time_def_tens[3] ; R25   ; 5        ; 115          ; 33           ; 0            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
 +------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -362,7 +362,7 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 +-----------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name            ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +-----------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; GND             ; R26   ; 5        ; 115          ; 33           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; GND             ; Y22   ; 5        ; 115          ; 30           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; bot_digit[0]    ; AA17  ; 4        ; 89           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; bot_digit[1]    ; AB16  ; 4        ; 65           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; bot_digit[2]    ; AA16  ; 4        ; 65           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
@@ -370,13 +370,13 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; bot_digit[4]    ; AB15  ; 4        ; 67           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; bot_digit[5]    ; AA15  ; 4        ; 67           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; bot_digit[6]    ; AC17  ; 4        ; 74           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; one_digit[0]    ; U25   ; 5        ; 115          ; 27           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; one_digit[1]    ; U26   ; 5        ; 115          ; 27           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; one_digit[2]    ; U21   ; 5        ; 115          ; 29           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; one_digit[3]    ; T25   ; 5        ; 115          ; 31           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; one_digit[4]    ; T26   ; 5        ; 115          ; 31           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; one_digit[5]    ; W22   ; 5        ; 115          ; 30           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; one_digit[6]    ; Y22   ; 5        ; 115          ; 30           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; one_digit[0]    ; P25   ; 6        ; 115          ; 41           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; one_digit[1]    ; N26   ; 6        ; 115          ; 44           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; one_digit[2]    ; R22   ; 5        ; 115          ; 36           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; one_digit[3]    ; P26   ; 6        ; 115          ; 40           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; one_digit[4]    ; M24   ; 6        ; 115          ; 41           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; one_digit[5]    ; R21   ; 5        ; 115          ; 36           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; one_digit[6]    ; P27   ; 6        ; 115          ; 44           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; pass_g          ; G21   ; 7        ; 74           ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; pass_r          ; G19   ; 7        ; 69           ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; player_digit[0] ; AB19  ; 4        ; 98           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
@@ -395,13 +395,13 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; sum_digit[6]    ; H22   ; 6        ; 115          ; 69           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; sum_status[0]   ; F17   ; 7        ; 67           ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; sum_status[1]   ; H16   ; 7        ; 65           ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; ten_digit[0]    ; U28   ; 5        ; 115          ; 28           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ten_digit[1]    ; U22   ; 5        ; 115          ; 26           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ten_digit[2]    ; V21   ; 5        ; 115          ; 25           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ten_digit[3]    ; V24   ; 5        ; 115          ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ten_digit[4]    ; V22   ; 5        ; 115          ; 26           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ten_digit[5]    ; W21   ; 5        ; 115          ; 25           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ten_digit[6]    ; U24   ; 5        ; 115          ; 28           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ten_digit[0]    ; U24   ; 5        ; 115          ; 28           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ten_digit[1]    ; U21   ; 5        ; 115          ; 29           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ten_digit[2]    ; U28   ; 5        ; 115          ; 28           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ten_digit[3]    ; W22   ; 5        ; 115          ; 30           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ten_digit[4]    ; T21   ; 5        ; 115          ; 32           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ten_digit[5]    ; U27   ; 5        ; 115          ; 29           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ten_digit[6]    ; T22   ; 5        ; 115          ; 32           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +-----------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -417,14 +417,17 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; N7       ; DATA0                       ; As input tri-stated      ; ~ALTERA_DATA0~          ; Dual Purpose Pin          ;
 ; P4       ; nCONFIG                     ; -                        ; -                       ; Dedicated Programming Pin ;
 ; R8       ; nCE                         ; -                        ; -                       ; Dedicated Programming Pin ;
-; T22      ; DIFFIO_R29n, DEV_OE         ; Use as regular IO        ; time_def_tens[3]        ; Dual Purpose Pin          ;
-; T21      ; DIFFIO_R29p, DEV_CLRn       ; Use as regular IO        ; time_def_ones[3]        ; Dual Purpose Pin          ;
+; T22      ; DIFFIO_R29n, DEV_OE         ; Use as regular IO        ; ten_digit[6]            ; Dual Purpose Pin          ;
+; T21      ; DIFFIO_R29p, DEV_CLRn       ; Use as regular IO        ; ten_digit[4]            ; Dual Purpose Pin          ;
 ; P24      ; CONF_DONE                   ; -                        ; -                       ; Dedicated Programming Pin ;
 ; N22      ; MSEL0                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; P23      ; MSEL1                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; M22      ; MSEL2                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; P22      ; MSEL3                       ; -                        ; -                       ; Dedicated Programming Pin ;
+; P26      ; DIFFIO_R24n, INIT_DONE      ; Use as regular IO        ; one_digit[3]            ; Dual Purpose Pin          ;
+; P25      ; DIFFIO_R24p, CRC_ERROR      ; Use as regular IO        ; one_digit[0]            ; Dual Purpose Pin          ;
 ; P28      ; DIFFIO_R23n, nCEO           ; Use as programming pin   ; ~ALTERA_nCEO~           ; Dual Purpose Pin          ;
+; P27      ; DIFFIO_R23p, CLKUSR         ; Use as regular IO        ; one_digit[6]            ; Dual Purpose Pin          ;
 +----------+-----------------------------+--------------------------+-------------------------+---------------------------+
 
 
@@ -437,8 +440,8 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; 2        ; 1 / 63 ( 2 % )   ; 2.5V          ; --           ;
 ; 3        ; 0 / 73 ( 0 % )   ; 2.5V          ; --           ;
 ; 4        ; 14 / 71 ( 20 % ) ; 2.5V          ; --           ;
-; 5        ; 32 / 65 ( 49 % ) ; 2.5V          ; --           ;
-; 6        ; 8 / 58 ( 14 % )  ; 2.5V          ; --           ;
+; 5        ; 27 / 65 ( 42 % ) ; 2.5V          ; --           ;
+; 6        ; 13 / 58 ( 22 % ) ; 2.5V          ; --           ;
 ; 7        ; 7 / 72 ( 10 % )  ; 2.5V          ; --           ;
 ; 8        ; 0 / 71 ( 0 % )   ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
@@ -1000,7 +1003,7 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; M21      ; 368        ; 6        ; acc_sel                                                   ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; M22      ; 342        ; 6        ; ^MSEL2                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; M23      ; 344        ; 6        ; RESET                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; M24      ; 347        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; M24      ; 347        ; 6        ; one_digit[4]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M25      ; 356        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M26      ; 355        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M27      ; 354        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1030,7 +1033,7 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; N23      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N24      ;            ; 6        ; VCCIO6                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; N25      ; 352        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; N26      ; 351        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N26      ; 351        ; 6        ; one_digit[1]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; N27      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N28      ;            ; 6        ; VCCIO6                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; P1       ; 53         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1053,13 +1056,13 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; P18      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P19      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; P20      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; P21      ; 334        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; P21      ; 334        ; 5        ; time_def_ones[3]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; P22      ; 343        ; 6        ; ^MSEL3                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; P23      ; 341        ; 6        ; ^MSEL1                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; P24      ; 339        ; 6        ; ^CONF_DONE                                                ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; P25      ; 346        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; P26      ; 345        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; P27      ; 350        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; P25      ; 346        ; 6        ; one_digit[0]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P26      ; 345        ; 6        ; one_digit[3]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P27      ; 350        ; 6        ; one_digit[6]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; P28      ; 349        ; 6        ; ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R1       ; 68         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R2       ; 67         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1081,13 +1084,13 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; R18      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; R19      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; R20      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; R21      ; 333        ; 5        ; time_def_tens[2]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; R22      ; 332        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; R23      ; 331        ; 5        ; time_def_ones[0]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R21      ; 333        ; 5        ; one_digit[5]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R22      ; 332        ; 5        ; one_digit[2]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R23      ; 331        ; 5        ; time_def_ones[2]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R24      ; 330        ; 5        ; player_sel                                                ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; R25      ; 327        ; 5        ; time_def_tens[0]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; R26      ; 326        ; 5        ; GND                                                       ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; R27      ; 329        ; 5        ; time_def_ones[2]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R25      ; 327        ; 5        ; time_def_tens[3]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R26      ; 326        ; 5        ; time_def_tens[1]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R27      ; 329        ; 5        ; time_def_ones[0]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R28      ; 328        ; 5        ; time_def_ones[1]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; T1       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; T2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1109,12 +1112,12 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; T18      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; T19      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; T20      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; T21      ; 325        ; 5        ; time_def_ones[3]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; T22      ; 324        ; 5        ; time_def_tens[3]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T21      ; 325        ; 5        ; ten_digit[4]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T22      ; 324        ; 5        ; ten_digit[6]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; T23      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; T24      ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; T25      ; 323        ; 5        ; one_digit[3]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; T26      ; 322        ; 5        ; one_digit[4]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T25      ; 323        ; 5        ; time_def_tens[2]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T26      ; 322        ; 5        ; time_def_tens[0]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; T27      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; T28      ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; U1       ; 80         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1137,14 +1140,14 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; U18      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; U19      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; U20      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; U21      ; 319        ; 5        ; one_digit[2]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; U22      ; 313        ; 5        ; ten_digit[1]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U21      ; 319        ; 5        ; ten_digit[1]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U22      ; 313        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U23      ; 305        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; U24      ; 316        ; 5        ; ten_digit[6]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; U25      ; 315        ; 5        ; one_digit[0]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; U26      ; 314        ; 5        ; one_digit[1]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; U27      ; 318        ; 5        ; time_def_tens[1]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; U28      ; 317        ; 5        ; ten_digit[0]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U24      ; 316        ; 5        ; ten_digit[0]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U25      ; 315        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; U26      ; 314        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; U27      ; 318        ; 5        ; ten_digit[5]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U28      ; 317        ; 5        ; ten_digit[2]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; V1       ; 84         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V2       ; 83         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V3       ; 82         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1165,10 +1168,10 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; V18      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; V19      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; V20      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; V21      ; 311        ; 5        ; ten_digit[2]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; V22      ; 312        ; 5        ; ten_digit[4]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V21      ; 311        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; V22      ; 312        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V23      ; 309        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; V24      ; 308        ; 5        ; ten_digit[3]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V24      ; 308        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V25      ; 307        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V26      ; 306        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V27      ; 304        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1193,8 +1196,8 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; W18      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; W19      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W20      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; W21      ; 310        ; 5        ; ten_digit[5]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; W22      ; 321        ; 5        ; one_digit[5]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; W21      ; 310        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; W22      ; 321        ; 5        ; ten_digit[3]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; W23      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W24      ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; W25      ; 300        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1222,7 +1225,7 @@ The pin-out file can be found in C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_
 ; Y19      ; 263        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y20      ;            ;          ; VCCD_PLL4                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; Y21      ;            ; --       ; VCCA4                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; Y22      ; 320        ; 5        ; one_digit[6]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; Y22      ; 320        ; 5        ; GND                                                       ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; Y23      ; 288        ; 5        ; player_data[3]                                            ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; Y24      ; 287        ; 5        ; player_data[2]                                            ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; Y25      ; 298        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1284,8 +1287,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; player_data[1]   ; Incomplete set of assignments ;
 ; player_data[2]   ; Incomplete set of assignments ;
 ; player_data[3]   ; Incomplete set of assignments ;
-; CLOCK            ; Incomplete set of assignments ;
 ; RESET            ; Incomplete set of assignments ;
+; CLOCK            ; Incomplete set of assignments ;
 ; time_def_tens[3] ; Incomplete set of assignments ;
 ; time_def_ones[3] ; Incomplete set of assignments ;
 ; acc_data[1]      ; Incomplete set of assignments ;
@@ -1330,14 +1333,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                              ; Entity Name  ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------+--------------+--------------+
-; |Lab3_BUCUR_S              ; 151 (0)     ; 66 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 61   ; 0            ; 85 (0)       ; 4 (0)             ; 62 (0)           ; |Lab3_BUCUR_S                                    ; Lab3_BUCUR_S ; work         ;
-;    |access:acc_ctl|        ; 28 (28)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (20)      ; 1 (1)             ; 7 (7)            ; |Lab3_BUCUR_S|access:acc_ctl                     ; access       ; work         ;
-;    |bshaper:acc_button|    ; 4 (4)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 2 (2)             ; 0 (0)            ; |Lab3_BUCUR_S|bshaper:acc_button                 ; bshaper      ; work         ;
+; |Lab3_BUCUR_S              ; 150 (0)     ; 66 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 61   ; 0            ; 84 (0)       ; 1 (0)             ; 65 (0)           ; |Lab3_BUCUR_S                                    ; Lab3_BUCUR_S ; work         ;
+;    |access:acc_ctl|        ; 30 (30)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 22 (22)      ; 1 (1)             ; 7 (7)            ; |Lab3_BUCUR_S|access:acc_ctl                     ; access       ; work         ;
+;    |bshaper:acc_button|    ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; |Lab3_BUCUR_S|bshaper:acc_button                 ; bshaper      ; work         ;
 ;    |decoder7:one_dec|      ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Lab3_BUCUR_S|decoder7:one_dec                   ; decoder7     ; work         ;
 ;    |decoder7:ten_dec|      ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Lab3_BUCUR_S|decoder7:ten_dec                   ; decoder7     ; work         ;
-;    |digitTimer_2:timer|    ; 46 (0)      ; 12 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 34 (0)       ; 1 (0)             ; 11 (0)           ; |Lab3_BUCUR_S|digitTimer_2:timer                 ; digitTimer_2 ; work         ;
+;    |digitTimer_2:timer|    ; 45 (0)      ; 12 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 33 (0)       ; 0 (0)             ; 12 (0)           ; |Lab3_BUCUR_S|digitTimer_2:timer                 ; digitTimer_2 ; work         ;
 ;       |digitTimer:ones|    ; 23 (23)     ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 6 (6)            ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:ones ; digitTimer   ; work         ;
-;       |digitTimer:tens|    ; 23 (23)     ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 1 (1)             ; 5 (5)            ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:tens ; digitTimer   ; work         ;
+;       |digitTimer:tens|    ; 22 (22)     ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (16)      ; 0 (0)             ; 6 (6)            ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:tens ; digitTimer   ; work         ;
 ;    |secTimer:timer_clk|    ; 59 (0)      ; 44 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (0)       ; 0 (0)             ; 44 (0)           ; |Lab3_BUCUR_S|secTimer:timer_clk                 ; secTimer     ; work         ;
 ;       |cnt1000:counter|    ; 14 (14)     ; 11 (11)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 11 (11)          ; |Lab3_BUCUR_S|secTimer:timer_clk|cnt1000:counter ; cnt1000      ; work         ;
 ;       |timer_1ms:timer|    ; 45 (45)     ; 33 (33)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 33 (33)          ; |Lab3_BUCUR_S|secTimer:timer_clk|timer_1ms:timer ; timer_1ms    ; work         ;
@@ -1396,21 +1399,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; player_data[1]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; player_data[2]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; player_data[3]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; RESET            ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; CLOCK            ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; RESET            ; Input    ; (0) 0 ps      ; (0) 0 ps      ; --                    ; --  ; --   ;
-; time_def_tens[3] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; time_def_tens[3] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; time_def_ones[3] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; acc_data[1]      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; acc_data[0]      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; acc_data[2]      ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; acc_data[2]      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; acc_data[3]      ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; acc_sel          ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; time_def_tens[0] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; time_def_tens[1] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; time_def_tens[1] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; time_def_tens[2] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; time_def_ones[0] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; time_def_ones[1] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; time_def_ones[2] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; time_def_ones[2] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +------------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -1425,30 +1428,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; player_data[1]                                          ;                   ;         ;
 ; player_data[2]                                          ;                   ;         ;
 ; player_data[3]                                          ;                   ;         ;
-; CLOCK                                                   ;                   ;         ;
 ; RESET                                                   ;                   ;         ;
-;      - access:acc_ctl|pass_red                          ; 0                 ; 0       ;
-;      - access:acc_ctl|pass_green                        ; 0                 ; 0       ;
-;      - access:acc_ctl|currentstate[2]                   ; 0                 ; 0       ;
-;      - access:acc_ctl|currentstate[1]                   ; 0                 ; 0       ;
-;      - access:acc_ctl|currentstate[0]                   ; 0                 ; 0       ;
-;      - access:acc_ctl|reconf                            ; 0                 ; 0       ;
-;      - access:acc_ctl|pass_OK                           ; 0                 ; 0       ;
-;      - secTimer:timer_clk|timer_1ms:timer|pulse_1ms     ; 1                 ; 0       ;
-;      - access:acc_ctl|enable                            ; 0                 ; 0       ;
-;      - bshaper:acc_button|currentstate~5                ; 1                 ; 0       ;
-;      - bshaper:acc_button|currentstate~6                ; 1                 ; 0       ;
-;      - secTimer:timer_clk|cnt1000:counter|pulse_sec~0   ; 1                 ; 0       ;
-;      - secTimer:timer_clk|cnt1000:counter|cnt[9]~14     ; 1                 ; 0       ;
-;      - secTimer:timer_clk|timer_1ms:timer|cnt[24]~36    ; 1                 ; 0       ;
-;      - secTimer:timer_clk|timer_1ms:timer|cnt[24]~37    ; 1                 ; 0       ;
+;      - access:acc_ctl|pass_green                        ; 1                 ; 6       ;
+;      - access:acc_ctl|currentstate[2]                   ; 1                 ; 6       ;
+;      - access:acc_ctl|currentstate[1]                   ; 1                 ; 6       ;
+;      - access:acc_ctl|currentstate[0]                   ; 1                 ; 6       ;
+;      - access:acc_ctl|reconf                            ; 1                 ; 6       ;
+;      - access:acc_ctl|pass_OK                           ; 1                 ; 6       ;
+;      - secTimer:timer_clk|timer_1ms:timer|pulse_1ms     ; 1                 ; 6       ;
+;      - access:acc_ctl|enable                            ; 1                 ; 6       ;
+;      - access:acc_ctl|pass_red~2                        ; 1                 ; 6       ;
+;      - bshaper:acc_button|currentstate~5                ; 1                 ; 6       ;
+;      - bshaper:acc_button|currentstate~6                ; 1                 ; 6       ;
+;      - secTimer:timer_clk|cnt1000:counter|pulse_sec~0   ; 1                 ; 6       ;
+;      - secTimer:timer_clk|cnt1000:counter|cnt[9]~14     ; 1                 ; 6       ;
+;      - secTimer:timer_clk|timer_1ms:timer|cnt[24]~36    ; 1                 ; 6       ;
+;      - secTimer:timer_clk|timer_1ms:timer|cnt[24]~37    ; 1                 ; 6       ;
+; CLOCK                                                   ;                   ;         ;
 ; time_def_tens[3]                                        ;                   ;         ;
-;      - digitTimer_2:timer|digitTimer:tens|count[3]~14   ; 1                 ; 6       ;
-;      - digitTimer_2:timer|digitTimer:tens|count~23      ; 1                 ; 6       ;
-;      - digitTimer_2:timer|digitTimer:tens|count~24      ; 1                 ; 6       ;
-;      - digitTimer_2:timer|digitTimer:tens|count~25      ; 1                 ; 6       ;
-;      - digitTimer_2:timer|digitTimer:tens|noborrow_dn~6 ; 1                 ; 6       ;
-;      - digitTimer_2:timer|digitTimer:tens|count[3]~13   ; 1                 ; 6       ;
+;      - digitTimer_2:timer|digitTimer:tens|count[3]~14   ; 0                 ; 6       ;
+;      - digitTimer_2:timer|digitTimer:tens|count~23      ; 0                 ; 6       ;
+;      - digitTimer_2:timer|digitTimer:tens|count~24      ; 0                 ; 6       ;
+;      - digitTimer_2:timer|digitTimer:tens|count~25      ; 0                 ; 6       ;
+;      - digitTimer_2:timer|digitTimer:tens|noborrow_dn~6 ; 0                 ; 6       ;
+;      - digitTimer_2:timer|digitTimer:tens|count[3]~13   ; 0                 ; 6       ;
 ; time_def_ones[3]                                        ;                   ;         ;
 ;      - digitTimer_2:timer|digitTimer:ones|count[3]~14   ; 1                 ; 6       ;
 ;      - digitTimer_2:timer|digitTimer:ones|count~23      ; 1                 ; 6       ;
@@ -1459,17 +1462,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; acc_data[1]                                             ;                   ;         ;
 ;      - access:acc_ctl|Mux8~2                            ; 0                 ; 6       ;
 ;      - access:acc_ctl|Mux6~2                            ; 0                 ; 6       ;
-;      - access:acc_ctl|Mux9~0                            ; 0                 ; 6       ;
-;      - access:acc_ctl|Mux9~3                            ; 0                 ; 6       ;
+;      - access:acc_ctl|pass_OK~0                         ; 0                 ; 6       ;
+;      - access:acc_ctl|pass_OK~1                         ; 0                 ; 6       ;
+;      - access:acc_ctl|pass_OK~2                         ; 0                 ; 6       ;
 ; acc_data[0]                                             ;                   ;         ;
 ;      - access:acc_ctl|currentstate~0                    ; 0                 ; 6       ;
-;      - access:acc_ctl|Mux9~2                            ; 0                 ; 6       ;
+;      - access:acc_ctl|pass_OK~2                         ; 0                 ; 6       ;
 ; acc_data[2]                                             ;                   ;         ;
-;      - access:acc_ctl|currentstate~0                    ; 1                 ; 6       ;
-;      - access:acc_ctl|Mux9~2                            ; 1                 ; 6       ;
+;      - access:acc_ctl|currentstate~0                    ; 0                 ; 6       ;
+;      - access:acc_ctl|pass_OK~2                         ; 0                 ; 6       ;
 ; acc_data[3]                                             ;                   ;         ;
 ;      - access:acc_ctl|currentstate~0                    ; 1                 ; 6       ;
-;      - access:acc_ctl|Mux9~2                            ; 1                 ; 6       ;
+;      - access:acc_ctl|pass_OK~2                         ; 1                 ; 6       ;
 ; acc_sel                                                 ;                   ;         ;
 ;      - bshaper:acc_button|currentstate~5                ; 0                 ; 6       ;
 ;      - bshaper:acc_button|currentstate~6                ; 0                 ; 6       ;
@@ -1477,9 +1481,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - digitTimer_2:timer|digitTimer:tens|count~23      ; 0                 ; 6       ;
 ;      - digitTimer_2:timer|digitTimer:tens|noborrow_dn~6 ; 0                 ; 6       ;
 ; time_def_tens[1]                                        ;                   ;         ;
-;      - digitTimer_2:timer|digitTimer:tens|count~23      ; 0                 ; 6       ;
-;      - digitTimer_2:timer|digitTimer:tens|count~24      ; 0                 ; 6       ;
-;      - digitTimer_2:timer|digitTimer:tens|noborrow_dn~6 ; 0                 ; 6       ;
+;      - digitTimer_2:timer|digitTimer:tens|count~23      ; 1                 ; 6       ;
+;      - digitTimer_2:timer|digitTimer:tens|count~24      ; 1                 ; 6       ;
+;      - digitTimer_2:timer|digitTimer:tens|noborrow_dn~6 ; 1                 ; 6       ;
 ; time_def_tens[2]                                        ;                   ;         ;
 ;      - digitTimer_2:timer|digitTimer:tens|count~23      ; 1                 ; 6       ;
 ;      - digitTimer_2:timer|digitTimer:tens|count~25      ; 1                 ; 6       ;
@@ -1492,28 +1496,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - digitTimer_2:timer|digitTimer:ones|count~24      ; 0                 ; 6       ;
 ;      - digitTimer_2:timer|digitTimer:ones|noborrow_dn~7 ; 0                 ; 6       ;
 ; time_def_ones[2]                                        ;                   ;         ;
-;      - digitTimer_2:timer|digitTimer:ones|count~23      ; 1                 ; 6       ;
-;      - digitTimer_2:timer|digitTimer:ones|count~25      ; 1                 ; 6       ;
-;      - digitTimer_2:timer|digitTimer:ones|noborrow_dn~7 ; 1                 ; 6       ;
+;      - digitTimer_2:timer|digitTimer:ones|count~23      ; 0                 ; 6       ;
+;      - digitTimer_2:timer|digitTimer:ones|count~25      ; 0                 ; 6       ;
+;      - digitTimer_2:timer|digitTimer:ones|noborrow_dn~7 ; 0                 ; 6       ;
 +---------------------------------------------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                           ;
-+-----------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; Name                                          ; Location            ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-----------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; CLOCK                                         ; PIN_Y2              ; 9       ; Sync. clear, Sync. load    ; no     ; --                   ; --               ; --                        ;
-; CLOCK                                         ; PIN_Y2              ; 35      ; Clock                      ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; RESET                                         ; PIN_M23             ; 15      ; Clock, Sync. clear         ; no     ; --                   ; --               ; --                        ;
-; access:acc_ctl|reconf                         ; FF_X114_Y36_N11     ; 22      ; Async. clear, Latch enable ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; digitTimer_2:timer|digitTimer:ones|borrow_up  ; FF_X113_Y32_N1      ; 6       ; Clock                      ; yes    ; Global Clock         ; GCLK9            ; --                        ;
-; secTimer:timer_clk|cnt1000:counter|cnt[9]~14  ; LCCOMB_X114_Y40_N6  ; 10      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; secTimer:timer_clk|cnt1000:counter|pulse_sec  ; FF_X114_Y40_N29     ; 6       ; Clock                      ; yes    ; Global Clock         ; GCLK5            ; --                        ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[24]~36 ; LCCOMB_X114_Y37_N12 ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[24]~37 ; LCCOMB_X114_Y36_N22 ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; secTimer:timer_clk|timer_1ms:timer|pulse_1ms  ; FF_X114_Y37_N29     ; 11      ; Clock                      ; yes    ; Global Clock         ; GCLK7            ; --                        ;
-+-----------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                          ;
++-----------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
+; Name                                          ; Location           ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-----------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
+; CLOCK                                         ; PIN_Y2             ; 43      ; Clock                      ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; RESET                                         ; PIN_M23            ; 15      ; Sync. clear, Sync. load    ; no     ; --                   ; --               ; --                        ;
+; access:acc_ctl|reconf                         ; FF_X114_Y37_N19    ; 22      ; Async. clear, Latch enable ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; digitTimer_2:timer|digitTimer:ones|borrow_up  ; FF_X112_Y37_N5     ; 6       ; Clock                      ; yes    ; Global Clock         ; GCLK5            ; --                        ;
+; secTimer:timer_clk|cnt1000:counter|cnt[9]~14  ; LCCOMB_X114_Y38_N2 ; 10      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; secTimer:timer_clk|cnt1000:counter|pulse_sec  ; FF_X114_Y38_N31    ; 6       ; Clock                      ; yes    ; Global Clock         ; GCLK8            ; --                        ;
+; secTimer:timer_clk|timer_1ms:timer|cnt[24]~36 ; LCCOMB_X113_Y24_N0 ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; secTimer:timer_clk|timer_1ms:timer|cnt[24]~37 ; LCCOMB_X113_Y24_N2 ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; secTimer:timer_clk|timer_1ms:timer|pulse_1ms  ; FF_X113_Y24_N17    ; 11      ; Clock                      ; yes    ; Global Clock         ; GCLK9            ; --                        ;
++-----------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1521,11 +1524,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                                         ; Location        ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------------------------+-----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; CLOCK                                        ; PIN_Y2          ; 35      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
-; access:acc_ctl|reconf                        ; FF_X114_Y36_N11 ; 22      ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
-; digitTimer_2:timer|digitTimer:ones|borrow_up ; FF_X113_Y32_N1  ; 6       ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
-; secTimer:timer_clk|cnt1000:counter|pulse_sec ; FF_X114_Y40_N29 ; 6       ; 0                                    ; Global Clock         ; GCLK5            ; --                        ;
-; secTimer:timer_clk|timer_1ms:timer|pulse_1ms ; FF_X114_Y37_N29 ; 11      ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
+; CLOCK                                        ; PIN_Y2          ; 43      ; 18                                   ; Global Clock         ; GCLK4            ; --                        ;
+; access:acc_ctl|reconf                        ; FF_X114_Y37_N19 ; 22      ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
+; digitTimer_2:timer|digitTimer:ones|borrow_up ; FF_X112_Y37_N5  ; 6       ; 0                                    ; Global Clock         ; GCLK5            ; --                        ;
+; secTimer:timer_clk|cnt1000:counter|pulse_sec ; FF_X114_Y38_N31 ; 6       ; 0                                    ; Global Clock         ; GCLK8            ; --                        ;
+; secTimer:timer_clk|timer_1ms:timer|pulse_1ms ; FF_X113_Y24_N17 ; 11      ; 2                                    ; Global Clock         ; GCLK9            ; --                        ;
 +----------------------------------------------+-----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1534,82 +1537,83 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 195 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 15 / 10,120 ( < 1 % )   ;
-; C4 interconnects      ; 115 / 209,544 ( < 1 % ) ;
-; Direct links          ; 34 / 342,891 ( < 1 % )  ;
+; Block interconnects   ; 185 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 11 / 10,120 ( < 1 % )   ;
+; C4 interconnects      ; 125 / 209,544 ( < 1 % ) ;
+; Direct links          ; 28 / 342,891 ( < 1 % )  ;
 ; Global clocks         ; 5 / 20 ( 25 % )         ;
-; Local interconnects   ; 98 / 119,088 ( < 1 % )  ;
-; R24 interconnects     ; 27 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 141 / 289,782 ( < 1 % ) ;
+; Local interconnects   ; 94 / 119,088 ( < 1 % )  ;
+; R24 interconnects     ; 6 / 9,963 ( < 1 % )     ;
+; R4 interconnects      ; 119 / 289,782 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 10.79) ; Number of LABs  (Total = 14) ;
+; Number of Logic Elements  (Average = 12.50) ; Number of LABs  (Total = 12) ;
 +---------------------------------------------+------------------------------+
 ; 1                                           ; 0                            ;
 ; 2                                           ; 1                            ;
 ; 3                                           ; 0                            ;
-; 4                                           ; 0                            ;
+; 4                                           ; 1                            ;
 ; 5                                           ; 0                            ;
-; 6                                           ; 1                            ;
-; 7                                           ; 4                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 0                            ;
 ; 8                                           ; 0                            ;
-; 9                                           ; 0                            ;
-; 10                                          ; 1                            ;
+; 9                                           ; 1                            ;
+; 10                                          ; 0                            ;
 ; 11                                          ; 0                            ;
-; 12                                          ; 1                            ;
-; 13                                          ; 0                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 2                            ;
 ; 14                                          ; 1                            ;
 ; 15                                          ; 1                            ;
-; 16                                          ; 4                            ;
+; 16                                          ; 5                            ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.36) ; Number of LABs  (Total = 14) ;
+; LAB-wide Signals  (Average = 1.67) ; Number of LABs  (Total = 12) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 2                            ;
-; 1 Clock                            ; 10                           ;
+; 1 Async. clear                     ; 3                            ;
+; 1 Clock                            ; 9                            ;
 ; 1 Clock enable                     ; 2                            ;
 ; 1 Sync. clear                      ; 4                            ;
 ; 1 Sync. load                       ; 1                            ;
+; 2 Clocks                           ; 1                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 15.50) ; Number of LABs  (Total = 14) ;
+; Number of Signals Sourced  (Average = 18.00) ; Number of LABs  (Total = 12) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 1                            ;
 ; 3                                            ; 0                            ;
-; 4                                            ; 0                            ;
+; 4                                            ; 1                            ;
 ; 5                                            ; 0                            ;
 ; 6                                            ; 0                            ;
-; 7                                            ; 3                            ;
-; 8                                            ; 2                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 0                            ;
+; 10                                           ; 1                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 0                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 1                            ;
 ; 15                                           ; 0                            ;
-; 16                                           ; 0                            ;
+; 16                                           ; 1                            ;
 ; 17                                           ; 0                            ;
 ; 18                                           ; 0                            ;
-; 19                                           ; 0                            ;
-; 20                                           ; 0                            ;
+; 19                                           ; 1                            ;
+; 20                                           ; 1                            ;
 ; 21                                           ; 2                            ;
-; 22                                           ; 1                            ;
+; 22                                           ; 0                            ;
 ; 23                                           ; 0                            ;
 ; 24                                           ; 0                            ;
 ; 25                                           ; 1                            ;
@@ -1626,19 +1630,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 5.93) ; Number of LABs  (Total = 14) ;
+; Number of Signals Sourced Out  (Average = 6.92) ; Number of LABs  (Total = 12) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
 ; 1                                               ; 1                            ;
-; 2                                               ; 3                            ;
-; 3                                               ; 1                            ;
+; 2                                               ; 1                            ;
+; 3                                               ; 2                            ;
 ; 4                                               ; 1                            ;
 ; 5                                               ; 0                            ;
-; 6                                               ; 4                            ;
-; 7                                               ; 2                            ;
-; 8                                               ; 0                            ;
+; 6                                               ; 1                            ;
+; 7                                               ; 1                            ;
+; 8                                               ; 2                            ;
 ; 9                                               ; 0                            ;
-; 10                                              ; 0                            ;
+; 10                                              ; 1                            ;
 ; 11                                              ; 0                            ;
 ; 12                                              ; 0                            ;
 ; 13                                              ; 0                            ;
@@ -1651,25 +1655,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 8.07) ; Number of LABs  (Total = 14) ;
+; Number of Distinct Inputs  (Average = 9.17) ; Number of LABs  (Total = 12) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 0                            ;
 ; 2                                           ; 1                            ;
-; 3                                           ; 2                            ;
+; 3                                           ; 1                            ;
 ; 4                                           ; 3                            ;
 ; 5                                           ; 0                            ;
 ; 6                                           ; 0                            ;
-; 7                                           ; 3                            ;
-; 8                                           ; 0                            ;
-; 9                                           ; 2                            ;
-; 10                                          ; 2                            ;
-; 11                                          ; 0                            ;
+; 7                                           ; 1                            ;
+; 8                                           ; 2                            ;
+; 9                                           ; 1                            ;
+; 10                                          ; 0                            ;
+; 11                                          ; 1                            ;
 ; 12                                          ; 0                            ;
 ; 13                                          ; 0                            ;
 ; 14                                          ; 0                            ;
 ; 15                                          ; 0                            ;
-; 16                                          ; 0                            ;
+; 16                                          ; 1                            ;
 ; 17                                          ; 0                            ;
 ; 18                                          ; 0                            ;
 ; 19                                          ; 0                            ;
@@ -1798,8 +1802,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; player_data[1]     ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; player_data[2]     ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; player_data[3]     ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; CLOCK              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; RESET              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; CLOCK              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; time_def_tens[3]   ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; time_def_ones[3]   ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; acc_data[1]        ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1857,20 +1861,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------+--------------------------------------------------+-------------------+
 ; Source Clock(s)                                                              ; Destination Clock(s)                             ; Delay Added in ns ;
 +------------------------------------------------------------------------------+--------------------------------------------------+-------------------+
-; RESET,access:acc_ctl|reconf,secTimer:timer_clk|cnt1000:counter|pulse_sec,I/O ; secTimer:timer_clk|cnt1000:counter|pulse_sec     ; 18.9              ;
-; RESET,access:acc_ctl|reconf,digitTimer_2:timer|digitTimer:ones|borrow_up,I/O ; digitTimer_2:timer|digitTimer:ones|borrow_up     ; 16.9              ;
-; RESET                                                                        ; secTimer:timer_clk|cnt1000:counter|pulse_sec,I/O ; 8.3               ;
-; I/O                                                                          ; CLOCK                                            ; 8.3               ;
-; RESET                                                                        ; digitTimer_2:timer|digitTimer:ones|borrow_up,I/O ; 5.7               ;
-; CLOCK,I/O                                                                    ; CLOCK                                            ; 5.0               ;
-; RESET                                                                        ; RESET                                            ; 4.8               ;
-; I/O                                                                          ; secTimer:timer_clk|timer_1ms:timer|pulse_1ms     ; 4.4               ;
-; RESET,I/O                                                                    ; CLOCK                                            ; 3.3               ;
-; RESET,access:acc_ctl|reconf,secTimer:timer_clk|cnt1000:counter|pulse_sec,I/O ; RESET                                            ; 3.3               ;
-; access:acc_ctl|reconf                                                        ; digitTimer_2:timer|digitTimer:ones|borrow_up     ; 3.1               ;
-; RESET,access:acc_ctl|reconf,digitTimer_2:timer|digitTimer:ones|borrow_up,I/O ; secTimer:timer_clk|cnt1000:counter|pulse_sec     ; 2.3               ;
-; RESET                                                                        ; secTimer:timer_clk|cnt1000:counter|pulse_sec     ; 2.2               ;
-; I/O                                                                          ; RESET                                            ; 1.3               ;
+; CLOCK,access:acc_ctl|reconf,secTimer:timer_clk|cnt1000:counter|pulse_sec,I/O ; secTimer:timer_clk|cnt1000:counter|pulse_sec     ; 19.2              ;
+; CLOCK,access:acc_ctl|reconf,digitTimer_2:timer|digitTimer:ones|borrow_up,I/O ; digitTimer_2:timer|digitTimer:ones|borrow_up     ; 16.2              ;
+; CLOCK                                                                        ; CLOCK                                            ; 10.6              ;
+; CLOCK                                                                        ; secTimer:timer_clk|cnt1000:counter|pulse_sec,I/O ; 7.4               ;
+; CLOCK,access:acc_ctl|reconf,secTimer:timer_clk|cnt1000:counter|pulse_sec,I/O ; CLOCK                                            ; 6.4               ;
+; CLOCK                                                                        ; digitTimer_2:timer|digitTimer:ones|borrow_up,I/O ; 4.4               ;
+; access:acc_ctl|reconf                                                        ; digitTimer_2:timer|digitTimer:ones|borrow_up     ; 2.7               ;
+; CLOCK,access:acc_ctl|reconf,digitTimer_2:timer|digitTimer:ones|borrow_up,I/O ; secTimer:timer_clk|cnt1000:counter|pulse_sec     ; 2.3               ;
+; CLOCK                                                                        ; secTimer:timer_clk|cnt1000:counter|pulse_sec     ; 1.7               ;
 +------------------------------------------------------------------------------+--------------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1881,86 +1880,41 @@ This will disable optimization of problematic paths and expose them for further 
 +----------------------------------------------------------+-------------------------------------------------------+-------------------+
 ; Source Register                                          ; Destination Register                                  ; Delay Added in ns ;
 +----------------------------------------------------------+-------------------------------------------------------+-------------------+
-; access:acc_ctl|reconf                                    ; digitTimer_2:timer|digitTimer:ones|count[2]~_emulated ; 3.549             ;
-; RESET                                                    ; secTimer:timer_clk|cnt1000:counter|pulse_sec          ; 3.224             ;
-; acc_sel                                                  ; bshaper:acc_button|currentstate.Init                  ; 1.496             ;
-; bshaper:acc_button|currentstate.Init                     ; bshaper:acc_button|currentstate.Edge                  ; 1.496             ;
-; bshaper:acc_button|currentstate.Edge                     ; bshaper:acc_button|currentstate.Init                  ; 1.496             ;
-; digitTimer_2:timer|digitTimer:ones|count[3]~_emulated    ; digitTimer_2:timer|digitTimer:ones|count[2]~_emulated ; 1.467             ;
-; digitTimer_2:timer|digitTimer:ones|count[3]~13           ; digitTimer_2:timer|digitTimer:ones|count[2]~_emulated ; 1.467             ;
-; time_def_ones[3]                                         ; digitTimer_2:timer|digitTimer:ones|count[2]~_emulated ; 1.467             ;
-; digitTimer_2:timer|digitTimer:tens|count[0]~1            ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.459             ;
-; digitTimer_2:timer|digitTimer:tens|count[0]~_emulated    ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.459             ;
-; time_def_tens[3]                                         ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.459             ;
-; time_def_tens[0]                                         ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.459             ;
-; time_def_tens[1]                                         ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.459             ;
-; time_def_tens[2]                                         ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.459             ;
-; digitTimer_2:timer|digitTimer:ones|count[1]~5            ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.456             ;
-; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated    ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.456             ;
-; time_def_ones[1]                                         ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.456             ;
-; digitTimer_2:timer|digitTimer:tens|count[1]~5            ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.441             ;
-; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated    ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.441             ;
-; digitTimer_2:timer|digitTimer:ones|count[0]~_emulated    ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.433             ;
-; digitTimer_2:timer|digitTimer:ones|count[0]~1            ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.433             ;
-; time_def_ones[0]                                         ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.433             ;
-; time_def_ones[2]                                         ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.433             ;
-; digitTimer_2:timer|digitTimer:tens|count[3]~13           ; digitTimer_2:timer|digitTimer:tens|count[3]~_emulated ; 1.427             ;
-; digitTimer_2:timer|digitTimer:tens|count[3]~_emulated    ; digitTimer_2:timer|digitTimer:tens|count[3]~_emulated ; 1.427             ;
-; digitTimer_2:timer|digitTimer:ones|count[2]~9            ; digitTimer_2:timer|digitTimer:ones|count[2]~_emulated ; 1.389             ;
-; digitTimer_2:timer|digitTimer:ones|count[2]~_emulated    ; digitTimer_2:timer|digitTimer:ones|count[2]~_emulated ; 1.389             ;
-; digitTimer_2:timer|digitTimer:tens|count[2]~9            ; digitTimer_2:timer|digitTimer:tens|count[2]~_emulated ; 1.367             ;
-; digitTimer_2:timer|digitTimer:tens|count[2]~_emulated    ; digitTimer_2:timer|digitTimer:tens|count[2]~_emulated ; 1.367             ;
-; secTimer:timer_clk|cnt1000:counter|cnt[7]                ; secTimer:timer_clk|cnt1000:counter|cnt[9]             ; 1.181             ;
-; secTimer:timer_clk|cnt1000:counter|cnt[6]                ; secTimer:timer_clk|cnt1000:counter|cnt[9]             ; 1.181             ;
-; secTimer:timer_clk|cnt1000:counter|cnt[5]                ; secTimer:timer_clk|cnt1000:counter|cnt[9]             ; 1.181             ;
-; secTimer:timer_clk|cnt1000:counter|cnt[4]                ; secTimer:timer_clk|cnt1000:counter|cnt[9]             ; 1.181             ;
-; secTimer:timer_clk|cnt1000:counter|cnt[3]                ; secTimer:timer_clk|cnt1000:counter|cnt[9]             ; 1.181             ;
-; secTimer:timer_clk|cnt1000:counter|cnt[2]                ; secTimer:timer_clk|cnt1000:counter|cnt[9]             ; 1.181             ;
-; secTimer:timer_clk|cnt1000:counter|cnt[1]                ; secTimer:timer_clk|cnt1000:counter|cnt[9]             ; 1.181             ;
-; secTimer:timer_clk|cnt1000:counter|cnt[8]                ; secTimer:timer_clk|cnt1000:counter|cnt[9]             ; 1.181             ;
-; secTimer:timer_clk|cnt1000:counter|cnt[9]                ; secTimer:timer_clk|cnt1000:counter|cnt[9]             ; 1.181             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[30]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[29]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[28]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[27]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[26]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[25]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[24]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[23]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[22]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[21]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[20]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[19]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[18]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[17]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[16]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[15]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[14]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[13]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[12]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[11]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[10]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[9]                ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[8]                ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[7]                ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[6]                ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[5]                ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[4]                ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[3]                ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[2]                ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[1]                ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; secTimer:timer_clk|timer_1ms:timer|cnt[31]               ; secTimer:timer_clk|timer_1ms:timer|cnt[31]            ; 1.087             ;
-; access:acc_ctl|enable                                    ; secTimer:timer_clk|timer_1ms:timer|pulse_1ms          ; 0.980             ;
-; digitTimer_2:timer|digitTimer:ones|noborrow_dn~1         ; access:acc_ctl|reconf                                 ; 0.911             ;
-; digitTimer_2:timer|digitTimer:ones|noborrow_dn~_emulated ; access:acc_ctl|reconf                                 ; 0.911             ;
-; digitTimer_2:timer|digitTimer:tens|noborrow_dn~_emulated ; digitTimer_2:timer|digitTimer:ones|count[0]~_emulated ; 0.825             ;
-; digitTimer_2:timer|digitTimer:tens|noborrow_dn~1         ; digitTimer_2:timer|digitTimer:ones|count[0]~_emulated ; 0.825             ;
-; access:acc_ctl|currentstate[1]                           ; access:acc_ctl|reconf                                 ; 0.678             ;
-; access:acc_ctl|currentstate[2]                           ; access:acc_ctl|reconf                                 ; 0.678             ;
-; CLOCK                                                    ; access:acc_ctl|pass_red                               ; 0.629             ;
-; access:acc_ctl|currentstate[0]                           ; access:acc_ctl|pass_red                               ; 0.315             ;
+; access:acc_ctl|reconf                                    ; access:acc_ctl|reconf                                 ; 4.090             ;
+; access:acc_ctl|currentstate[1]                           ; access:acc_ctl|reconf                                 ; 1.889             ;
+; access:acc_ctl|currentstate[2]                           ; access:acc_ctl|reconf                                 ; 1.889             ;
+; bshaper:acc_button|currentstate.Edge                     ; access:acc_ctl|reconf                                 ; 1.889             ;
+; digitTimer_2:timer|digitTimer:ones|count[3]~_emulated    ; digitTimer_2:timer|digitTimer:ones|count[2]~_emulated ; 1.527             ;
+; digitTimer_2:timer|digitTimer:ones|count[3]~13           ; digitTimer_2:timer|digitTimer:ones|count[2]~_emulated ; 1.527             ;
+; time_def_ones[3]                                         ; digitTimer_2:timer|digitTimer:ones|count[2]~_emulated ; 1.527             ;
+; digitTimer_2:timer|digitTimer:ones|count[0]~_emulated    ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.520             ;
+; digitTimer_2:timer|digitTimer:ones|count[0]~1            ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.520             ;
+; time_def_ones[0]                                         ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.520             ;
+; time_def_ones[1]                                         ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.520             ;
+; time_def_ones[2]                                         ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.520             ;
+; digitTimer_2:timer|digitTimer:ones|count[1]~5            ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.519             ;
+; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated    ; digitTimer_2:timer|digitTimer:ones|count[1]~_emulated ; 1.519             ;
+; digitTimer_2:timer|digitTimer:ones|noborrow_dn~1         ; access:acc_ctl|pass_green                             ; 1.510             ;
+; digitTimer_2:timer|digitTimer:ones|noborrow_dn~_emulated ; access:acc_ctl|pass_green                             ; 1.510             ;
+; digitTimer_2:timer|digitTimer:ones|count[2]~9            ; digitTimer_2:timer|digitTimer:ones|count[2]~_emulated ; 1.453             ;
+; digitTimer_2:timer|digitTimer:ones|count[2]~_emulated    ; digitTimer_2:timer|digitTimer:ones|count[2]~_emulated ; 1.453             ;
+; digitTimer_2:timer|digitTimer:tens|count[0]~1            ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.436             ;
+; digitTimer_2:timer|digitTimer:tens|count[0]~_emulated    ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.436             ;
+; digitTimer_2:timer|digitTimer:tens|count[1]~5            ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.436             ;
+; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated    ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.436             ;
+; time_def_tens[3]                                         ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.436             ;
+; time_def_tens[0]                                         ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.436             ;
+; time_def_tens[1]                                         ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.436             ;
+; time_def_tens[2]                                         ; digitTimer_2:timer|digitTimer:tens|count[1]~_emulated ; 1.436             ;
+; digitTimer_2:timer|digitTimer:tens|count[3]~13           ; digitTimer_2:timer|digitTimer:tens|count[3]~_emulated ; 1.428             ;
+; digitTimer_2:timer|digitTimer:tens|count[3]~_emulated    ; digitTimer_2:timer|digitTimer:tens|count[3]~_emulated ; 1.428             ;
+; digitTimer_2:timer|digitTimer:tens|count[2]~9            ; digitTimer_2:timer|digitTimer:tens|count[2]~_emulated ; 1.067             ;
+; digitTimer_2:timer|digitTimer:tens|count[2]~_emulated    ; digitTimer_2:timer|digitTimer:tens|count[2]~_emulated ; 1.067             ;
+; digitTimer_2:timer|digitTimer:tens|noborrow_dn~_emulated ; digitTimer_2:timer|digitTimer:ones|count[0]~_emulated ; 0.856             ;
+; digitTimer_2:timer|digitTimer:tens|noborrow_dn~1         ; digitTimer_2:timer|digitTimer:ones|count[0]~_emulated ; 0.856             ;
+; access:acc_ctl|currentstate[0]                           ; access:acc_ctl|pass_red                               ; 0.593             ;
 +----------------------------------------------------------+-------------------------------------------------------+-------------------+
-Note: This table only shows the top 78 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 33 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1999,15 +1953,6 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node CLOCK~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 20
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
-    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node access:acc_ctl|pass_green File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v Line: 31
-        Info (176357): Destination node access:acc_ctl|currentstate[2] File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v Line: 48
-        Info (176357): Destination node access:acc_ctl|currentstate[1] File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v Line: 48
-        Info (176357): Destination node access:acc_ctl|currentstate[0] File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v Line: 48
-        Info (176357): Destination node access:acc_ctl|reconf File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v Line: 29
-        Info (176357): Destination node access:acc_ctl|pass_OK File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v Line: 42
-        Info (176357): Destination node access:acc_ctl|enable File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v Line: 29
-        Info (176357): Destination node access:acc_ctl|pass_red~2 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v Line: 31
 Info (176353): Automatically promoted node secTimer:timer_clk|timer_1ms:timer|pulse_1ms  File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/timer_1ms.v Line: 9
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176353): Automatically promoted node access:acc_ctl|reconf  File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v Line: 29
@@ -2022,7 +1967,7 @@ Info (176353): Automatically promoted node access:acc_ctl|reconf  File: C:/intel
         Info (176357): Destination node digitTimer_2:timer|digitTimer:ones|count[2]~10 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 56
         Info (176357): Destination node digitTimer_2:timer|digitTimer:ones|count[3]~14 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 56
         Info (176357): Destination node digitTimer_2:timer|digitTimer:ones|noborrow_dn~2 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 29
-        Info (176357): Destination node access:acc_ctl|Mux5~0 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v Line: 60
+        Info (176357): Destination node access:acc_ctl|Mux5~0 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v Line: 61
         Info (176358): Non-global destination nodes limited to 10 nodes
 Info (176353): Automatically promoted node digitTimer_2:timer|digitTimer:ones|borrow_up  File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 29
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
@@ -2057,18 +2002,18 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.43 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.35 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Info (144001): Generated suppressed messages file C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_files/Lab3_BUCUR_S.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6310 megabytes
-    Info: Processing ended: Fri Mar 06 03:45:54 2020
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:37
+    Info: Peak virtual memory: 6307 megabytes
+    Info: Processing ended: Sat Mar 07 02:36:38 2020
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:36
 
 
 +----------------------------+
