@@ -11,16 +11,20 @@ module access_tb ();
 
     reg clk, rst;
     reg [3:0] passnum;
-    reg load_p1, load_p2, p_enter;
-    wire load1_out, load2_out;
+    reg load_p1, load_R, p_enter;
+    reg timeout;
+    wire enable, reconf;
+    wire load1_out, loadR_out;
     wire passr, passg;
     wire [2:0] state_acc;
 
     access testmod(
-        rst, clk,
-        load_p1, load_p2,
+        clk, rst,
+        load_p1, load_R,
         passnum, p_enter,
-        load1_out, load2_out,
+        timeout,
+        enable, reconf,
+        load1_out, loadR_out,
         passr, passg, state_acc
     );
 
@@ -33,8 +37,9 @@ module access_tb ();
     initial begin
             rst = 1;
             load_p1 = 1;
-            load_p2 = 1;
+            load_R = 0;
             p_enter = 0;
+            timeout = 0;
         // Let FSM assume 1st state and show load_px is blocked (output loadx_out 0)
         @(posedge clk);
         @(posedge clk);
@@ -100,12 +105,12 @@ module access_tb ();
         @(posedge clk);
         @(posedge clk);
 
-        // Test 3: Logout and re-enter correct sequence
-            p_enter = 1;
-        @(posedge clk);
-            p_enter = 0;
+        // Test 3: reset, log in and attempt to start game
+            rst = 0;
         @(posedge clk);
         @(posedge clk);
+        @(posedge clk);
+            rst = 1;
 
         passnum = 3;
             p_enter = 1;
@@ -135,6 +140,28 @@ module access_tb ();
         @(posedge clk);
         @(posedge clk);
 
+            p_enter = 1;
+        @(posedge clk);
+            p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
+
+            p_enter = 1;
+        @(posedge clk);
+            p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+            timeout = 1;
+        @(posedge clk);
+        @(posedge clk);
+            timeout = 0;
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
         // reset
             rst = 0;
         @(posedge clk);

@@ -18,7 +18,7 @@ module cnt1000(rst, cnt_up, pulse_sec);
             pulse_sec <= 0;
         end
         else begin
-            if(cnt >= 10)
+            if(cnt >= 1000)
             begin
                 cnt <= 0;
                 pulse_sec <= 1;

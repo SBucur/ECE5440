@@ -1,5 +1,5 @@
 Archive Project report for Lab3_BUCUR_S
-Fri Feb 21 19:31:25 2020
+Sat Mar 07 19:10:52 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -35,7 +35,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Fri Feb 21 19:31:25 2020 ;
+; Archive Project Status ; Successful - Sat Mar 07 19:10:52 2020 ;
 ; Revision Name          ; Lab3_BUCUR_S                          ;
 ; Top-level Entity Name  ; Lab3_BUCUR_S                          ;
 ; Family                 ; Cyclone IV E                          ;
@@ -59,10 +59,10 @@ Info: ----------------------------------------------------------
 Info: Generated report 'Lab3_BUCUR_S.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4842 megabytes
-    Info: Processing ended: Fri Feb 21 19:31:25 2020
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Sat Mar 07 19:10:52 2020
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +--------------------------------------------------------------+
@@ -76,9 +76,14 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; ../src/button_press.v                                        ;
 ; ../src/check.v                                               ;
 ; ../src/cnt4.v                                                ;
+; ../src/cnt1000.v                                             ;
 ; ../src/decoder7.v                                            ;
+; ../src/digitTimer.v                                          ;
+; ../src/digitTimer_2.v                                        ;
 ; ../src/Lab3_BUCUR_S.v                                        ;
 ; ../src/loadreg.v                                             ;
+; ../src/secTimer.v                                            ;
+; ../src/timer_1ms.v                                           ;
 ; ../src/trng.v                                                ;
 ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v             ;
 ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/adder.v              ;
@@ -86,9 +91,14 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/button_press.v       ;
 ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/check.v              ;
 ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/cnt4.v               ;
+; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/cnt1000.v            ;
 ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/decoder7.v           ;
+; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v         ;
+; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer_2.v       ;
 ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v       ;
 ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/loadreg.v            ;
+; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/secTimer.v           ;
+; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/timer_1ms.v          ;
 ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/trng.v               ;
 ; c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf ;
 ; Lab3_BUCUR_S.qpf                                             ;

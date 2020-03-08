@@ -20,7 +20,7 @@ module timer_1ms(clk, rst, en, pulse_1ms);
         else begin
             if(en == 1'b1)
             begin
-                if(cnt >= 10)
+                if(cnt >= 50000)
                 begin
                     cnt <= 0;
                     pulse_1ms <= 1;

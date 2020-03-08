@@ -13,7 +13,7 @@ module Lab3_BUCUR_S(
     // outputs
     bot_digit, player_digit, sum_digit,
     sum_status, pass_r, pass_g,
-    ten_digit, one_digit,
+    ten_digit, one_digit, //acc_state,
     GND
     );
 

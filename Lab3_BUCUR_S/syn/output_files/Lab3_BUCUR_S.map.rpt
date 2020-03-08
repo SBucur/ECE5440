@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab3_BUCUR_S
-Fri Mar 06 03:45:28 2020
+Sat Mar 07 13:52:23 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -16,14 +16,14 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   8. State Machine - |Lab3_BUCUR_S|bshaper:acc_button|currentstate
   9. State Machine - |Lab3_BUCUR_S|bshaper:player_button|currentstate
  10. Registers Removed During Synthesis
- 11. Removed Registers Triggering Further Register Optimizations
- 12. General Register Statistics
- 13. Inverted Register Statistics
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Parameter Settings for User Entity Instance: loadreg:player_num
- 16. Parameter Settings for User Entity Instance: access:acc_ctl
- 17. Parameter Settings for User Entity Instance: bshaper:player_button
- 18. Parameter Settings for User Entity Instance: bshaper:acc_button
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: loadreg:player_num
+ 15. Parameter Settings for User Entity Instance: access:acc_ctl
+ 16. Parameter Settings for User Entity Instance: bshaper:player_button
+ 17. Parameter Settings for User Entity Instance: bshaper:acc_button
+ 18. Port Connectivity Checks: "digitTimer_2:timer|digitTimer:ones"
  19. Port Connectivity Checks: "access:acc_ctl"
  20. Post-Synthesis Netlist Statistics for Top Partition
  21. Elapsed Time Per Partition
@@ -53,15 +53,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Mar 06 03:45:28 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 07 13:52:22 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab3_BUCUR_S                                ;
 ; Top-level Entity Name              ; Lab3_BUCUR_S                                ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 147                                         ;
-;     Total combinational functions  ; 147                                         ;
-;     Dedicated logic registers      ; 66                                          ;
-; Total registers                    ; 66                                          ;
+; Total logic elements               ; 182                                         ;
+;     Total combinational functions  ; 182                                         ;
+;     Dedicated logic registers      ; 77                                          ;
+; Total registers                    ; 77                                          ;
 ; Total pins                         ; 61                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -161,16 +161,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -201,20 +200,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 147         ;
+; Estimated Total logic elements              ; 182         ;
 ;                                             ;             ;
-; Total combinational functions               ; 147         ;
+; Total combinational functions               ; 182         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 75          ;
-;     -- 3 input functions                    ; 20          ;
-;     -- <=2 input functions                  ; 52          ;
+;     -- 4 input functions                    ; 90          ;
+;     -- 3 input functions                    ; 29          ;
+;     -- <=2 input functions                  ; 63          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 107         ;
-;     -- arithmetic mode                      ; 40          ;
+;     -- normal mode                          ; 136         ;
+;     -- arithmetic mode                      ; 46          ;
 ;                                             ;             ;
-; Total registers                             ; 66          ;
-;     -- Dedicated logic registers            ; 66          ;
+; Total registers                             ; 77          ;
+;     -- Dedicated logic registers            ; 77          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 61          ;
@@ -222,9 +221,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; CLOCK~input ;
-; Maximum fan-out                             ; 43          ;
-; Total fan-out                               ; 766         ;
-; Average fan-out                             ; 2.29        ;
+; Maximum fan-out                             ; 55          ;
+; Total fan-out                               ; 928         ;
+; Average fan-out                             ; 2.44        ;
 +---------------------------------------------+-------------+
 
 
@@ -233,17 +232,26 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                              ; Entity Name  ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+--------------+
-; |Lab3_BUCUR_S              ; 147 (0)             ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 61   ; 0            ; |Lab3_BUCUR_S                                    ; Lab3_BUCUR_S ; work         ;
-;    |access:acc_ctl|        ; 27 (27)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|access:acc_ctl                     ; access       ; work         ;
+; |Lab3_BUCUR_S              ; 182 (0)             ; 77 (0)                    ; 0           ; 0            ; 0       ; 0         ; 61   ; 0            ; |Lab3_BUCUR_S                                    ; Lab3_BUCUR_S ; work         ;
+;    |access:acc_ctl|        ; 30 (30)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|access:acc_ctl                     ; access       ; work         ;
+;    |adder:player_sum|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|adder:player_sum                   ; adder        ; work         ;
 ;    |bshaper:acc_button|    ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|bshaper:acc_button                 ; bshaper      ; work         ;
+;    |bshaper:player_button| ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|bshaper:player_button              ; bshaper      ; work         ;
+;    |check:sum_result|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|check:sum_result                   ; check        ; work         ;
+;    |decoder7:bot_dec|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|decoder7:bot_dec                   ; decoder7     ; work         ;
 ;    |decoder7:one_dec|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|decoder7:one_dec                   ; decoder7     ; work         ;
+;    |decoder7:player_dec|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|decoder7:player_dec                ; decoder7     ; work         ;
+;    |decoder7:sum_dec|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|decoder7:sum_dec                   ; decoder7     ; work         ;
 ;    |decoder7:ten_dec|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|decoder7:ten_dec                   ; decoder7     ; work         ;
-;    |digitTimer_2:timer|    ; 45 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|digitTimer_2:timer                 ; digitTimer_2 ; work         ;
-;       |digitTimer:ones|    ; 23 (23)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:ones ; digitTimer   ; work         ;
+;    |digitTimer_2:timer|    ; 41 (1)              ; 11 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|digitTimer_2:timer                 ; digitTimer_2 ; work         ;
+;       |digitTimer:ones|    ; 18 (18)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:ones ; digitTimer   ; work         ;
 ;       |digitTimer:tens|    ; 22 (22)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:tens ; digitTimer   ; work         ;
-;    |secTimer:timer_clk|    ; 59 (0)              ; 44 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|secTimer:timer_clk                 ; secTimer     ; work         ;
+;    |loadreg:player_num|    ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|loadreg:player_num                 ; loadreg      ; work         ;
+;    |secTimer:timer_clk|    ; 58 (0)              ; 44 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|secTimer:timer_clk                 ; secTimer     ; work         ;
 ;       |cnt1000:counter|    ; 14 (14)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|secTimer:timer_clk|cnt1000:counter ; cnt1000      ; work         ;
-;       |timer_1ms:timer|    ; 45 (45)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|secTimer:timer_clk|timer_1ms:timer ; timer_1ms    ; work         ;
+;       |timer_1ms:timer|    ; 44 (44)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|secTimer:timer_clk|timer_1ms:timer ; timer_1ms    ; work         ;
+;    |trng:pbot|             ; 4 (0)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|trng:pbot                          ; trng         ; work         ;
+;       |cnt4:counter|       ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|trng:pbot|cnt4:counter             ; cnt4         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -272,33 +280,15 @@ Encoding Type:  One-Hot
 +-------------------+-------------------+-------------------+-------------------+
 
 
-+----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                               ;
-+-----------------------------------------+----------------------------------------+
-; Register name                           ; Reason for Removal                     ;
-+-----------------------------------------+----------------------------------------+
-; access:acc_ctl|loadreg_R_out            ; Stuck at VCC due to stuck port data_in ;
-; access:acc_ctl|loadreg_1_out            ; Stuck at GND due to stuck port data_in ;
-; trng:pbot|cnt4:counter|count[0..3]      ; Stuck at GND due to stuck port data_in ;
-; bshaper:acc_button|currentstate.Wait    ; Lost fanout                            ;
-; bshaper:player_button|currentstate.Edge ; Lost fanout                            ;
-; bshaper:player_button|currentstate.Wait ; Lost fanout                            ;
-; bshaper:player_button|currentstate.Init ; Lost fanout                            ;
-; loadreg:player_num|data_out[0..3]       ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 14  ;                                        ;
-+-----------------------------------------+----------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                  ;
-+------------------------------+---------------------------+-------------------------------------------------------------------+
-; Register name                ; Reason for Removal        ; Registers Removed due to This Register                            ;
-+------------------------------+---------------------------+-------------------------------------------------------------------+
-; access:acc_ctl|loadreg_R_out ; Stuck at VCC              ; trng:pbot|cnt4:counter|count[0], trng:pbot|cnt4:counter|count[1], ;
-;                              ; due to stuck port data_in ; trng:pbot|cnt4:counter|count[2], trng:pbot|cnt4:counter|count[3]  ;
-; access:acc_ctl|loadreg_1_out ; Stuck at GND              ; loadreg:player_num|data_out[0], loadreg:player_num|data_out[1],   ;
-;                              ; due to stuck port data_in ; loadreg:player_num|data_out[2], loadreg:player_num|data_out[3]    ;
-+------------------------------+---------------------------+-------------------------------------------------------------------+
++--------------------------------------------------------------+
+; Registers Removed During Synthesis                           ;
++-----------------------------------------+--------------------+
+; Register name                           ; Reason for Removal ;
++-----------------------------------------+--------------------+
+; bshaper:acc_button|currentstate.Wait    ; Lost fanout        ;
+; bshaper:player_button|currentstate.Wait ; Lost fanout        ;
+; Total Number of Removed Registers = 2   ;                    ;
++-----------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -306,12 +296,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 66    ;
-; Number of registers using Synchronous Clear  ; 48    ;
-; Number of registers using Synchronous Load   ; 2     ;
-; Number of registers using Asynchronous Clear ; 12    ;
+; Total registers                              ; 77    ;
+; Number of registers using Synchronous Clear  ; 53    ;
+; Number of registers using Synchronous Load   ; 3     ;
+; Number of registers using Asynchronous Clear ; 11    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Clock Enable       ; 36    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -333,10 +323,10 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Lab3_BUCUR_S|loadreg:player_num|data_out[2]              ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Lab3_BUCUR_S|secTimer:timer_clk|cnt1000:counter|cnt[9]   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Lab3_BUCUR_S|secTimer:timer_clk|timer_1ms:timer|cnt[24]  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:tens|count[3] ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:ones|count[1] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Lab3_BUCUR_S|secTimer:timer_clk|cnt1000:counter|cnt[7]   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Lab3_BUCUR_S|secTimer:timer_clk|timer_1ms:timer|cnt[23]  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:tens|count[0] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:ones|count[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 
 
@@ -391,6 +381,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "digitTimer_2:timer|digitTimer:ones"                                                        ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; noborrow_dn ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "access:acc_ctl"                                                                             ;
 +--------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -406,24 +405,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 61                          ;
-; cycloneiii_ff         ; 66                          ;
-;     CLR               ; 12                          ;
+; cycloneiii_ff         ; 77                          ;
+;     CLR               ; 11                          ;
+;     ENA               ; 4                           ;
 ;     ENA SCLR          ; 32                          ;
-;     SCLR              ; 16                          ;
-;     SLD               ; 2                           ;
-;     plain             ; 4                           ;
-; cycloneiii_lcell_comb ; 152                         ;
-;     arith             ; 40                          ;
-;         2 data inputs ; 40                          ;
-;     normal            ; 112                         ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 20                          ;
-;         4 data inputs ; 75                          ;
+;     SCLR              ; 21                          ;
+;     SLD               ; 3                           ;
+;     plain             ; 6                           ;
+; cycloneiii_lcell_comb ; 189                         ;
+;     arith             ; 46                          ;
+;         2 data inputs ; 42                          ;
+;         3 data inputs ; 4                           ;
+;     normal            ; 143                         ;
+;         1 data inputs ; 10                          ;
+;         2 data inputs ; 18                          ;
+;         3 data inputs ; 25                          ;
+;         4 data inputs ; 90                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 3.02                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.20                        ;
 +-----------------------+-----------------------------+
 
 
@@ -432,7 +432,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -442,10 +442,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Mar 06 03:45:17 2020
+    Info: Processing started: Sat Mar 07 13:52:07 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3_BUCUR_S -c Lab3_BUCUR_S
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/timer_1ms.v
     Info (12023): Found entity 1: timer_1ms File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/timer_1ms.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/sectimer.v
@@ -456,7 +456,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file /intelf
     Info (12023): Found entity 1: digitTimer File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/cnt1000.v
     Info (12023): Found entity 1: cnt1000 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/cnt1000.v Line: 7
-Warning (10463): Verilog HDL Declaration warning at trng.v(17): "rand" is SystemVerilog-2005 keyword File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/trng.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/trng.v
     Info (12023): Found entity 1: trng File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/trng.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/loadreg.v
@@ -483,15 +482,13 @@ Info (12128): Elaborating entity "adder" for hierarchy "adder:player_sum" File: 
 Info (12128): Elaborating entity "check" for hierarchy "check:sum_result" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 43
 Info (12128): Elaborating entity "trng" for hierarchy "trng:pbot" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 44
 Info (12128): Elaborating entity "cnt4" for hierarchy "trng:pbot|cnt4:counter" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/trng.v Line: 20
-Warning (10230): Verilog HDL assignment warning at cnt4.v(26): truncated value with size 32 to match size of target (4) File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/cnt4.v Line: 26
 Info (12128): Elaborating entity "loadreg" for hierarchy "loadreg:player_num" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 46
 Info (12128): Elaborating entity "access" for hierarchy "access:acc_ctl" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 55
 Info (12128): Elaborating entity "bshaper" for hierarchy "bshaper:player_button" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 57
 Info (12128): Elaborating entity "digitTimer_2" for hierarchy "digitTimer_2:timer" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 64
-Info (12128): Elaborating entity "digitTimer" for hierarchy "digitTimer_2:timer|digitTimer:tens" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer_2.v Line: 31
+Info (12128): Elaborating entity "digitTimer" for hierarchy "digitTimer_2:timer|digitTimer:tens" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer_2.v Line: 34
 Info (12128): Elaborating entity "secTimer" for hierarchy "secTimer:timer_clk" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 65
 Info (12128): Elaborating entity "cnt1000" for hierarchy "secTimer:timer_clk|cnt1000:counter" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/secTimer.v Line: 11
-Warning (10230): Verilog HDL assignment warning at cnt1000.v(28): truncated value with size 32 to match size of target (10) File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/cnt1000.v Line: 28
 Info (12128): Elaborating entity "timer_1ms" for hierarchy "secTimer:timer_clk|timer_1ms:timer" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/secTimer.v Line: 12
 Info (13000): Registers with preset signals will power-up high File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 29
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
@@ -504,51 +501,19 @@ Warning (13004): Presettable and clearable registers converted to equivalent cir
     Warning (13310): Register "digitTimer_2:timer|digitTimer:ones|count[1]" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:ones|count[1]~_emulated" and latch "digitTimer_2:timer|digitTimer:ones|count[1]~5" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 56
     Warning (13310): Register "digitTimer_2:timer|digitTimer:ones|count[2]" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:ones|count[2]~_emulated" and latch "digitTimer_2:timer|digitTimer:ones|count[2]~9" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 56
     Warning (13310): Register "digitTimer_2:timer|digitTimer:ones|count[3]" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:ones|count[3]~_emulated" and latch "digitTimer_2:timer|digitTimer:ones|count[3]~13" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 56
-    Warning (13310): Register "digitTimer_2:timer|digitTimer:ones|noborrow_dn" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:ones|noborrow_dn~_emulated" and latch "digitTimer_2:timer|digitTimer:ones|noborrow_dn~1" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 29
     Warning (13310): Register "digitTimer_2:timer|digitTimer:tens|noborrow_dn" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:tens|noborrow_dn~_emulated" and latch "digitTimer_2:timer|digitTimer:tens|noborrow_dn~1" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 29
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "bot_digit[0]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "bot_digit[1]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "bot_digit[2]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "bot_digit[3]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "bot_digit[4]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "bot_digit[5]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "bot_digit[6]" is stuck at VCC File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "player_digit[0]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "player_digit[1]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "player_digit[2]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "player_digit[3]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "player_digit[4]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "player_digit[5]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "player_digit[6]" is stuck at VCC File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "sum_digit[0]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "sum_digit[1]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "sum_digit[2]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "sum_digit[3]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "sum_digit[4]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "sum_digit[5]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "sum_digit[6]" is stuck at VCC File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 25
-    Warning (13410): Pin "sum_status[0]" is stuck at GND File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 26
-    Warning (13410): Pin "sum_status[1]" is stuck at VCC File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 26
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 4 registers lost all their fanouts during netlist optimizations.
+Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 6 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "bot_sel" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 23
-    Warning (15610): No output dependent on input pin "player_sel" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 23
-    Warning (15610): No output dependent on input pin "player_data[0]" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 21
-    Warning (15610): No output dependent on input pin "player_data[1]" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 21
-    Warning (15610): No output dependent on input pin "player_data[2]" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 21
-    Warning (15610): No output dependent on input pin "player_data[3]" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 21
-Info (21057): Implemented 210 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 245 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 40 output pins
-    Info (21061): Implemented 149 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
-    Info: Peak virtual memory: 4830 megabytes
-    Info: Processing ended: Fri Mar 06 03:45:28 2020
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:23
+    Info (21061): Implemented 184 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4765 megabytes
+    Info: Processing ended: Sat Mar 07 13:52:23 2020
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:26
 
 
