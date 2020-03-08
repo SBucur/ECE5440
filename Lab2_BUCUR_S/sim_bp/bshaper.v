@@ -1,58 +1,66 @@
 // ECE5440
 // Author: Stefan Bucur
-// button_shaper.v
+// bshaper.v
 // Decription: Changes the functionality of input buttons on the FPGA.
-//		Changes between Login mode and Game mode
-//		Two-Procedure FSM
+//      Changes between Login mode and Game mode
+//      Two-Procedure FSM
 
 // Button input is pulled up (active low)
-// FSM is based on Week 4 tutorial
 
-module button_press(
-	//inputs
-	button_in, CLK, RST,
-	//outputs
-	button_out
-	);
+module bshaper(
+    CLK, RST,
+    b_in, b_out
+    );
 
-	input button_in, CLK, RST;
-	output button_out;
-	reg button_out;
+    input b_in, CLK, RST;
+    output b_out;
+    reg b_out;
 
-	//FSM
-	reg [1:0] currentstate;
-	parameter Init = 2'b00, Edge = 2'b01, Wait = 2'b10;
+    //FSM
+    reg [1:0] currentstate, nextstate;
+    parameter Init = 2'b00, Edge = 2'b01, Wait = 2'b10;
 
-	// sequential logic: update state on rising clock edge
-	always @(posedge CLK) begin
-		if(RST == 0)
-		begin
-			currentstate <= Init;
-		end
-		else case (currentstate)
-			Init: begin
-				if (button_in == 0) begin currentstate <= Edge; end
-				if (button_in == 1) begin currentstate <= Init; end
-			end
-			Edge: begin
-				if (button_in == 0) begin currentstate <= Wait; end
-				if (button_in == 1) begin currentstate <= Wait; end
-			end
-			Wait: begin
-				if (button_in == 0) begin currentstate <= Wait; end
-				if (button_in == 1) begin currentstate <= Init; end
-			end
-			default: begin currentstate <= Init; end
-		endcase
-	end
+    //Update state
+    always @ (posedge CLK) begin
+        if(RST == 1'b0)
+        begin
+            currentstate <= Init;
+        end
+        else begin
+            currentstate <= nextstate;
+        end
+    end
 
-	// combinational logic: update output on state change
-	always @ (currentstate) begin
-		case (currentstate)
-			Init: begin button_out = 1'b0; end
-			Edge: begin button_out = 1'b1; end
-			Wait: begin button_out = 1'b0; end
-			default: begin button_out = 1'b0; end
-		endcase
-	end
+    always @ (currentstate, b_in) begin
+        case (currentstate)
+            Init: begin
+                b_out <= 1'b0;
+                if(b_in == 1'b1)
+                begin
+                    nextstate <= Init;
+                end
+                else begin
+                    nextstate <= Edge;
+                end
+            end
+            Edge: begin
+                b_out <= 1'b1;
+                nextstate <= Wait;
+            end
+            Wait: begin
+                b_out <= 1'b0;
+                if(b_in == 1'b1)
+                begin
+                    nextstate <= Init;
+                end
+                else begin
+                    nextstate <= Wait;
+                end
+            end
+            default: begin
+                nextstate <= Init;
+            end
+        endcase
+    end
+
 endmodule

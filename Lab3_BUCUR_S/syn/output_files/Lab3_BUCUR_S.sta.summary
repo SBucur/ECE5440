@@ -1,0 +1,245 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK'
+Slack : -4.130
+TNS   : -137.641
+
+Type  : Slow 1200mV 85C Model Setup 'RESET'
+Slack : -2.932
+TNS   : -20.172
+
+Type  : Slow 1200mV 85C Model Setup 'secTimer:timer_clk|timer_1ms:timer|pulse_1ms'
+Slack : -2.411
+TNS   : -25.019
+
+Type  : Slow 1200mV 85C Model Setup 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : -2.409
+TNS   : -13.774
+
+Type  : Slow 1200mV 85C Model Setup 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : -1.903
+TNS   : -11.055
+
+Type  : Slow 1200mV 85C Model Hold 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'RESET'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'secTimer:timer_clk|timer_1ms:timer|pulse_1ms'
+Slack : 0.458
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK'
+Slack : 0.654
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : 0.701
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : 0.111
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : -0.380
+TNS   : -2.279
+
+Type  : Slow 1200mV 85C Model Removal 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : -0.158
+TNS   : -0.948
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK'
+Slack : -3.000
+TNS   : -47.975
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RESET'
+Slack : -3.000
+TNS   : -13.280
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'secTimer:timer_clk|timer_1ms:timer|pulse_1ms'
+Slack : -1.285
+TNS   : -14.135
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : -1.285
+TNS   : -7.710
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : -1.285
+TNS   : -7.710
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'access:acc_ctl|reconf'
+Slack : 0.460
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK'
+Slack : -3.721
+TNS   : -123.851
+
+Type  : Slow 1200mV 0C Model Setup 'RESET'
+Slack : -2.495
+TNS   : -17.107
+
+Type  : Slow 1200mV 0C Model Setup 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : -2.152
+TNS   : -12.193
+
+Type  : Slow 1200mV 0C Model Setup 'secTimer:timer_clk|timer_1ms:timer|pulse_1ms'
+Slack : -2.134
+TNS   : -22.139
+
+Type  : Slow 1200mV 0C Model Setup 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : -1.691
+TNS   : -9.582
+
+Type  : Slow 1200mV 0C Model Hold 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : 0.280
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'RESET'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'secTimer:timer_clk|timer_1ms:timer|pulse_1ms'
+Slack : 0.519
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK'
+Slack : 0.598
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : 0.645
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : -0.349
+TNS   : -2.093
+
+Type  : Slow 1200mV 0C Model Removal 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : -0.157
+TNS   : -0.942
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK'
+Slack : -3.000
+TNS   : -47.975
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RESET'
+Slack : -3.000
+TNS   : -13.280
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'secTimer:timer_clk|timer_1ms:timer|pulse_1ms'
+Slack : -1.285
+TNS   : -14.135
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : -1.285
+TNS   : -7.710
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : -1.285
+TNS   : -7.710
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'access:acc_ctl|reconf'
+Slack : 0.468
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK'
+Slack : -1.545
+TNS   : -51.381
+
+Type  : Fast 1200mV 0C Model Setup 'RESET'
+Slack : -1.442
+TNS   : -9.542
+
+Type  : Fast 1200mV 0C Model Setup 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : -1.022
+TNS   : -5.794
+
+Type  : Fast 1200mV 0C Model Setup 'secTimer:timer_clk|timer_1ms:timer|pulse_1ms'
+Slack : -0.683
+TNS   : -7.405
+
+Type  : Fast 1200mV 0C Model Setup 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : -0.450
+TNS   : -2.490
+
+Type  : Fast 1200mV 0C Model Hold 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : 0.027
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'secTimer:timer_clk|timer_1ms:timer|pulse_1ms'
+Slack : 0.051
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK'
+Slack : 0.136
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'RESET'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : 0.272
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : 0.239
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : 0.511
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : -0.221
+TNS   : -1.326
+
+Type  : Fast 1200mV 0C Model Removal 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : -0.084
+TNS   : -0.504
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK'
+Slack : -3.000
+TNS   : -40.134
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RESET'
+Slack : -3.000
+TNS   : -11.976
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'secTimer:timer_clk|timer_1ms:timer|pulse_1ms'
+Slack : -1.000
+TNS   : -11.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'digitTimer_2:timer|digitTimer:ones|borrow_up'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'secTimer:timer_clk|cnt1000:counter|pulse_sec'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'access:acc_ctl|reconf'
+Slack : 0.402
+TNS   : 0.000
+
+------------------------------------------------------------

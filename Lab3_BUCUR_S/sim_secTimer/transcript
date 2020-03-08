@@ -1,0 +1,83 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_secTimer/Lab3_BUCUR_S_sim_secTimer.mpf
+# Loading project Lab3_BUCUR_S_sim_secTimer
+# Compile of timer_1ms.v was successful.
+# Compile of secTimer.v was successful.
+# Compile of cnt1000.v was successful.
+# Compile of timer_1s_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+# reading C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project Lab3_BUCUR_S
+# Compile of trng.v was successful.
+# Compile of access.v failed with 2 errors.
+# Compile of adder.v was successful.
+# Compile of bshaper.v was successful.
+# Compile of button_press.v was successful.
+# Compile of check.v was successful.
+# Compile of cnt4.v was successful.
+# Compile of cnt1000.v was successful.
+# Compile of decoder7.v was successful.
+# Compile of digitTimer.v was successful.
+# Compile of digitTimer_2.v failed with 1 errors.
+# Compile of Lab3_BUCUR_S.v was successful.
+# Compile of loadreg.v was successful.
+# Compile of secTimer.v was successful.
+# Compile of timer_1ms.v was successful.
+# 15 compiles, 2 failed with 3 errors.
+# Compile of access.v was successful.
+# Compile of digitTimer_2.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of trng.v was successful.
+# Compile of access.v was successful.
+# Compile of adder.v was successful.
+# Compile of bshaper.v was successful.
+# Compile of button_press.v was successful.
+# Compile of check.v was successful.
+# Compile of cnt4.v was successful.
+# Compile of cnt1000.v was successful.
+# Compile of decoder7.v was successful.
+# Compile of digitTimer.v was successful.
+# Compile of digitTimer_2.v failed with 1 errors.
+# Compile of Lab3_BUCUR_S.v was successful.
+# Compile of loadreg.v was successful.
+# Compile of secTimer.v was successful.
+# Compile of timer_1ms.v was successful.
+# 15 compiles, 1 failed with 1 error.
+# Compile of digitTimer_2.v failed with 2 errors.
+# Compile of trng.v was successful.
+# Compile of access.v was successful.
+# Compile of adder.v was successful.
+# Compile of bshaper.v was successful.
+# Compile of button_press.v was successful.
+# Compile of check.v was successful.
+# Compile of cnt4.v was successful.
+# Compile of cnt1000.v was successful.
+# Compile of decoder7.v was successful.
+# Compile of digitTimer.v was successful.
+# Compile of digitTimer_2.v was successful.
+# Compile of Lab3_BUCUR_S.v was successful.
+# Compile of loadreg.v was successful.
+# Compile of secTimer.v was successful.
+# Compile of timer_1ms.v was successful.
+# 15 compiles, 0 failed with no errors.
+# Compile of Lab3_BUCUR_S.v was successful.
+# Compile of trng.v was successful.
+# Compile of cnt4.v was successful.
+# Compile of cnt1000.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of trng.v was successful.
+# Compile of access.v was successful.
+# Compile of adder.v was successful.
+# Compile of bshaper.v was successful.
+# Compile of button_press.v was successful.
+# Compile of check.v was successful.
+# Compile of cnt4.v was successful.
+# Compile of cnt1000.v was successful.
+# Compile of decoder7.v was successful.
+# Compile of digitTimer.v was successful.
+# Compile of digitTimer_2.v was successful.
+# Compile of Lab3_BUCUR_S.v was successful.
+# Compile of loadreg.v was successful.
+# Compile of secTimer.v was successful.
+# Compile of timer_1ms.v was successful.
+# 15 compiles, 0 failed with no errors.
