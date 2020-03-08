@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EPCS64) Path("C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_files/") File("Lab3_BUCUR_S.pof") MfrSpec(OpMask(1) Child_OpMask(1 1));
+		Device PartName(EPCS64) Path("C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/syn/output_files/") File("Lab3_BUCUR_S.pof") MfrSpec(OpMask(3) Child_OpMask(1 3));
 
 ChainEnd;
 

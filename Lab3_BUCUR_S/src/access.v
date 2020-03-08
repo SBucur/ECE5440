@@ -181,8 +181,8 @@ module access (
                     begin
                         pass_red <= 1'b0;
                         pass_green <= 1'b1;
-                        loadreg_1_out <= loadreg_1_out;
-                        loadreg_R_out <= loadreg_R_out;
+                        loadreg_1_out <= loadreg_1_in;
+                        loadreg_R_out <= loadreg_R_in;
                         enable <= 1'b1;
                         reconf <= 1'b0;
                         currentstate <= PLAY;

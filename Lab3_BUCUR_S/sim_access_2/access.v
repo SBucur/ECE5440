@@ -8,7 +8,7 @@
 
 module access (
     //inputs
-    RST, CLK,
+    CLK, RST,
 	loadreg_1_in, loadreg_R_in,
 	pword, pword_enter,
     timeout,
@@ -49,11 +49,11 @@ module access (
 	always @ (posedge CLK) begin
         // If RST triggered, switch case is ignored and FSM is forced to Digit_1
 		if (RST == 1'b0) begin
-			pass_OK <= 1'b1;
-			pass_red <= 1'b1;
-			pass_green <= 1'b0;
-			loadreg_1_out <= 1'b0;
-			loadreg_R_out <= 1'b1;
+            pass_OK <= 1'b1;
+            pass_red <= 1'b1;
+            pass_green <= 1'b0;
+            loadreg_1_out <= 1'b0;
+            loadreg_R_out <= 1'b1;
             enable <= 1'b0;
             reconf <= 1'b0;
             currentstate <= Digit_1;
@@ -82,13 +82,13 @@ module access (
 				Digit_2: begin
 					if(pword_enter == 1'b0)
 					begin
-						pass_red <= 1'b1;
-						pass_green <= 1'b0;
-						loadreg_1_out <= 1'b0;
-						loadreg_R_out <= 1'b1;
+                        pass_red <= 1'b1;
+                        pass_green <= 1'b0;
+                        loadreg_1_out <= 1'b0;
+                        loadreg_R_out <= 1'b1;
                         enable <= 1'b0;
                         reconf <= 1'b0;
-						currentstate <= Digit_2;
+                        currentstate <= Digit_2;
 					end
 					else begin
 						if(pword !== 4'b0001) //1
@@ -151,8 +151,8 @@ module access (
                     begin
                         pass_red <= 1'b0;
                         pass_green <= 1'b1;
-                        loadreg_1_out <= 0;         
-                        loadreg_R_out <= 1;
+                        loadreg_1_out <= 1'b0;         
+                        loadreg_R_out <= 1'b1;
                         enable <= 1'b0;
                         reconf <= 1'b0;
                         currentstate <= OK;
@@ -181,8 +181,8 @@ module access (
                     begin
                         pass_red <= 1'b0;
                         pass_green <= 1'b1;
-                        loadreg_1_out <= loadreg_1_out;
-                        loadreg_R_out <= loadreg_R_out;
+                        loadreg_1_out <= loadreg_1_in;
+                        loadreg_R_out <= loadreg_R_in;
                         enable <= 1'b1;
                         reconf <= 1'b0;
                         currentstate <= PLAY;
