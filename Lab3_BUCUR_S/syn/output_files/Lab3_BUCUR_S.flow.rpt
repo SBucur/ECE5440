@@ -1,5 +1,5 @@
 Flow report for Lab3_BUCUR_S
-Sat Mar 07 13:53:04 2020
+Mon Apr 27 23:25:33 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Mar 07 13:52:59 2020       ;
+; Flow Status                        ; Successful - Mon Apr 27 23:25:33 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab3_BUCUR_S                                ;
 ; Top-level Entity Name              ; Lab3_BUCUR_S                                ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 185 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 182 / 114,480 ( < 1 % )                     ;
-;     Dedicated logic registers      ; 77 / 114,480 ( < 1 % )                      ;
-; Total registers                    ; 77                                          ;
-; Total pins                         ; 61 / 529 ( 12 % )                           ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/07/2020 13:52:08 ;
+; Start date & time ; 04/27/2020 23:25:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab3_BUCUR_S        ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 169736367386220.158361072803704        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 114472187731342.158804792308780        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -92,38 +92,29 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4756 MB             ; 00:00:26                           ;
-; Fitter               ; 00:00:26     ; 1.0                     ; 5446 MB             ; 00:00:32                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4699 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4837 MB             ; 00:00:03                           ;
-; Total                ; 00:00:52     ; --                      ; --                  ; 00:01:07                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:11     ; 1.0                     ; 4715 MB             ; 00:00:22                           ;
+; Total                  ; 00:00:11     ; --                      ; --                  ; 00:00:22                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-HR5KN2I  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-HR5KN2I  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-HR5KN2I  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-HR5KN2I  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; DESKTOP-6BVD0F3  ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off Lab3_BUCUR_S -c Lab3_BUCUR_S
-quartus_fit --read_settings_files=off --write_settings_files=off Lab3_BUCUR_S -c Lab3_BUCUR_S
-quartus_asm --read_settings_files=off --write_settings_files=off Lab3_BUCUR_S -c Lab3_BUCUR_S
-quartus_sta Lab3_BUCUR_S -c Lab3_BUCUR_S
+quartus_map --read_settings_files=on --write_settings_files=off Lab3_BUCUR_S -c Lab3_BUCUR_S --analysis_and_elaboration
 
 
 

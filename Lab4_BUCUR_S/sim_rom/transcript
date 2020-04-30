@@ -1,0 +1,320 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/Lab4_BUCUR_S_ROM_sim.mpf
+# Loading project Lab4_BUCUR_S_ROM_sim
+# Compile of access_tb.v was successful.
+# Compile of access.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.access_tb -L altera_mf_ver -L altera_mf
+# vsim -gui work.access_tb -L altera_mf_ver -L altera_mf 
+# Start time: 00:11:15 on Apr 28,2020
+# Loading work.access_tb
+# Loading work.access
+# Loading work.ROM_BUCUR_S
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Fatal: (vsim-3365) C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/access_tb.v(25): Too many port connections. Expected 17, found 19.
+#    Time: 0 ps  Iteration: 0  Instance: /access_tb/testmod File: C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/access.v
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 00:11:16 on Apr 28,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Compile of access_tb.v was successful.
+# Compile of ROM_tb.v was successful.
+# Compile of ROM_BUCUR_S.v was successful.
+# Compile of access_tb.v was successful.
+# Compile of access.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -L altera_mf_ver -L altera_mf work.access_tb
+# vsim -gui -L altera_mf_ver -L altera_mf work.access_tb 
+# Start time: 00:15:19 on Apr 28,2020
+# Loading work.access_tb
+# Loading work.access
+# Loading work.ROM_BUCUR_S
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+quit -sim
+# End time: 00:15:45 on Apr 28,2020, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 0
+# Compile of access_tb.v was successful.
+# Compile of ROM_tb.v was successful.
+# Compile of ROM_BUCUR_S.v was successful.
+# Compile of access_tb.v was successful.
+# Compile of access.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -L altera_mf_ver -L altera_mf work.access_tb
+# vsim -gui -L altera_mf_ver -L altera_mf work.access_tb 
+# Start time: 00:16:04 on Apr 28,2020
+# Loading work.access_tb
+# Loading work.access
+# Loading work.ROM_BUCUR_S
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+add wave -position insertpoint  \
+sim:/access_tb/CLK \
+sim:/access_tb/RST \
+sim:/access_tb/pword \
+sim:/access_tb/loadreg_1_in \
+sim:/access_tb/loadreg_R_in \
+sim:/access_tb/pword_enter \
+sim:/access_tb/timeout \
+sim:/access_tb/enable \
+sim:/access_tb/reconf \
+sim:/access_tb/loadreg_1_out \
+sim:/access_tb/loadreg_R_out \
+sim:/access_tb/pass_red \
+sim:/access_tb/pass_green \
+sim:/access_tb/currentstate \
+sim:/access_tb/rom_q \
+sim:/access_tb/addr \
+sim:/access_tb/pass_OK
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 00:20:18 on Apr 28,2020, Elapsed time: 0:04:14
+# Errors: 0, Warnings: 0
+# Compile of access_tb.v was successful.
+vsim -gui -L altera_mf_ver -L altera_mf work.access_tb
+# vsim -gui -L altera_mf_ver -L altera_mf work.access_tb 
+# Start time: 00:20:26 on Apr 28,2020
+# Loading work.access_tb
+# Loading work.access
+# Loading work.ROM_BUCUR_S
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+add wave -position insertpoint  \
+sim:/access_tb/CLK \
+sim:/access_tb/RST \
+sim:/access_tb/pword \
+sim:/access_tb/loadreg_1_in \
+sim:/access_tb/loadreg_R_in \
+sim:/access_tb/pword_enter \
+sim:/access_tb/timeout \
+sim:/access_tb/enable \
+sim:/access_tb/reconf \
+sim:/access_tb/loadreg_1_out \
+sim:/access_tb/loadreg_R_out \
+sim:/access_tb/pass_red \
+sim:/access_tb/pass_green \
+sim:/access_tb/currentstate \
+sim:/access_tb/rom_q \
+sim:/access_tb/addr \
+sim:/access_tb/pass_OK
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+quit -sim
+# End time: 00:45:08 on Apr 28,2020, Elapsed time: 0:24:42
+# Errors: 0, Warnings: 1
+# Compile of ROM_tb.v was successful.
+# Compile of ROM_BUCUR_S.v was successful.
+# Compile of access_tb.v was successful.
+# Compile of access.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -L altera_mf_ver -L altera_mf work.access_tb
+# vsim -gui -L altera_mf_ver -L altera_mf work.access_tb 
+# Start time: 00:45:17 on Apr 28,2020
+# Loading work.access_tb
+# Loading work.access
+# Loading work.ROM_BUCUR_S
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/access_tb/CLK \
+sim:/access_tb/RST \
+sim:/access_tb/pword \
+sim:/access_tb/loadreg_1_in \
+sim:/access_tb/loadreg_R_in \
+sim:/access_tb/pword_enter \
+sim:/access_tb/timeout \
+sim:/access_tb/enable \
+sim:/access_tb/reconf \
+sim:/access_tb/loadreg_1_out \
+sim:/access_tb/loadreg_R_out \
+sim:/access_tb/pass_red \
+sim:/access_tb/pass_green \
+sim:/access_tb/currentstate \
+sim:/access_tb/rom_q \
+sim:/access_tb/addr \
+sim:/access_tb/pass_OK
+run
+run
+run
+run
+quit -sim
+# End time: 00:59:28 on Apr 28,2020, Elapsed time: 0:14:11
+# Errors: 0, Warnings: 1

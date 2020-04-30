@@ -1,5 +1,5 @@
-Analysis & Synthesis report for Lab3_BUCUR_S
-Sat Mar 07 13:52:23 2020
+Analysis & Elaboration report for Lab3_BUCUR_S
+Mon Apr 27 23:25:33 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -7,27 +7,16 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |Lab3_BUCUR_S|bshaper:acc_button|currentstate
-  9. State Machine - |Lab3_BUCUR_S|bshaper:player_button|currentstate
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Parameter Settings for User Entity Instance: loadreg:player_num
- 15. Parameter Settings for User Entity Instance: access:acc_ctl
- 16. Parameter Settings for User Entity Instance: bshaper:player_button
- 17. Parameter Settings for User Entity Instance: bshaper:acc_button
- 18. Port Connectivity Checks: "digitTimer_2:timer|digitTimer:ones"
- 19. Port Connectivity Checks: "access:acc_ctl"
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: loadreg:player_num
+  5. Parameter Settings for User Entity Instance: access:acc_ctl
+  6. Parameter Settings for User Entity Instance: bshaper:player_button
+  7. Parameter Settings for User Entity Instance: bshaper:acc_button
+  8. Analysis & Elaboration Settings
+  9. Port Connectivity Checks: "digitTimer_2:timer|digitTimer:ones"
+ 10. Port Connectivity Checks: "access:acc_ctl"
+ 11. Analysis & Elaboration Messages
 
 
 
@@ -51,27 +40,94 @@ refer to the applicable agreement for further details.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
+; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Mar 07 13:52:22 2020       ;
+; Analysis & Elaboration Status      ; Successful - Mon Apr 27 23:25:33 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab3_BUCUR_S                                ;
 ; Top-level Entity Name              ; Lab3_BUCUR_S                                ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 182                                         ;
-;     Total combinational functions  ; 182                                         ;
-;     Dedicated logic registers      ; 77                                          ;
-; Total registers                    ; 77                                          ;
-; Total pins                         ; 61                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: loadreg:player_num ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; Store          ; 0     ; Unsigned Binary                        ;
+; Load           ; 1     ; Unsigned Binary                        ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: access:acc_ctl ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; Digit_1        ; 001   ; Unsigned Binary                    ;
+; Digit_2        ; 010   ; Unsigned Binary                    ;
+; Digit_3        ; 011   ; Unsigned Binary                    ;
+; Digit_4        ; 100   ; Unsigned Binary                    ;
+; OK             ; 101   ; Unsigned Binary                    ;
+; SET            ; 110   ; Unsigned Binary                    ;
+; PLAY           ; 111   ; Unsigned Binary                    ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bshaper:player_button ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; Init           ; 00    ; Unsigned Binary                           ;
+; Edge           ; 01    ; Unsigned Binary                           ;
+; Wait           ; 10    ; Unsigned Binary                           ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bshaper:acc_button ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; Init           ; 00    ; Unsigned Binary                        ;
+; Edge           ; 01    ; Unsigned Binary                        ;
+; Wait           ; 10    ; Unsigned Binary                        ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                              ;
+; Analysis & Elaboration Settings                                                                            ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -156,231 +212,6 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-+----------------------------+-------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                           ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------+---------+
-; ../src/timer_1ms.v               ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/timer_1ms.v    ;         ;
-; ../src/secTimer.v                ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/secTimer.v     ;         ;
-; ../src/digitTimer_2.v            ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer_2.v ;         ;
-; ../src/digitTimer.v              ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v   ;         ;
-; ../src/cnt1000.v                 ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/cnt1000.v      ;         ;
-; ../src/trng.v                    ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/trng.v         ;         ;
-; ../src/loadreg.v                 ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/loadreg.v      ;         ;
-; ../src/Lab3_BUCUR_S.v            ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v ;         ;
-; ../src/decoder7.v                ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/decoder7.v     ;         ;
-; ../src/cnt4.v                    ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/cnt4.v         ;         ;
-; ../src/check.v                   ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/check.v        ;         ;
-; ../src/bshaper.v                 ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/bshaper.v      ;         ;
-; ../src/adder.v                   ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/adder.v        ;         ;
-; ../src/access.v                  ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v       ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 182         ;
-;                                             ;             ;
-; Total combinational functions               ; 182         ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 90          ;
-;     -- 3 input functions                    ; 29          ;
-;     -- <=2 input functions                  ; 63          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 136         ;
-;     -- arithmetic mode                      ; 46          ;
-;                                             ;             ;
-; Total registers                             ; 77          ;
-;     -- Dedicated logic registers            ; 77          ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 61          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; CLOCK~input ;
-; Maximum fan-out                             ; 55          ;
-; Total fan-out                               ; 928         ;
-; Average fan-out                             ; 2.44        ;
-+---------------------------------------------+-------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                              ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+--------------+
-; |Lab3_BUCUR_S              ; 182 (0)             ; 77 (0)                    ; 0           ; 0            ; 0       ; 0         ; 61   ; 0            ; |Lab3_BUCUR_S                                    ; Lab3_BUCUR_S ; work         ;
-;    |access:acc_ctl|        ; 30 (30)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|access:acc_ctl                     ; access       ; work         ;
-;    |adder:player_sum|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|adder:player_sum                   ; adder        ; work         ;
-;    |bshaper:acc_button|    ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|bshaper:acc_button                 ; bshaper      ; work         ;
-;    |bshaper:player_button| ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|bshaper:player_button              ; bshaper      ; work         ;
-;    |check:sum_result|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|check:sum_result                   ; check        ; work         ;
-;    |decoder7:bot_dec|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|decoder7:bot_dec                   ; decoder7     ; work         ;
-;    |decoder7:one_dec|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|decoder7:one_dec                   ; decoder7     ; work         ;
-;    |decoder7:player_dec|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|decoder7:player_dec                ; decoder7     ; work         ;
-;    |decoder7:sum_dec|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|decoder7:sum_dec                   ; decoder7     ; work         ;
-;    |decoder7:ten_dec|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|decoder7:ten_dec                   ; decoder7     ; work         ;
-;    |digitTimer_2:timer|    ; 41 (1)              ; 11 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|digitTimer_2:timer                 ; digitTimer_2 ; work         ;
-;       |digitTimer:ones|    ; 18 (18)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:ones ; digitTimer   ; work         ;
-;       |digitTimer:tens|    ; 22 (22)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:tens ; digitTimer   ; work         ;
-;    |loadreg:player_num|    ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|loadreg:player_num                 ; loadreg      ; work         ;
-;    |secTimer:timer_clk|    ; 58 (0)              ; 44 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|secTimer:timer_clk                 ; secTimer     ; work         ;
-;       |cnt1000:counter|    ; 14 (14)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|secTimer:timer_clk|cnt1000:counter ; cnt1000      ; work         ;
-;       |timer_1ms:timer|    ; 44 (44)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|secTimer:timer_clk|timer_1ms:timer ; timer_1ms    ; work         ;
-;    |trng:pbot|             ; 4 (0)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|trng:pbot                          ; trng         ; work         ;
-;       |cnt4:counter|       ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_BUCUR_S|trng:pbot|cnt4:counter             ; cnt4         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+-------------------------------------------------------------------------------+
-; State Machine - |Lab3_BUCUR_S|bshaper:acc_button|currentstate                 ;
-+-------------------+-------------------+-------------------+-------------------+
-; Name              ; currentstate.Init ; currentstate.Wait ; currentstate.Edge ;
-+-------------------+-------------------+-------------------+-------------------+
-; currentstate.Init ; 0                 ; 0                 ; 0                 ;
-; currentstate.Edge ; 1                 ; 0                 ; 1                 ;
-; currentstate.Wait ; 1                 ; 1                 ; 0                 ;
-+-------------------+-------------------+-------------------+-------------------+
-
-
-Encoding Type:  One-Hot
-+-------------------------------------------------------------------------------+
-; State Machine - |Lab3_BUCUR_S|bshaper:player_button|currentstate              ;
-+-------------------+-------------------+-------------------+-------------------+
-; Name              ; currentstate.Init ; currentstate.Wait ; currentstate.Edge ;
-+-------------------+-------------------+-------------------+-------------------+
-; currentstate.Init ; 0                 ; 0                 ; 0                 ;
-; currentstate.Edge ; 1                 ; 0                 ; 1                 ;
-; currentstate.Wait ; 1                 ; 1                 ; 0                 ;
-+-------------------+-------------------+-------------------+-------------------+
-
-
-+--------------------------------------------------------------+
-; Registers Removed During Synthesis                           ;
-+-----------------------------------------+--------------------+
-; Register name                           ; Reason for Removal ;
-+-----------------------------------------+--------------------+
-; bshaper:acc_button|currentstate.Wait    ; Lost fanout        ;
-; bshaper:player_button|currentstate.Wait ; Lost fanout        ;
-; Total Number of Removed Registers = 2   ;                    ;
-+-----------------------------------------+--------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 77    ;
-; Number of registers using Synchronous Clear  ; 53    ;
-; Number of registers using Synchronous Load   ; 3     ;
-; Number of registers using Asynchronous Clear ; 11    ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 36    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+--------------------------------------------------------+
-; Inverted Register Statistics                           ;
-+----------------------------------------------+---------+
-; Inverted Register                            ; Fan out ;
-+----------------------------------------------+---------+
-; digitTimer_2:timer|digitTimer:tens|borrow_up ; 4       ;
-; digitTimer_2:timer|digitTimer:ones|borrow_up ; 6       ;
-; Total number of inverted registers = 2       ;         ;
-+----------------------------------------------+---------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Lab3_BUCUR_S|loadreg:player_num|data_out[2]              ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Lab3_BUCUR_S|secTimer:timer_clk|cnt1000:counter|cnt[7]   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Lab3_BUCUR_S|secTimer:timer_clk|timer_1ms:timer|cnt[23]  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:tens|count[0] ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Lab3_BUCUR_S|digitTimer_2:timer|digitTimer:ones|count[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: loadreg:player_num ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; Store          ; 0     ; Unsigned Binary                        ;
-; Load           ; 1     ; Unsigned Binary                        ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: access:acc_ctl ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; Digit_1        ; 001   ; Unsigned Binary                    ;
-; Digit_2        ; 010   ; Unsigned Binary                    ;
-; Digit_3        ; 011   ; Unsigned Binary                    ;
-; Digit_4        ; 100   ; Unsigned Binary                    ;
-; OK             ; 101   ; Unsigned Binary                    ;
-; SET            ; 110   ; Unsigned Binary                    ;
-; PLAY           ; 111   ; Unsigned Binary                    ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: bshaper:player_button ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; Init           ; 00    ; Unsigned Binary                           ;
-; Edge           ; 01    ; Unsigned Binary                           ;
-; Wait           ; 10    ; Unsigned Binary                           ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: bshaper:acc_button ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; Init           ; 00    ; Unsigned Binary                        ;
-; Edge           ; 01    ; Unsigned Binary                        ;
-; Wait           ; 10    ; Unsigned Binary                        ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-----------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "digitTimer_2:timer|digitTimer:ones"                                                        ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -399,121 +230,64 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 61                          ;
-; cycloneiii_ff         ; 77                          ;
-;     CLR               ; 11                          ;
-;     ENA               ; 4                           ;
-;     ENA SCLR          ; 32                          ;
-;     SCLR              ; 21                          ;
-;     SLD               ; 3                           ;
-;     plain             ; 6                           ;
-; cycloneiii_lcell_comb ; 189                         ;
-;     arith             ; 46                          ;
-;         2 data inputs ; 42                          ;
-;         3 data inputs ; 4                           ;
-;     normal            ; 143                         ;
-;         1 data inputs ; 10                          ;
-;         2 data inputs ; 18                          ;
-;         3 data inputs ; 25                          ;
-;         4 data inputs ; 90                          ;
-;                       ;                             ;
-; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.20                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Mar 07 13:52:07 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3_BUCUR_S -c Lab3_BUCUR_S
+    Info: Processing started: Mon Apr 27 23:25:22 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3_BUCUR_S -c Lab3_BUCUR_S --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/timer_1ms.v
-    Info (12023): Found entity 1: timer_1ms File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/timer_1ms.v Line: 7
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/sectimer.v
-    Info (12023): Found entity 1: secTimer File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/secTimer.v Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/digittimer_2.v
-    Info (12023): Found entity 1: digitTimer_2 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer_2.v Line: 12
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/digittimer.v
-    Info (12023): Found entity 1: digitTimer File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 20
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/cnt1000.v
-    Info (12023): Found entity 1: cnt1000 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/cnt1000.v Line: 7
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/trng.v
-    Info (12023): Found entity 1: trng File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/trng.v Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/loadreg.v
-    Info (12023): Found entity 1: loadreg File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/loadreg.v Line: 8
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/lab3_bucur_s.v
-    Info (12023): Found entity 1: Lab3_BUCUR_S File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 7
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/decoder7.v
-    Info (12023): Found entity 1: decoder7 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/decoder7.v Line: 17
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/cnt4.v
-    Info (12023): Found entity 1: cnt4 File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/cnt4.v Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/check.v
-    Info (12023): Found entity 1: check File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/check.v Line: 8
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/button_press.v
-    Info (12023): Found entity 1: button_press File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/button_press.v Line: 11
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/bshaper.v
-    Info (12023): Found entity 1: bshaper File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/bshaper.v Line: 10
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/adder.v
-    Info (12023): Found entity 1: adder File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/adder.v Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file /intelfpga_lite/18.1/lab3_bucur_s/src/access.v
-    Info (12023): Found entity 1: access File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/access.v Line: 9
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/timer_1ms.v
+    Info (12023): Found entity 1: timer_1ms File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/timer_1ms.v Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/sectimer.v
+    Info (12023): Found entity 1: secTimer File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/secTimer.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/digittimer_2.v
+    Info (12023): Found entity 1: digitTimer_2 File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/digitTimer_2.v Line: 12
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/digittimer.v
+    Info (12023): Found entity 1: digitTimer File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/digitTimer.v Line: 20
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/cnt1000.v
+    Info (12023): Found entity 1: cnt1000 File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/cnt1000.v Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/trng.v
+    Info (12023): Found entity 1: trng File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/trng.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/loadreg.v
+    Info (12023): Found entity 1: loadreg File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/loadreg.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/lab3_bucur_s.v
+    Info (12023): Found entity 1: Lab3_BUCUR_S File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/decoder7.v
+    Info (12023): Found entity 1: decoder7 File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/decoder7.v Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/cnt4.v
+    Info (12023): Found entity 1: cnt4 File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/cnt4.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/check.v
+    Info (12023): Found entity 1: check File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/check.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/button_press.v
+    Info (12023): Found entity 1: button_press File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/button_press.v Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/bshaper.v
+    Info (12023): Found entity 1: bshaper File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/bshaper.v Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/adder.v
+    Info (12023): Found entity 1: adder File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/adder.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /users/stefan/documents/github/ece5440/lab3_bucur_s/src/access.v
+    Info (12023): Found entity 1: access File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/access.v Line: 9
 Info (12127): Elaborating entity "Lab3_BUCUR_S" for the top level hierarchy
-Info (12128): Elaborating entity "decoder7" for hierarchy "decoder7:bot_dec" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 36
-Info (12128): Elaborating entity "adder" for hierarchy "adder:player_sum" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 42
-Info (12128): Elaborating entity "check" for hierarchy "check:sum_result" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 43
-Info (12128): Elaborating entity "trng" for hierarchy "trng:pbot" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 44
-Info (12128): Elaborating entity "cnt4" for hierarchy "trng:pbot|cnt4:counter" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/trng.v Line: 20
-Info (12128): Elaborating entity "loadreg" for hierarchy "loadreg:player_num" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 46
-Info (12128): Elaborating entity "access" for hierarchy "access:acc_ctl" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 55
-Info (12128): Elaborating entity "bshaper" for hierarchy "bshaper:player_button" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 57
-Info (12128): Elaborating entity "digitTimer_2" for hierarchy "digitTimer_2:timer" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 64
-Info (12128): Elaborating entity "digitTimer" for hierarchy "digitTimer_2:timer|digitTimer:tens" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer_2.v Line: 34
-Info (12128): Elaborating entity "secTimer" for hierarchy "secTimer:timer_clk" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 65
-Info (12128): Elaborating entity "cnt1000" for hierarchy "secTimer:timer_clk|cnt1000:counter" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/secTimer.v Line: 11
-Info (12128): Elaborating entity "timer_1ms" for hierarchy "secTimer:timer_clk|timer_1ms:timer" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/secTimer.v Line: 12
-Info (13000): Registers with preset signals will power-up high File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 29
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "digitTimer_2:timer|digitTimer:tens|count[0]" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:tens|count[0]~_emulated" and latch "digitTimer_2:timer|digitTimer:tens|count[0]~1" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 56
-    Warning (13310): Register "digitTimer_2:timer|digitTimer:tens|count[1]" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:tens|count[1]~_emulated" and latch "digitTimer_2:timer|digitTimer:tens|count[1]~5" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 56
-    Warning (13310): Register "digitTimer_2:timer|digitTimer:tens|count[2]" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:tens|count[2]~_emulated" and latch "digitTimer_2:timer|digitTimer:tens|count[2]~9" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 56
-    Warning (13310): Register "digitTimer_2:timer|digitTimer:tens|count[3]" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:tens|count[3]~_emulated" and latch "digitTimer_2:timer|digitTimer:tens|count[3]~13" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 56
-    Warning (13310): Register "digitTimer_2:timer|digitTimer:ones|count[0]" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:ones|count[0]~_emulated" and latch "digitTimer_2:timer|digitTimer:ones|count[0]~1" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 56
-    Warning (13310): Register "digitTimer_2:timer|digitTimer:ones|count[1]" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:ones|count[1]~_emulated" and latch "digitTimer_2:timer|digitTimer:ones|count[1]~5" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 56
-    Warning (13310): Register "digitTimer_2:timer|digitTimer:ones|count[2]" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:ones|count[2]~_emulated" and latch "digitTimer_2:timer|digitTimer:ones|count[2]~9" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 56
-    Warning (13310): Register "digitTimer_2:timer|digitTimer:ones|count[3]" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:ones|count[3]~_emulated" and latch "digitTimer_2:timer|digitTimer:ones|count[3]~13" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 56
-    Warning (13310): Register "digitTimer_2:timer|digitTimer:tens|noborrow_dn" is converted into an equivalent circuit using register "digitTimer_2:timer|digitTimer:tens|noborrow_dn~_emulated" and latch "digitTimer_2:timer|digitTimer:tens|noborrow_dn~1" File: C:/intelFPGA_lite/18.1/Lab3_BUCUR_S/src/digitTimer.v Line: 29
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 2 registers lost all their fanouts during netlist optimizations.
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 245 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 21 input pins
-    Info (21059): Implemented 40 output pins
-    Info (21061): Implemented 184 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4765 megabytes
-    Info: Processing ended: Sat Mar 07 13:52:23 2020
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:26
+Info (12128): Elaborating entity "decoder7" for hierarchy "decoder7:bot_dec" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 36
+Info (12128): Elaborating entity "adder" for hierarchy "adder:player_sum" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 42
+Info (12128): Elaborating entity "check" for hierarchy "check:sum_result" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 43
+Info (12128): Elaborating entity "trng" for hierarchy "trng:pbot" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 44
+Info (12128): Elaborating entity "cnt4" for hierarchy "trng:pbot|cnt4:counter" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/trng.v Line: 20
+Info (12128): Elaborating entity "loadreg" for hierarchy "loadreg:player_num" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 46
+Info (12128): Elaborating entity "access" for hierarchy "access:acc_ctl" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 55
+Info (12128): Elaborating entity "bshaper" for hierarchy "bshaper:player_button" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 57
+Info (12128): Elaborating entity "digitTimer_2" for hierarchy "digitTimer_2:timer" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 64
+Info (12128): Elaborating entity "digitTimer" for hierarchy "digitTimer_2:timer|digitTimer:tens" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/digitTimer_2.v Line: 34
+Info (12128): Elaborating entity "secTimer" for hierarchy "secTimer:timer_clk" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/Lab3_BUCUR_S.v Line: 65
+Info (12128): Elaborating entity "cnt1000" for hierarchy "secTimer:timer_clk|cnt1000:counter" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/secTimer.v Line: 11
+Info (12128): Elaborating entity "timer_1ms" for hierarchy "secTimer:timer_clk|timer_1ms:timer" File: C:/Users/Stefan/Documents/GitHub/ECE5440/Lab3_BUCUR_S/src/secTimer.v Line: 12
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4715 megabytes
+    Info: Processing ended: Mon Apr 27 23:25:33 2020
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:22
 
 

@@ -8,18 +8,60 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA_lite/18.1/Lab3_BUCUR_S/sim_access_2
+vaccess
+Z0 !s110 1588052712
+!i10b 1
+!s100 N@GGP5boKkO^L3M6BkB9=3
+Ij@om^6k;:j>2`P5VlYCVD2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom
+w1588052514
+8C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/access.v
+FC:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/access.v
+L0 9
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1588052712.000000
+!s107 C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/access.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/access.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vaccess_tb
+R0
+!i10b 1
+!s100 2n_R@[L6k<<QJif29[MfF2
+IHU]5<Lz:nha?[`_]<mVEk1
+R1
+R2
+w1588052146
+8C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/access_tb.v
+FC:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/access_tb.v
+L0 10
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/access_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/access_tb.v|
+!i113 1
+R5
+R6
 vROM
 !s110 1585883577
 !i10b 1
 !s100 HX?oXdKQ1zDZihzVF;AP01
 I@l85[6B2_Qo7XJkjO[l2U0
-Z0 VDg1SIo80bB@j0V0VzS_@n1
-Z1 dC:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom
+R1
+R2
 w1585881821
 8C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_bb.v
 FC:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_bb.v
 L0 34
-Z2 OV;L;10.5b;63
+R3
 r1
 !s85 0
 31
@@ -27,50 +69,50 @@ r1
 !s107 C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_bb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_bb.v|
 !i113 1
-Z3 o-work work
-Z4 tCvgOpt 0
+R5
+R6
 n@r@o@m
 vROM_BUCUR_S
-Z5 !s110 1585900448
+R0
 !i10b 1
 !s100 k4^O^0HCT7;D;m[7:RSE62
 IJbT:XEJfKfoNmJGSMPzcI0
-R0
 R1
+R2
 w1585900126
 8C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_BUCUR_S.v
 FC:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_BUCUR_S.v
 L0 39
-R2
+R3
 r1
 !s85 0
 31
-Z6 !s108 1585900448.000000
+Z7 !s108 1588052711.000000
 !s107 C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_BUCUR_S.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_BUCUR_S.v|
 !i113 1
-R3
-R4
+R5
+R6
 n@r@o@m_@b@u@c@u@r_@s
 vROM_tb
-R5
+!s110 1588052711
 !i10b 1
 !s100 @HOR_d9XZjM8Rejh4>4fL3
 I`mk6;9;m[DS7i?TRQYCa@0
-R0
 R1
+R2
 w1585899077
 8C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_tb.v
 FC:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_tb.v
 L0 3
-R2
+R3
 r1
 !s85 0
 31
-R6
+R7
 !s107 C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_tb.v|
 !i113 1
-R3
-R4
+R5
+R6
 n@r@o@m_tb

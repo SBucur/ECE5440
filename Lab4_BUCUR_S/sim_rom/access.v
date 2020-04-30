@@ -12,12 +12,16 @@ module access (
 	loadreg_1_in, loadreg_R_in,
 	pword, pword_enter,
     timeout,
-    pword_q,
+    rom_q,
     //outputs
     enable, reconf,
     loadreg_1_out, loadreg_R_out,
-	pass_red, pass_green, currentstate,
-    addr
+	pass_red, pass_green,
+    currentstate,
+    addr,
+    //DEBUG
+    pass_OK
+    //END DEBUG
     );
 
     input RST, CLK, timeout;
@@ -26,40 +30,54 @@ module access (
     // user inputs 4-bit password digit
     input [3:0] pword;
     input pword_enter;
+    
 
-    // signals to wire out to player loadreg modules
+    // signals to wire out to player loadreg modules + digit timer reconf
     output enable, reconf;
     output loadreg_1_out, loadreg_R_out;
+
+    //LED inficator of login pass/fail
     output pass_red, pass_green;
-    // display current state for simulation and debugging pruposes
-    // currentstate will not be wired to any modules or I/O
-	output [2:0] currentstate;
     
+    
+    // variables for communicating with the ROM module
+    input [3:0] rom_q;
+    output [1:0] addr;
     reg [1:0] addr;
+
     reg enable, reconf;
     reg loadreg_1_out, loadreg_R_out;
     reg pass_red, pass_green;
 
+    //////////////////////////////////////////////DEBUG, comment out when not testbenching
+    output pass_OK;
+    // display current state for simulation and debugging pruposes
+    // currentstate will not be wired to any modules or I/O
+	output [2:0] currentstate;
+    //////////////////////////////////////////////END DEBUG
+
     // FSM regs, parameters and states
-    reg [3:0] currentstate;
-    reg pass_OK;
+    reg [3:0] currentstate; // enumerated state of the FSM
+    reg pass_OK; // flag that tells if the current sequence is incorrect
+    reg [3:0] pword_current; // internal variable recording player input
+    reg [3:0] pword_rom; // internal variable recording ROM output
+    // enumerated state values
     parameter   Init = 4'b0000, Next = 4'b0001, W1 = 4'b0010, W2 = 4'b0011,
-                Catch = 4'b0100, Equ = 4'b0101, Inc = 4'b0110,
-                //Digit_1 = 3'b001, Digit_2 = 3'b010, Digit_3 = 3'b011, Digit_4 = 3'b100,
+                Get = 4'b0100, Equ = 4'b0101, Eval = 4'b0110, Pass = 4'b0111,
                 OK = 4'b1000, SET = 4'b1001, PLAY = 4'b1010;
 
     // FSM
-    // Key is hardcoded to each state with comments denoting each digit
-    // pass_OK acts as a flag detecting if input sequence matches key (default value 1)
+    // Key is retrieved from a ROM module that stores each digit as a 4-bit word
+    // pass_OK acts as a flag detecting if input sequence has matched so far (default value 1)
 	always @ (posedge CLK) begin
-        // If RST triggered, switch case is ignored and FSM is forced to Digit_1
+        // If RST triggered, switch case is ignored and FSM is forced to Init
 		if (RST == 1'b0) begin
             addr <= 2'b00;
             pass_OK <= 1'b1;
             pass_red <= 1'b1;
             pass_green <= 1'b0;
             loadreg_1_out <= 1'b0;
-            loadreg_R_out <= 1'b1;
+            loadreg_R_out <= 1'b1;  // loadreg_R must be inverted because a 0 enables the RNG
             enable <= 1'b0;
             reconf <= 1'b0;
             currentstate <= Init;
@@ -77,126 +95,103 @@ module access (
                     currentstate <= Next;
                 end
                 Next: begin
-                    
+                    //definition
+                    pass_red <= 1'b1;
+                    pass_green <= 1'b0;
+                    loadreg_1_out <= 1'b0;
+                    loadreg_R_out <= 1'b1;
+                    enable <= 1'b0;
+                    reconf <= 1'b0;
+                    //transition
+                    if(pword_enter == 1'b0)
+                    begin
+                        currentstate <= Next;
+                    end
+                    else begin
+                        pword_current <= pword;
+                        currentstate <= W1;
+                    end
                 end
-                /*
-				Digit_1: begin
-					pass_OK <= 1'b1;
-					if(pword_enter == 1'b0)
-					begin
-						pass_red <= 1'b1;
-						pass_green <= 1'b0;
-						loadreg_1_out <= 1'b0;
-						loadreg_R_out <= 1'b1;
-                        enable <= 1'b0;
-                        reconf <= 1'b0;
-						currentstate <= Digit_1;
-					end
-					else begin
-						if(pword !== 4'b0011) //3
-						begin
-							pass_OK <= 1'b0;
-						end
-						currentstate <= Digit_2;
-					end
-				end
-				Digit_2: begin
-					if(pword_enter == 1'b0)
-					begin
-                        pass_red <= 1'b1;
-                        pass_green <= 1'b0;
-                        loadreg_1_out <= 1'b0;
-                        loadreg_R_out <= 1'b1;
-                        enable <= 1'b0;
-                        reconf <= 1'b0;
-                        currentstate <= Digit_2;
-					end
-					else begin
-						if(pword !== 4'b0001) //1
-						begin
-							pass_OK <= 1'b0;
-						end
-						currentstate <= Digit_3;
-					end
-				end
-				Digit_3: begin
-					if(pword_enter == 1'b0)
-					begin
-						pass_red <= 1'b1;
-						pass_green <= 1'b0;
-						loadreg_1_out <= 1'b0;
-						loadreg_R_out <= 1'b1;
-                        enable <= 1'b0;
-                        reconf <= 1'b0;
-						currentstate <= Digit_3;
-					end
-					else begin
-						if(pword !== 4'b0101) //5
-						begin
-							pass_OK <= 1'b0;
-						end
-						currentstate <= Digit_4;
-					end
-				end
-				Digit_4: begin
-					if(pword_enter == 1'b0)
-					begin
-						pass_red <= 1'b1;
-						pass_green <= 1'b0;
-						loadreg_1_out <= 1'b0;
-						loadreg_R_out <= 1'b1;
-                        enable <= 1'b0;
-                        reconf <= 1'b0;
-						currentstate <= Digit_4;
-					end
-					else begin
-						if(pword !== 4'b0011) //3
-						begin
-							pass_OK <= 1'b0;
-						end
-						else begin
-							// Determines if input sequence is a match
-							if(pass_OK == 1'b1)
-							begin
-								currentstate <= OK;
-								pass_OK <= 1'b1;
-							end
-							else begin
-								currentstate <= Digit_1;
-							end
-						end
-					end
-				end
-                */
 
+                // wait two cycles for the ROM module to retrieve the data
+                W1: begin
+                    //definition
+                    pass_red <= 1'b1;
+                    pass_green <= 1'b0;
+                    loadreg_1_out <= 1'b0;
+                    loadreg_R_out <= 1'b1;
+                    enable <= 1'b0;
+                    reconf <= 1'b0;
+                    //transition
+                    currentstate <= W2;
+                end
+                W2: begin
+                    //definition
+                    pass_red <= 1'b1;
+                    pass_green <= 1'b0;
+                    loadreg_1_out <= 1'b0;
+                    loadreg_R_out <= 1'b1;
+                    enable <= 1'b0;
+                    reconf <= 1'b0;
+                    //transition
+                    currentstate <= Get;
+                end
+                // ROM should have fetched the data by now, record the output from the memory module
+                Get: begin
+                    //definition
+                    pass_red <= 1'b1;
+                    pass_green <= 1'b0;
+                    loadreg_1_out <= 1'b0;
+                    loadreg_R_out <= 1'b1;
+                    enable <= 1'b0;
+                    reconf <= 1'b0;
+                    //transition
+                    pword_rom <= rom_q;
+                    currentstate <= Eval;
+                end
+                // flag if the player input does not match what ROM returns
+                Eval: begin
+                    //definition
+                    pass_red <= 1'b1;
+                    pass_green <= 1'b0;
+                    loadreg_1_out <= 1'b0;
+                    loadreg_R_out <= 1'b1;
+                    enable <= 1'b0;
+                    reconf <= 1'b0;
+                    //transition
+                    if(pword_current != pword_rom) begin
+                        pass_OK <= 1'b0;
+                    end
+                    currentstate <= Pass;
+                end
+                // if the sequence matched, goto game
+                    // if not, reset and restart
+                // if the sequence isn't finished, goto next address and loop back
+                Pass: begin
+                    //definition
+                    pass_red <= 1'b1;
+                    pass_green <= 1'b0;
+                    loadreg_1_out <= 1'b0;
+                    loadreg_R_out <= 1'b1;
+                    enable <= 1'b0;
+                    reconf <= 1'b0;
+                    //transition
+                    if(addr >= 2'b11) begin
+                        if(pass_OK == 1'b1) begin
+                            currentstate <= OK;
+                        end
+                        else begin
+                            currentstate <= Init;
+                        end
+                    end
+                    else begin
+                        addr <= addr + 2'b01;
+                        currentstate <= Next;
+                    end
+                end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				OK: begin
+                // game loop
+                OK: begin
                     if(pword_enter == 1'b0)
                     begin
                         pass_red <= 1'b0;
@@ -231,8 +226,8 @@ module access (
                     begin
                         pass_red <= 1'b0;
                         pass_green <= 1'b1;
-                        loadreg_1_out <= loadreg_1_out;
-                        loadreg_R_out <= loadreg_R_out;
+                        loadreg_1_out <= loadreg_1_in;
+                        loadreg_R_out <= loadreg_R_in;
                         enable <= 1'b1;
                         reconf <= 1'b0;
                         currentstate <= PLAY;
@@ -244,7 +239,7 @@ module access (
                         end
                     end
                 end
-				default: begin currentstate <= Digit_1; end
+				default: begin currentstate <= Init; end
 			endcase
 		end
 	end
