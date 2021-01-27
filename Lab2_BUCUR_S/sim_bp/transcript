@@ -1,0 +1,85 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_bp/Lab2_BUCUR_S_sim_bshaper.mpf
+# Loading project Lab2_BUCUR_S_sim_bshaper
+vsim -gui work.bshaper_tb
+# vsim -gui work.bshaper_tb 
+# Start time: 09:30:43 on Feb 16,2020
+# Loading work.bshaper_tb
+# Loading work.bshaper
+add wave -position insertpoint  \
+sim:/bshaper_tb/CLK \
+sim:/bshaper_tb/RST \
+sim:/bshaper_tb/button_in \
+sim:/bshaper_tb/button_out
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 09:36:53 on Feb 16,2020, Elapsed time: 0:06:10
+# Errors: 0, Warnings: 0
+project open C:/intelFPGA_lite/18.1/Lab2_BUCUR_S/sim_access/Lab2_BUCUR_S_sim_access
+# reading C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project Lab2_BUCUR_S_sim_access
+vsim -gui work.access_tb
+# vsim -gui work.access_tb 
+# Start time: 09:42:02 on Feb 16,2020
+# Loading work.access_tb
+# Loading work.access
+add wave -position insertpoint  \
+sim:/access_tb/clk \
+sim:/access_tb/rst \
+sim:/access_tb/passnum \
+sim:/access_tb/load_p1 \
+sim:/access_tb/load_p2 \
+sim:/access_tb/p_enter \
+sim:/access_tb/load1_out \
+sim:/access_tb/load2_out \
+sim:/access_tb/passr \
+sim:/access_tb/passg \
+sim:/access_tb/state_acc
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 10:27:01 on Feb 16,2020, Elapsed time: 0:44:59
+# Errors: 0, Warnings: 0

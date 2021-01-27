@@ -1,29 +1,44 @@
-`timescale 10ns/100ps
+// ECE5440
+// Author: Stefan Bucur
+// loadreg_tb.v
+// Decription: Testbench for loadreg module
+//	Case 1: load 0101 to loadreg
+//	Case 2: reset loadreg to 0
+`timescale 1ns/100ps
 
 module loadreg_tb();
 
-	reg clk, rst, sig_load;
+	reg CLK, RST, sig_load;
 	reg [3:0] data;
 	wire [3:0] loadreg_out;
 
-	loadreg load_tb(clk, rst, data, sig_load, loadreg_out);
+	loadreg load_tb(CLK, RST, data, sig_load, loadreg_out);
 
 	always begin
-		#10 clk = 1;
-		#10 clk = 0;
+		#10 CLK = 0;
+		#10 CLK = 1;
 	end
 
 	initial begin
-		#5
-		rst = 1;
+		RST = 1;
 		sig_load = 0;
-		data = 4'b0000;
-		#20 sig_load = 1;
-		#10 sig_load = 0;
-		#10 data = 4'b1010;
-			sig_load = 1;
-		#10 sig_load = 0;
-			data = 4'b1111;
+		data = 4'b0101;
+		@(posedge CLK);
+		@(posedge CLK);
+		@(posedge CLK);
+		#5 sig_load = 1;
+		@(posedge CLK);
+		#5 sig_load = 0;
+		@(posedge CLK);
+		@(posedge CLK);
+		@(posedge CLK);
+		#5 RST = 0;
+		@(posedge CLK);
+		@(posedge CLK);
+		@(posedge CLK);
+		#5 RST = 1;
+		@(posedge CLK);
+		@(posedge CLK);
+		@(posedge CLK);
 	end
-
 endmodule

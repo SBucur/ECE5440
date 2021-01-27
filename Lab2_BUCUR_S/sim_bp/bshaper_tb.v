@@ -1,11 +1,18 @@
-`timescale 10ns/100ps
+// ECE5440
+// Author: Stefan Bucur
+// bshaper_tb.v
+// Decription: Testbench for access.v. Testing cases:
+//  1. Wrong password -> Load signals blocked
+//  2. Correct Password -> Load signals pass through
+//  3. Logout+Re-enter -> Re-blocks signals until correct sequence re-entered
+`timescale 1ns/100ps
 
 module bshaper_tb ();
 	reg CLK, RST, button_in;
 
 	wire button_out;
 
-	bshaper button_tb (button_in, CLK, RST, button_out);
+	bshaper button_tb (CLK, RST, button_in, button_out);
 
 	//define clock cycle
 	always begin
@@ -21,6 +28,10 @@ module bshaper_tb ();
 		@(posedge CLK);
 		@(posedge CLK);
 		#5 button_in = 0;
+		@(posedge CLK);
+		@(posedge CLK);
+		@(posedge CLK);
+		@(posedge CLK);
 		@(posedge CLK);
 		@(posedge CLK);
 		@(posedge CLK);

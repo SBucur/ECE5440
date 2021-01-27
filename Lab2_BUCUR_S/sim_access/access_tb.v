@@ -1,4 +1,3 @@
-`timescale 1ns/100ps
 // ECE5440
 // Author: Stefan Bucur
 // access_tb.v
@@ -6,9 +5,9 @@
 //  1. Wrong password -> Load signals blocked
 //  2. Correct Password -> Load signals pass through
 //  3. Logout+Re-enter -> Re-blocks signals until correct sequence re-entered
+`timescale 1ns/100ps
 
 module access_tb ();
-
     reg clk, rst;
     reg [3:0] passnum;
     reg load_p1, load_p2, p_enter;
@@ -16,7 +15,7 @@ module access_tb ();
     wire passr, passg;
     wire [2:0] state_acc;
 
-    access testmod(
+    access acc_tb(
         rst, clk,
         load_p1, load_p2,
         passnum, p_enter,
@@ -39,110 +38,164 @@ module access_tb ();
         @(posedge clk);
         @(posedge clk);
         // Test 1: Incorrect password -> 3453
-            passnum = 3;
-            p_enter = 1;
-        @(posedge clk);
-            p_enter = 0;
+        #5  passnum = 3;
         @(posedge clk);
         @(posedge clk);
-
-            passnum = 4;
-            p_enter = 1;
+        #5  p_enter = 1;
         @(posedge clk);
-            p_enter = 0;
+        #5  p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
         @(posedge clk);
         @(posedge clk);
 
-            passnum = 5;
-            p_enter = 1;
+        #5  passnum = 4;
         @(posedge clk);
-            p_enter = 0;
+        @(posedge clk);
+        #5  p_enter = 1;
+        @(posedge clk);
+        #5  p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
         @(posedge clk);
         @(posedge clk);
 
-            passnum = 3;
-            p_enter = 1;
+        #5  passnum = 5;
         @(posedge clk);
-            p_enter = 0;
+        @(posedge clk);
+        #5  p_enter = 1;
+        @(posedge clk);
+        #5  p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+
+        #5  passnum = 3;
+        @(posedge clk);
+        @(posedge clk);
+        #5 p_enter = 1;
+        @(posedge clk);
+        #5  p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
         @(posedge clk);
         @(posedge clk);
         @(posedge clk);
         @(posedge clk);
 
         // Test 2: Correct password -> 3153
-            passnum = 3;
-            p_enter = 1;
-        @(posedge clk);
-            p_enter = 0;
+        #5  passnum = 3;
         @(posedge clk);
         @(posedge clk);
-
-            passnum = 1;
-            p_enter = 1;
+        #5  p_enter = 1;
         @(posedge clk);
-            p_enter = 0;
+        #5  p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
         @(posedge clk);
         @(posedge clk);
 
-            passnum = 5;
-            p_enter = 1;
+        #5  passnum = 1;
         @(posedge clk);
-            p_enter = 0;
+        @(posedge clk);
+        #5  p_enter = 1;
+        @(posedge clk);
+        #5  p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
         @(posedge clk);
         @(posedge clk);
 
-            passnum = 3;
-            p_enter = 1;
+        #5  passnum = 5;
         @(posedge clk);
-            p_enter = 0;
+        @(posedge clk);
+        #5  p_enter = 1;
+        @(posedge clk);
+        #5  p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+
+        #5  passnum = 3;
+        @(posedge clk);
+        @(posedge clk);
+        #5  p_enter = 1;
+        @(posedge clk);
+        #5  p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
         @(posedge clk);
         @(posedge clk);
         @(posedge clk);
         @(posedge clk);
 
         // Test 3: Logout and re-enter correct sequence
-            p_enter = 1;
+        #5  p_enter = 1;
         @(posedge clk);
-            p_enter = 0;
+        #5  p_enter = 0;
         @(posedge clk);
         @(posedge clk);
-
-        passnum = 3;
-            p_enter = 1;
-        @(posedge clk);
-            p_enter = 0;
         @(posedge clk);
         @(posedge clk);
 
-            passnum = 1;
-            p_enter = 1;
-        @(posedge clk);
-            p_enter = 0;
+        #5  passnum = 3;
         @(posedge clk);
         @(posedge clk);
-
-            passnum = 5;
-            p_enter = 1;
+        #5  p_enter = 1;
         @(posedge clk);
-            p_enter = 0;
+        #5  p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
         @(posedge clk);
         @(posedge clk);
 
-            passnum = 3;
-            p_enter = 1;
+        #5  passnum = 1;
         @(posedge clk);
-            p_enter = 0;
+        @(posedge clk);
+        #5  p_enter = 1;
+        @(posedge clk);
+        #5  p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+
+        #5  passnum = 5;
+        @(posedge clk);
+        @(posedge clk);
+        #5  p_enter = 1;
+        @(posedge clk);
+        #5  p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+
+        #5  passnum = 3;
+        @(posedge clk);
+        @(posedge clk);
+        #5  p_enter = 1;
+        @(posedge clk);
+        #5  p_enter = 0;
+        @(posedge clk);
+        @(posedge clk);
         @(posedge clk);
         @(posedge clk);
 
         // reset
-            rst = 0;
+        #5  rst = 0;
         @(posedge clk);
         @(posedge clk);
         @(posedge clk);
         @(posedge clk);
         @(posedge clk);
         @(posedge clk);
-            rst = 1;
+        @(posedge clk);
+        @(posedge clk);
+        #5  rst = 1;
     end
 endmodule

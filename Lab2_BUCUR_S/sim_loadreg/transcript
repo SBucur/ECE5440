@@ -4,3 +4,17 @@
 # Compile of loadreg.v was successful.
 # Compile of loadreg_tb.v was successful.
 # 2 compiles, 0 failed with no errors.
+vsim -gui work.loadreg_tb
+# vsim -gui work.loadreg_tb 
+# Start time: 08:17:33 on Feb 15,2020
+# Loading work.loadreg_tb
+# Loading work.loadreg
+add wave -position insertpoint  \
+sim:/loadreg_tb/CLK \
+sim:/loadreg_tb/RST \
+sim:/loadreg_tb/sig_load \
+sim:/loadreg_tb/data \
+sim:/loadreg_tb/loadreg_out
+run
+# End time: 08:22:21 on Feb 15,2020, Elapsed time: 0:04:48
+# Errors: 0, Warnings: 0

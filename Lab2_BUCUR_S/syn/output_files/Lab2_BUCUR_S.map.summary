@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Feb 16 20:04:28 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Lab2_BUCUR_S
+Top-level Entity Name : Lab2_BUCUR_S
+Family : Cyclone IV E
+Total logic elements : 67
+    Total combinational functions : 67
+    Dedicated logic registers : 22
+Total registers : 22
+Total pins : 42
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

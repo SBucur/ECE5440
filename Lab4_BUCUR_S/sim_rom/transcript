@@ -1,0 +1,57 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/Lab4_BUCUR_S_ROM_sim.mpf
+# Loading project Lab4_BUCUR_S_ROM_sim
+# Load canceled
+# Compile of ROM_tb.v was successful.
+# Compile of ROM_BUCUR_S.v was successful.
+# Compile of access_tb.v was successful.
+# Compile of access.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.access_tb
+# vsim -gui work.access_tb 
+# Start time: 22:48:12 on Apr 30,2020
+# Loading work.access_tb
+# Loading work.access
+# Loading work.ROM_BUCUR_S
+# ** Error: (vsim-3033) C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_BUCUR_S.v(58): Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /access_tb/ROM_DUT File: C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/ROM_BUCUR_S.v
+#         Searched libraries:
+#             C:/intelFPGA_lite/18.1/Lab4_BUCUR_S/sim_rom/work
+# Error loading design
+# End time: 22:48:13 on Apr 30,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim -gui work.access_tb -L altera_mf_ver -L altera_mf
+# vsim -gui work.access_tb -L altera_mf_ver -L altera_mf 
+# Start time: 22:49:08 on Apr 30,2020
+# Loading work.access_tb
+# Loading work.access
+# Loading work.ROM_BUCUR_S
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/access_tb/CLK \
+sim:/access_tb/RST \
+sim:/access_tb/pword \
+sim:/access_tb/loadreg_1_in \
+sim:/access_tb/loadreg_R_in \
+sim:/access_tb/pword_enter \
+sim:/access_tb/timeout \
+sim:/access_tb/enable \
+sim:/access_tb/reconf \
+sim:/access_tb/loadreg_1_out \
+sim:/access_tb/loadreg_R_out \
+sim:/access_tb/pass_red \
+sim:/access_tb/pass_green \
+sim:/access_tb/currentstate \
+sim:/access_tb/rom_q \
+sim:/access_tb/addr \
+sim:/access_tb/pass_OK
+run
+run
+run
+run
+# End time: 23:23:29 on Apr 30,2020, Elapsed time: 0:34:21
+# Errors: 0, Warnings: 1
